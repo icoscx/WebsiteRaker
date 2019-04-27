@@ -1,3 +1,5 @@
+/*
+*/
 //any browser variable can be omitted to be enumerated
 //Works for IE, Chrome, firefox, htmlunit (except for navigator)
 var obj = navigator;
