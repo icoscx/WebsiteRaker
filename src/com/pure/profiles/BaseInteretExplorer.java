@@ -46,11 +46,13 @@ public class BaseInteretExplorer extends BaseProfile{
 
     private void webClientFeatures(){
 
-        webClient.getOptions().setJavaScriptEnabled(false);
-        webClient.getOptions().setActiveXNative(false);
+        webClient.getOptions().setJavaScriptEnabled(true);
+        webClient.getOptions().setActiveXNative(true);
         webClient.getOptions().setAppletEnabled(true);
         webClient.getOptions().setCssEnabled(true);
         webClient.getOptions().setRedirectEnabled(true);
+        webClient.getOptions().setUseInsecureSSL(true);
+        //webClient.waitForBackgroundJavaScript(1000);
         CookieManager cookieManager = new CookieManager();
         cookieManager.setCookiesEnabled(true);
         webClient.setCookieManager(cookieManager);
