@@ -46,8 +46,8 @@ public class BaseInteretExplorer extends BaseProfile{
 
     private void webClientFeatures(){
 
-        webClient.getOptions().setJavaScriptEnabled(true);
-        webClient.getOptions().setActiveXNative(true);
+        webClient.getOptions().setJavaScriptEnabled(false);
+        webClient.getOptions().setActiveXNative(false);
         webClient.getOptions().setAppletEnabled(true);
         webClient.getOptions().setCssEnabled(true);
         webClient.getOptions().setRedirectEnabled(true);

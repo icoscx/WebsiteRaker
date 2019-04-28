@@ -3,6 +3,7 @@ package com.pure.locker;
 import com.gargoylesoftware.htmlunit.WebResponse;
 import com.gargoylesoftware.htmlunit.html.*;
 import com.pure.logger.Log;
+import org.apache.commons.text.StringEscapeUtils;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -24,9 +25,11 @@ public class EvidenceLocker {
             DomNodeList<DomElement> domElements = htmlPage.getElementsByTagName(tag);
             for (DomElement domElement : domElements) {
                 //asText = parseFrameContent
-                if (!domElement.getId().equals("") || !domElement.asText().equals("")) {
+                if (!domElement.getId().equals("")) {
                     //frameRunner
-                    simpleResultsDOM.put(domElement.getId(), domElement.asText());
+                    //simpleResultsDOM.put(domElement.getId(), domElement.getTextContent().replaceAll("\n|\"",""));
+                    simpleResultsDOM.put(domElement.getId(),
+                            StringEscapeUtils.escapeEcmaScript(domElement.getTextContent()));
                 }
             }
         }
@@ -34,15 +37,27 @@ public class EvidenceLocker {
         DomNodeList<DomElement> domElements = htmlPage.getElementsByTagName("script");
         int pos = 0;
         for (DomElement domElement : domElements) {
-            //getTextCOntent = view source
-            if(!domElement.getTextContent().equals("")) {
-                //Log.logger.info(domElement.getTagName() + "||" + domElement.getTextContent());
-                simpleResultsJS.put("//" + pos, domElement.getTextContent());
-                pos++;
+            if (!domElement.getId().equals("")) {
+                simpleResultsDOM.put(domElement.getId(),
+                        StringEscapeUtils.escapeEcmaScript(domElement.getTextContent()));
             }
         }
-
-        createFileForSandbox();
+        for (DomElement domElement : domElements) {
+            if(!domElement.getTextContent().equals("")) {
+                //Log.logger.info(domElement.getTagName() + "||" + domElement.getTextContent());
+                String s = domElement.getTextContent();
+                if(!s.contains("jQuery") &&
+                        !s.contains("google-analytics") &&
+                        !s.contains("schema.org") &&
+                        !s.contains("CDATA") &&
+                        !s.contains("/themes/")) {
+                    simpleResultsJS.put("//" + pos, domElement.getTextContent());
+                    pos++;
+                }
+            }
+        }
+        //if script has ID
+        createVirtualPage();
     }
     /*Iterate all tags**/
     public void advancedParse(HtmlPage htmlPage, WebResponse webResponse){
@@ -61,13 +76,13 @@ public class EvidenceLocker {
 
     }
 
-    private void createFileForSandbox() throws IOException{
+    private void createVirtualPage() throws IOException{
 
-        Path path = Paths.get(rootPath, File.separator + "malware" + File.separator + "fileCreated.js");
+        Path path = Paths.get(rootPath, File.separator + "malware" + File.separator + "angler.js");
         Log.logger.info("Creating file: " + path.toString());
         File file = new File(path.toString());
 
-        FileWriter fr = new FileWriter(file, true);
+        FileWriter fr = new FileWriter(file, false);
 
         for (Map.Entry<String, String> entry : simpleResultsDOM.entrySet()) {
             String key = entry.getKey();

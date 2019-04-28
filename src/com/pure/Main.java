@@ -33,7 +33,7 @@ public class Main {
             }
         }
         //String hostToVisit = args[0];
-        String hostToVisit = "http://localhost/1.php";
+        String hostToVisit = "http://localhost/angler.html";
         try {
             URL url = new URL(hostToVisit);
             httpAgentz(url);
