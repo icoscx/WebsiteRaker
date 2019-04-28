@@ -22,7 +22,7 @@ public class Log {
         logger.setUseParentHandlers(true);
 
         try {
-            fileHandler = new FileHandler("./allOfEm.log", false);
+            fileHandler = new FileHandler("./allOfEm.log", true);
         } catch (IOException e) {
             System.err.println(e.getMessage());
             e.printStackTrace();

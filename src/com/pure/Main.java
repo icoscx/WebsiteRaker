@@ -33,7 +33,7 @@ public class Main {
             }
         }
         //String hostToVisit = args[0];
-        String hostToVisit = "http://localhost/2.php";
+        String hostToVisit = "http://localhost/1.php";
         try {
             URL url = new URL(hostToVisit);
             httpAgentz(url);
@@ -57,9 +57,7 @@ public class Main {
         Log.logger.info("Last page Navigated to " + htmlPage.getTitleText() + " status: "
                 + htmlPage.getWebResponse().getStatusCode() + " date: " +
                 htmlPage.getWebResponse().getResponseHeaderValue("Date"));
-        List<FrameWindow> window = htmlPage.getFrames();
-        Log.logger.info("Found frames: " + window.size());
-        //Log.logger.info(htmlPage.asText());
+
         EvidenceLocker evidenceLocker = new EvidenceLocker();
         evidenceLocker.simpleParse(htmlPage, webResponse);
 
