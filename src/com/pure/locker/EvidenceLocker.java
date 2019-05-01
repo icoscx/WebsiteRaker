@@ -85,7 +85,7 @@ public class EvidenceLocker {
         if(simpleResultsDOM.isEmpty() && simpleResultsJS.isEmpty()){
             throw new Exception("Cannot create VirtualPage without content");
         }
-        String timeStamp = new SimpleDateFormat("MM-dd_HH-mm-ssss").format(Calendar.getInstance().getTime());
+        String timeStamp = new SimpleDateFormat("MM-dd_hh-mm-ssss").format(Calendar.getInstance().getTime());
         Path path = Paths.get(rootPath, File.separator + "malware" + File.separator +
                 uri.getHost().replace(".","_") +"_"+ timeStamp +".js");
         Log.logger.info("Creating file: " + path.toString());
@@ -123,6 +123,8 @@ public class EvidenceLocker {
             }
         }
     }
+    //save as HtmlPage
+    public void parsePCAP(){}
 
     public void setUri(URL uri) {
         this.uri = uri;
