@@ -8,56 +8,60 @@ import org.apache.commons.text.StringEscapeUtils;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.net.URL;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class EvidenceLocker {
 
-    private HashMap<String, String> simpleResultsDOM = new HashMap<>();
+    private List<String> exceptions = Arrays.asList("jQuery", "google-analytics", "schema.org", "CDATA"
+    , "/themes/");
+    private List<String> tags = Arrays.asList("div","p");
+    //private HashMap<String, String> simpleResultsDOM = new HashMap<>();
+    private HashMap<Integer, List<String>> simpleResultsDOM = new HashMap<>();
     private HashMap<String, String> simpleResultsJS = new HashMap<>();
-    private List<String> tags = Arrays.asList("div","p","iframe");
     private static String rootPath = System.getProperty("user.dir");
+    private URL uri = null;
+    private int posOfJsPointer = 0;
+    private int posOfDomPointer = 0;
 
-    public void simpleParse(HtmlPage htmlPage, WebResponse webResponse)throws IOException {
+    public void simpleParse(HtmlPage htmlPage)throws IOException {
 
         for(String tag : tags) {
             DomNodeList<DomElement> domElements = htmlPage.getElementsByTagName(tag);
             for (DomElement domElement : domElements) {
                 //asText = parseFrameContent
                 if (!domElement.getId().equals("")) {
-                    //frameRunner
-                    //simpleResultsDOM.put(domElement.getId(), domElement.getTextContent().replaceAll("\n|\"",""));
-                    simpleResultsDOM.put(domElement.getId(),
-                            StringEscapeUtils.escapeEcmaScript(domElement.getTextContent()));
+                    //simpleFrameRunner
+                    simpleResultsDOM.put(posOfDomPointer, Arrays.asList(domElement.getId(),
+                            StringEscapeUtils.escapeEcmaScript(domElement.getTextContent())));
+                    posOfDomPointer++;
+                }
+            }
+        }
+        //Special case: Script tags with ID
+        DomNodeList<DomElement> domElements = htmlPage.getElementsByTagName("script");
+        for (DomElement domElement : domElements) {
+            if (!domElement.getId().equals("")) {
+                simpleResultsDOM.put(posOfDomPointer, Arrays.asList(domElement.getId(),
+                        StringEscapeUtils.escapeEcmaScript(domElement.getTextContent())));
+                posOfDomPointer++;
+            }
+        }
+        //Iterate script pieces
+        for (DomElement domElement : domElements) {
+            if(!domElement.getTextContent().equals("")) {
+                String stringToSeek = domElement.getTextContent();
+                //Push js excluding whitelist
+                if(!exceptions.parallelStream().anyMatch(stringToSeek::contains)) {
+                    simpleResultsJS.put("//" + posOfJsPointer, domElement.getTextContent());
+                    posOfJsPointer++;
                 }
             }
         }
 
-        DomNodeList<DomElement> domElements = htmlPage.getElementsByTagName("script");
-        int pos = 0;
-        for (DomElement domElement : domElements) {
-            if (!domElement.getId().equals("")) {
-                simpleResultsDOM.put(domElement.getId(),
-                        StringEscapeUtils.escapeEcmaScript(domElement.getTextContent()));
-            }
-        }
-        for (DomElement domElement : domElements) {
-            if(!domElement.getTextContent().equals("")) {
-                //Log.logger.info(domElement.getTagName() + "||" + domElement.getTextContent());
-                String s = domElement.getTextContent();
-                if(!s.contains("jQuery") &&
-                        !s.contains("google-analytics") &&
-                        !s.contains("schema.org") &&
-                        !s.contains("CDATA") &&
-                        !s.contains("/themes/")) {
-                    simpleResultsJS.put("//" + pos, domElement.getTextContent());
-                    pos++;
-                }
-            }
-        }
-        //if script has ID
-        createVirtualPage();
     }
     /*Iterate all tags**/
     public void advancedParse(HtmlPage htmlPage, WebResponse webResponse){
@@ -76,17 +80,23 @@ public class EvidenceLocker {
 
     }
 
-    private void createVirtualPage() throws IOException{
+    public void createVirtualPage() throws IOException, Exception{
 
-        Path path = Paths.get(rootPath, File.separator + "malware" + File.separator + "angler.js");
+        if(simpleResultsDOM.isEmpty() && simpleResultsJS.isEmpty()){
+            throw new Exception("Cannot create VirtualPage without content");
+        }
+        String timeStamp = new SimpleDateFormat("MM-dd_HH-mm-ssss").format(Calendar.getInstance().getTime());
+        Path path = Paths.get(rootPath, File.separator + "malware" + File.separator +
+                uri.getHost().replace(".","_") +"_"+ timeStamp +".js");
         Log.logger.info("Creating file: " + path.toString());
         File file = new File(path.toString());
 
         FileWriter fr = new FileWriter(file, false);
 
-        for (Map.Entry<String, String> entry : simpleResultsDOM.entrySet()) {
-            String key = entry.getKey();
-            String value = entry.getValue();
+        for (Map.Entry<Integer, List<String>> entry : simpleResultsDOM.entrySet()) {
+            //String key = entry.getKey(); //String value = entry.getValue();
+            String key = entry.getValue().get(0);
+            String value = entry.getValue().get(1);
             fr.write("document._addElementById(\"" + key + "\",\"" + value + "\");\n");
         }
 
@@ -100,18 +110,22 @@ public class EvidenceLocker {
 
     }
 
-    private void frameRunner(HtmlPage htmlPage){
+    //2n deep, no recursion
+    public void simpleFrameRunner(HtmlPage htmlPage) throws IOException{
 
         List<FrameWindow> window = htmlPage.getFrames();
         Log.logger.info("Found frames: " + window.size());
-        for (FrameWindow frame : window) {
-            if (frame.getFrameElement().getId().equals("farmozz")) {
-                HtmlPage subPage = (HtmlPage) frame.getEnclosedPage();
-                Log.logger.info(subPage.asText());
+        simpleParse(htmlPage);
+        if(window.size() > 0){
+            for (FrameWindow frameWindow : window) {
+                HtmlPage subpage = (HtmlPage) frameWindow.getFrameElement().getEnclosedPage();
+                simpleParse(subpage);
             }
         }
-
     }
 
+    public void setUri(URL uri) {
+        this.uri = uri;
 
+    }
 }

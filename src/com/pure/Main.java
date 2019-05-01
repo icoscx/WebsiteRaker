@@ -1,7 +1,6 @@
 package com.pure;
 
 import com.gargoylesoftware.htmlunit.*;
-import com.gargoylesoftware.htmlunit.html.FrameWindow;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.pure.locker.EvidenceLocker;
 import com.pure.logger.Log;
@@ -9,7 +8,6 @@ import com.pure.profiles.BaseInteretExplorer;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.*;
 import java.util.logging.Level;
 
 public class Main {
@@ -42,7 +40,7 @@ public class Main {
         }
     }
 
-    public static void httpAgentz(URL uri) throws IOException {
+    public static void httpAgentz(URL uri) throws IOException, Exception {
 
         BaseInteretExplorer interetExplorer = new BaseInteretExplorer();
         //Debug.enumPlugins(interetExplorer.getWebClient());
@@ -59,7 +57,9 @@ public class Main {
                 htmlPage.getWebResponse().getResponseHeaderValue("Date"));
 
         EvidenceLocker evidenceLocker = new EvidenceLocker();
-        evidenceLocker.simpleParse(htmlPage, webResponse);
+        evidenceLocker.setUri(uri);
+        evidenceLocker.simpleFrameRunner(htmlPage);
+        evidenceLocker.createVirtualPage();
 
     }
 

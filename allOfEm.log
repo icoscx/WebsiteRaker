@@ -344,3 +344,77 @@ document.write("188888");
 [28/04/2019 13:49:47.437]|[INFO]|Starting job http://localhost/angler.html
 [28/04/2019 13:49:48.375]|[INFO]|Last page Navigated to Renees Destiny Productions | The Beauty and The Beats status: 200 date: Sun, 28 Apr 2019 20:49:47 GMT
 [28/04/2019 13:49:48.415]|[INFO]|Creating file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/angler.js
+[30/04/2019 02:18:39.441]|[INFO]|Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[30/04/2019 02:18:39.522]|[INFO]|Starting job http://localhost/1.php
+[30/04/2019 02:18:40.488]|[INFO]|Last page Navigated to Lolz2 status: 200 date: Tue, 30 Apr 2019 09:18:40 GMT
+[30/04/2019 02:18:40.545]|[INFO]|Creating file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_0430_021840.js
+[30/04/2019 03:07:00.571]|[INFO]|Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[30/04/2019 03:07:00.626]|[INFO]|Starting job http://localhost/3.php
+[30/04/2019 03:07:01.253]|[INFO]|Last page Navigated to Lolz3 status: 200 date: Tue, 30 Apr 2019 10:07:00 GMT
+[30/04/2019 03:07:01.288]|[INFO]|Creating file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_0430_030701.js
+[30/04/2019 11:23:13.243]|[INFO]|Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[30/04/2019 11:23:13.308]|[INFO]|Starting job http://localhost/3.php
+[30/04/2019 11:23:13.892]|[INFO]|Last page Navigated to Lolz3 status: 200 date: Tue, 30 Apr 2019 18:23:13 GMT
+[30/04/2019 11:23:13.897]|[INFO]|Found frames: 1
+[30/04/2019 11:23:13.905]|[INFO]|Lolz4
+refooro http://localhost/3.php
+4 no id
+ 4 - withid
+[30/04/2019 11:23:13.931]|[INFO]|Creating file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_0430_112313.js
+[30/04/2019 11:33:41.007]|[INFO]|Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[30/04/2019 11:33:41.044]|[INFO]|Starting job http://localhost/3.php
+[30/04/2019 11:33:41.614]|[INFO]|Last page Navigated to Lolz3 status: 200 date: Tue, 30 Apr 2019 18:33:41 GMT
+[30/04/2019 11:33:41.619]|[INFO]|Found frames: 1
+[30/04/2019 11:33:41.626]|[INFO]|Lolz4
+refooro http://localhost/3.php
+4 no id
+ 4 - withid
+[30/04/2019 13:19:55.922]|[INFO]|Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[30/04/2019 13:19:55.962]|[INFO]|Starting job http://localhost/3.php
+[30/04/2019 13:19:56.491]|[INFO]|Last page Navigated to Lolz3 status: 200 date: Tue, 30 Apr 2019 20:19:56 GMT
+[30/04/2019 13:19:56.503]|[INFO]|Found frames: 1
+[30/04/2019 13:19:56.509]|[INFO]|Lolz4
+refooro http://localhost/3.php
+4 no id
+ 4 - withid
+[30/04/2019 13:49:03.866]|[INFO]|Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[30/04/2019 13:49:03.947]|[INFO]|Starting job http://localhost/3.php
+[30/04/2019 13:49:04.428]|[INFO]|Last page Navigated to Lolz3 status: 200 date: Tue, 30 Apr 2019 20:49:04 GMT
+[30/04/2019 13:49:04.473]|[INFO]|Creating file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_0430_134904.js
+[30/04/2019 13:49:50.376]|[INFO]|Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[30/04/2019 13:49:50.414]|[INFO]|Starting job http://localhost/angler.html
+[30/04/2019 13:49:51.462]|[INFO]|Last page Navigated to Renees Destiny Productions | The Beauty and The Beats status: 200 date: Tue, 30 Apr 2019 20:49:50 GMT
+[30/04/2019 13:49:51.524]|[INFO]|Creating file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_0430_134951.js
+[01/05/2019 00:17:21.061]|[INFO]|Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[01/05/2019 00:17:21.133]|[INFO]|Starting job http://localhost/3.php
+[01/05/2019 00:17:21.750]|[INFO]|Last page Navigated to Lolz3 status: 200 date: Wed, 01 May 2019 07:17:21 GMT
+[01/05/2019 00:17:21.755]|[INFO]|Found frames: 1
+[01/05/2019 00:17:21.761]|[INFO]|Lolz4
+refooro http://localhost/3.php
+4 no id
+ 4 - withid
+[01/05/2019 00:31:26.680]|[INFO]|Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[01/05/2019 00:31:26.758]|[INFO]|Starting job http://localhost/angler.html
+[01/05/2019 00:31:28.146]|[INFO]|Last page Navigated to Renees Destiny Productions | The Beauty and The Beats status: 200 date: Wed, 01 May 2019 07:31:27 GMT
+[01/05/2019 00:31:28.151]|[INFO]|Found frames: 0
+[01/05/2019 00:31:28.206]|[INFO]|Creating file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_0501_003128.js
+[01/05/2019 00:33:09.557]|[INFO]|Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[01/05/2019 00:33:09.618]|[INFO]|Starting job http://localhost/3.php
+[01/05/2019 00:33:10.150]|[INFO]|Last page Navigated to Lolz3 status: 200 date: Wed, 01 May 2019 07:33:09 GMT
+[01/05/2019 00:33:10.155]|[INFO]|Found frames: 1
+[01/05/2019 00:33:10.194]|[INFO]|Creating file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_0501_003310.js
+[01/05/2019 00:39:58.774]|[INFO]|Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[01/05/2019 00:39:58.813]|[INFO]|Starting job http://localhost/3.php
+[01/05/2019 00:39:59.332]|[INFO]|Last page Navigated to Lolz3 status: 200 date: Wed, 01 May 2019 07:39:59 GMT
+[01/05/2019 00:39:59.336]|[INFO]|Found frames: 1
+[01/05/2019 00:39:59.379]|[INFO]|Creating file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_0501_003959.js
+[01/05/2019 01:40:48.018]|[INFO]|Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[01/05/2019 01:40:48.062]|[INFO]|Starting job http://localhost/angler.html
+[01/05/2019 01:40:49.493]|[INFO]|Last page Navigated to Renees Destiny Productions | The Beauty and The Beats status: 200 date: Wed, 01 May 2019 08:40:48 GMT
+[01/05/2019 01:40:49.501]|[INFO]|Found frames: 0
+[01/05/2019 01:40:49.617]|[INFO]|Creating file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-01_01-40-0049.js
+[01/05/2019 01:44:50.700]|[INFO]|Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[01/05/2019 01:44:50.758]|[INFO]|Starting job http://localhost/angler.html
+[01/05/2019 01:44:52.226]|[INFO]|Last page Navigated to Renees Destiny Productions | The Beauty and The Beats status: 200 date: Wed, 01 May 2019 08:44:51 GMT
+[01/05/2019 01:44:52.230]|[INFO]|Found frames: 0
+[01/05/2019 01:44:52.283]|[INFO]|Creating file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-01_01-44-0052.js
