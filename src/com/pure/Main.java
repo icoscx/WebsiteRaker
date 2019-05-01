@@ -39,6 +39,7 @@ public class Main {
             Log.logger.log(Level.SEVERE,e.getCause() + e.getMessage(), e);
         }
     }
+    //edge: if (typeof document == "undefined")
 
     public static void httpAgentz(URL uri) throws IOException, Exception {
 

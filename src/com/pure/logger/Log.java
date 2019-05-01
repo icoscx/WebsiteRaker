@@ -1,5 +1,6 @@
 package com.pure.logger;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.FileHandler;
@@ -22,7 +23,8 @@ public class Log {
         logger.setUseParentHandlers(true);
 
         try {
-            fileHandler = new FileHandler("./allOfEm.log", true);
+            fileHandler = new FileHandler(System.getProperty("user.dir")+
+                    File.separator + "dev-log" + File.separator + "dev.log", true);
         } catch (IOException e) {
             System.err.println(e.getMessage());
             e.printStackTrace();
