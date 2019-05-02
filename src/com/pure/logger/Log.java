@@ -19,7 +19,7 @@ public class Log {
         handling) and adding our own handler that will only show the short
         message makes the error output much more manageable.*/
 
-        //see false
+        //see false (red f to console)
         logger.setUseParentHandlers(true);
 
         try {
@@ -36,10 +36,11 @@ public class Log {
 
         logger.addHandler(fileHandler);
 
-        consoleHandler = new ConsoleHandler();
+        //consoleHandler = new ConsoleHandler();
         //consoleHandler.setFormatter(formatter);
-        logger.addHandler(consoleHandler);
-        consoleHandler.setLevel(Level.SEVERE);
+        //logger.addHandler(consoleHandler);
+        //see severe
+        //consoleHandler.setLevel(Level.ALL);
         fileHandler.setLevel(Level.ALL);
 
         // Default level is ALL, no Filter. 1. logger lvl -> 2. Handler lvl/filter

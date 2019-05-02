@@ -61,6 +61,11 @@ public class Main {
         evidenceLocker.setUri(uri);
         evidenceLocker.simpleFrameRunner(htmlPage);
         evidenceLocker.createVirtualPage();
+        Integer jobId = 1;
+        Composer composer = new Composer();
+        composer.executor(evidenceLocker.getFolderName(),
+                evidenceLocker.getFileName());
+
 
     }
 

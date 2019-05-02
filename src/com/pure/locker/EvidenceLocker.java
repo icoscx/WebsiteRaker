@@ -26,6 +26,10 @@ public class EvidenceLocker {
     private URL uri = null;
     private int posOfJsPointer = 0;
     private int posOfDomPointer = 0;
+    private String folderName = null;
+    private String fileName = null;
+
+    /*if class name not empty create class*/
 
     public void simpleParse(HtmlPage htmlPage)throws IOException {
 
@@ -85,12 +89,18 @@ public class EvidenceLocker {
         if(simpleResultsDOM.isEmpty() && simpleResultsJS.isEmpty()){
             throw new Exception("Cannot create VirtualPage without content");
         }
-        String timeStamp = new SimpleDateFormat("MM-dd_hh-mm-ssss").format(Calendar.getInstance().getTime());
+        String timeStamp = new SimpleDateFormat("MM-dd_HH-mm-ssss").format(Calendar.getInstance().getTime());
+        String folderStamp = new SimpleDateFormat("HH-mm-ssss").format(Calendar.getInstance().getTime());
+
+        this.folderName = uri.getHost()+"_"+folderStamp;
+        this.fileName = uri.getHost().replace(".","_") +"_"+ timeStamp +".js";
+
         Path path = Paths.get(rootPath, File.separator + "malware" + File.separator +
-                uri.getHost().replace(".","_") +"_"+ timeStamp +".js");
+                folderName + File.separator + fileName);
+
         Log.logger.info("Creating file: " + path.toString());
         File file = new File(path.toString());
-
+        file.getParentFile().mkdir();
         FileWriter fr = new FileWriter(file, false);
 
         for (Map.Entry<Integer, List<String>> entry : simpleResultsDOM.entrySet()) {
@@ -129,5 +139,13 @@ public class EvidenceLocker {
     public void setUri(URL uri) {
         this.uri = uri;
 
+    }
+
+    public String getFolderName() {
+        return folderName;
+    }
+
+    public String getFileName() {
+        return fileName;
     }
 }
