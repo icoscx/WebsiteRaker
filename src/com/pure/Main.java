@@ -17,7 +17,7 @@ public class Main {
         //htmlunit off
         java.util.logging.Logger.getLogger("com.gargoylesoftware").setLevel(Level.OFF);
         //initLogging
-        Log.enableLog();
+        Log.enableProgramFlowLog();
         //simpleArgs parser
         if(args.length > 0){
             for(int ii = 0; ii < args.length; ii++){
@@ -62,7 +62,8 @@ public class Main {
         evidenceLocker.simpleFrameRunner(htmlPage);
         evidenceLocker.createVirtualPage();
         Integer jobId = 1;
-        Composer composer = new Composer();
+        Composer composer = new Composer("." + evidenceLocker.getCurrentJobFullPath(),
+                evidenceLocker.getFileName());
         composer.executor(evidenceLocker.getFolderName(),
                 evidenceLocker.getFileName());
 

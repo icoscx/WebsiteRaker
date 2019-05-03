@@ -28,6 +28,7 @@ public class EvidenceLocker {
     private int posOfDomPointer = 0;
     private String folderName = null;
     private String fileName = null;
+    private String currentJobFullPath = null;
 
     /*if class name not empty create class*/
 
@@ -92,13 +93,15 @@ public class EvidenceLocker {
         String timeStamp = new SimpleDateFormat("MM-dd_HH-mm-ssss").format(Calendar.getInstance().getTime());
         String folderStamp = new SimpleDateFormat("HH-mm-ssss").format(Calendar.getInstance().getTime());
 
-        this.folderName = uri.getHost()+"_"+folderStamp;
+        this.folderName = uri.getHost().replace(".","_")+"_"+folderStamp;
         this.fileName = uri.getHost().replace(".","_") +"_"+ timeStamp +".js";
+        this.currentJobFullPath = File.separator + "malware" + File.separator +
+                folderName + File.separator;
 
         Path path = Paths.get(rootPath, File.separator + "malware" + File.separator +
                 folderName + File.separator + fileName);
 
-        Log.logger.info("Creating file: " + path.toString());
+        Log.logger.info("Creating virtual page file: " + path.toString());
         File file = new File(path.toString());
         file.getParentFile().mkdir();
         FileWriter fr = new FileWriter(file, false);
@@ -120,7 +123,7 @@ public class EvidenceLocker {
 
     }
 
-    //2n deep, no recursion
+    //2n deep, no recursion, all frames
     public void simpleFrameRunner(HtmlPage htmlPage) throws IOException{
 
         List<FrameWindow> window = htmlPage.getFrames();
@@ -147,5 +150,9 @@ public class EvidenceLocker {
 
     public String getFileName() {
         return fileName;
+    }
+
+    public String getCurrentJobFullPath() {
+        return currentJobFullPath;
     }
 }
