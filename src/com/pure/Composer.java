@@ -22,39 +22,43 @@ public class Composer {
     //GetBrowserProfileFrom Profiles
     public void setBrowserProfile(BrowserVersion firefox52) {}
 
-    public void executor(String folder, String filename) {
+    public void executor(String folder) {
 
+        //TODO: /*wscript_only*/
         Runtime runtime = Runtime.getRuntime();
         String[] commands  = {"node", "./malware-jail/jailme.js", "--h404",
-                "./malware/" + folder + File.separator + filename};
+                "./malware/" + folder + File.separator + fileName};
         Process process = null;
         boolean jobFailed = false;
+        Log.logger.info("Processing command: node ./malware-jail/jailme.js --h404 ./malware/"
+                + folder + File.separator + fileName);
         try {
             process = runtime.exec(commands);
             BufferedReader lineReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             lineReader.lines().forEach(dataLine -> caseWriter(dataLine));
             //gatherData FOR YARA and to jobNotFailed
 
+            /*TODO: Needs fix flow wont stop no try*/
             BufferedReader errorReader = new BufferedReader(new InputStreamReader(process.getErrorStream()));
             errorReader.lines().forEach(Log.logger::severe);
         } catch (IOException e) {
             Log.logger.severe("#############################\nSandBox job: " +
-                    folder + File.separator + filename + " - FAILED: "
+                    folder + File.separator + fileName + " - FAILED: "
                     + e.getCause() + "||" + e.getMessage() + "#############################\n");
 
             jobFailed = true;
         }
-        //TODO:
         if(!jobFailed){
             exportCaseResults();
         }
-    /*wscript_only*/
     }
 
     private void exportCaseResults(){
 
         File file = new File(fullPathWithDot + "results" + File.separator +
-                fileName.replace(".js", ".log"));
+                fileName.replace(".js", ".dynamic.log"));
+        Log.logger.info("Exporting results to: /" + "results" + File.separator +
+                fileName.replace(".js", ".dynamic.log"));
         file.getParentFile().mkdir();
         try {
             FileWriter fr = new FileWriter(file, false);

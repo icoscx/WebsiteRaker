@@ -61,34 +61,13 @@ public class Main {
         evidenceLocker.setUri(uri);
         evidenceLocker.simpleFrameRunner(htmlPage);
         evidenceLocker.createVirtualPage();
-        Integer jobId = 1;
+        //Integer jobId = 1;
         Composer composer = new Composer("." + evidenceLocker.getCurrentJobFullPath(),
                 evidenceLocker.getFileName());
-        composer.executor(evidenceLocker.getFolderName(),
-                evidenceLocker.getFileName());
+        composer.executor(evidenceLocker.getFolderName());
+        Scanner scanner = new Scanner(evidenceLocker.getFolderName());
 
 
-    }
-
-    public static void crawler(URL hostToVisit) throws IOException, ScriptException {
-
-        /*
-         List<TopLevelWindow> lastWindow = webClient.getTopLevelWindows();
-        History history = lastWindow.get(0).getHistory();
-        Log.logger.info(String.valueOf(history.getLength()));
-
-
-        ContentExtractor contentExtractor = new ContentExtractor();
-        Composer composer = new Composer();
-        composer.setBrowserProfile(FIREFOX_52);
-        JSfile jSfile = composer.createTargetJavascriptFile("malware_" + hostToVisit + ".js");
-        //this._addElementById = function(id, content)
-        //this._addElementByClass = function(cls, content)
-        jSfile.appendDOM(contentExtractor.getDOMList());
-        composer.createVirtualPage(jSfile);
-        //Process p=Runtime.getRuntime().exec("")
-        composer.execute("node jailme.js -b FF_W10 -c config.json -t 10000 --down=y " + jSfile.getNameOfFile());
-        */
     }
 
     public static void printHelp(){
