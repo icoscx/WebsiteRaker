@@ -17,7 +17,7 @@ public class Scanner {
     private List<String> scannerResults = new LinkedList<>();
     private boolean noSignatureHits = false;
     private boolean yaraHadError = false;
-    private Queue<Match> matchQueue = new LinkedList<>();
+    private List<Match> matchQueue = new LinkedList<>();
 
     public Scanner(String malwareSamplesPath) throws Exception {
         this.malwareSamplesPath = malwareSamplesPath;
@@ -63,6 +63,9 @@ public class Scanner {
                 } else if (result.substring(0, 2).matches("0x") && acceptResultData) { //end index is exclusive
 
                     match.getMatchedRows().add(result);
+                    if(scannerResults.get(scannerResults.size()-1).equals(result)){
+                        matchQueue.add(match);
+                    }
 
                 }
             }
@@ -109,7 +112,7 @@ public class Scanner {
         return noSignatureHits;
     }
 
-    public Queue<Match> getMatchQueue() {
+    public List<Match> getMatchQueue() {
         return matchQueue;
     }
 }
