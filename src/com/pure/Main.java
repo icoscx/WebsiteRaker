@@ -66,6 +66,8 @@ public class Main {
                 evidenceLocker.getFileName());
         composer.executor(evidenceLocker.getFolderName());
         Scanner scanner = new Scanner(evidenceLocker.getFolderName());
+        Evaluator evaluator = new Evaluator();
+        evaluator.judgment(scanner.getMatchQueue());
 
 
     }
