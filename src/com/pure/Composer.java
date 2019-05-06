@@ -5,6 +5,7 @@ import com.pure.locker.EvidenceLocker;
 import com.pure.logger.Log;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 
@@ -12,7 +13,8 @@ public class Composer {
 
     private String fullPathWithDot;
     private String fileName;
-    private String dataToWrite;
+    private String dataToWrite = "";
+    private boolean jobFailed = false;
 
     public Composer(String fullPathWithDot, String fileName) {
         this.fullPathWithDot = fullPathWithDot;
@@ -22,35 +24,47 @@ public class Composer {
     //GetBrowserProfileFrom Profiles
     public void setBrowserProfile(BrowserVersion firefox52) {}
 
-    public void executor(String folder) {
+    public void executor(String folder, String configFile) throws IOException {
 
-        //TODO: /*wscript_only*/
         Runtime runtime = Runtime.getRuntime();
+
+        List<String> commandList = new ArrayList<>();
+        commandList.add("node");
+        commandList.add("./malware-jail/jailme.js");
+        commandList.add("--h404");
+        if(configFile.length() != 0) {
+            commandList.add("-c");
+            commandList.add(configFile);
+        }
+        commandList.add("./malware/" + folder + File.separator + fileName);
+
+        String[] commands = new String[commandList.size()];
+        commands = commandList.toArray(commands);
+        /**
         String[] commands  = {"node", "./malware-jail/jailme.js", "--h404",
                 "./malware/" + folder + File.separator + fileName};
+        */
+        Log.logger.info("Processing command for NodeJS in folder " + folder + " and file " + fileName);
         Process process = null;
-        boolean jobFailed = false;
-        Log.logger.info("Processing command: node ./malware-jail/jailme.js --h404 ./malware/"
-                + folder + File.separator + fileName);
-        try {
-            process = runtime.exec(commands);
-            BufferedReader lineReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-            lineReader.lines().forEach(dataLine -> caseWriter(dataLine));
-            //gatherData FOR YARA and to jobNotFailed
 
-            /*TODO: Needs fix flow wont stop no try*/
-            BufferedReader errorReader = new BufferedReader(new InputStreamReader(process.getErrorStream()));
-            errorReader.lines().forEach(Log.logger::severe);
-        } catch (IOException e) {
-            Log.logger.severe("#############################\nSandBox job: " +
-                    folder + File.separator + fileName + " - FAILED: "
-                    + e.getCause() + "||" + e.getMessage() + "#############################\n");
+        process = runtime.exec(commands);
+        Log.logger.info("Process at " + process.pid() + " | CMD: " + process.info().commandLine());
 
-            jobFailed = true;
-        }
+        BufferedReader lineReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+        lineReader.lines().forEach(dataLine -> caseWriter(dataLine));
+
         if(!jobFailed){
             exportCaseResults();
+        }else{
+            Log.logger.warning("Uncaught Exception occured, scanning results might be innacurate: \n"
+                    + dataToWrite);
         }
+    }
+
+    private void catchErrorStreamAndLog(String line){
+
+        Log.logger.severe(line);
+        jobFailed = true;
     }
 
     private void exportCaseResults(){
@@ -70,6 +84,9 @@ public class Composer {
     }
 
     private void caseWriter(String dataLine){
+        if(dataLine.contains("Uncaught Exception")){
+            jobFailed = true;
+        }
         dataToWrite += dataLine + "\n";
     }
 }

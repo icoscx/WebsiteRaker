@@ -36,7 +36,7 @@ public class Main {
             URL url = new URL(hostToVisit);
             httpAgentz(url);
         }catch (Exception e){
-            Log.logger.log(Level.SEVERE,e.getCause() + e.getMessage(), e);
+            Log.logger.log(Level.SEVERE, e.getMessage(), e);
         }
     }
     //edge: if (typeof document == "undefined")
@@ -64,8 +64,11 @@ public class Main {
         //Integer jobId = 1;
         Composer composer = new Composer("." + evidenceLocker.getCurrentJobFullPath(),
                 evidenceLocker.getFileName());
-        composer.executor(evidenceLocker.getFolderName());
-        Scanner scanner = new Scanner(evidenceLocker.getFolderName());
+        // ./config.json
+        composer.executor(evidenceLocker.getFolderName(),"./config.json" +
+                "");
+        String[] tags = {"location", "ansip"};
+        Scanner scanner = new Scanner(evidenceLocker.getFolderName(), tags);
         Evaluator evaluator = new Evaluator();
         evaluator.judgment(scanner.getMatchQueue());
 

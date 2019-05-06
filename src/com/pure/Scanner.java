@@ -7,9 +7,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 public class Scanner {
 
@@ -19,9 +17,13 @@ public class Scanner {
     private boolean yaraHadError = false;
     private List<Match> matchQueue = new LinkedList<>();
 
-    public Scanner(String malwareSamplesPath) throws Exception {
+    /*
+    getYear wscript replace +- 3years
+     */
+
+    public Scanner(String malwareSamplesPath, String[] tags) throws Exception {
         this.malwareSamplesPath = malwareSamplesPath;
-        yaraWrapperProcess();
+        yaraWrapperProcess(tags);
         parseYaraInput();
     }
 
@@ -29,7 +31,11 @@ public class Scanner {
 
         if (scannerResults.isEmpty() && !yaraHadError) {
             noSignatureHits = true;
+
+            //TODO: sendToJSON
+            
             Log.logger.info("\n" + malwareSamplesPath + " CLEAN ");
+
         } else {
 
             Match match = null;
@@ -70,25 +76,36 @@ public class Scanner {
                 }
             }
         }
+
+        //program Flow Ends if yaraHaderror
+        if(yaraHadError){throw new Exception("^^ YARA failure ^^");}
     }
 
-    /**
-     * eval_*.js
-     * urls.json
-     * >> out
-     */
-
-    /*
-    getYear
-    replace
-     */
-    private void yaraWrapperProcess() throws IOException {
+    private void yaraWrapperProcess(String[] tags) throws IOException {
 
         Runtime runtime = Runtime.getRuntime();
-        String tag = "";
-        String[] commands = {"yara", "-m","-s","-L","-w","./yararules/run.yar",
+
+        List<String> commandList = new ArrayList<>();
+        commandList.add("yara");
+        commandList.add("-m");
+        commandList.add("-s");
+        commandList.add("-L");
+        commandList.add("-w");
+        if(tags.length != 0){
+            for(String tag : tags){
+                commandList.add("-t");
+                commandList.add(tag);
+            }
+        }
+        commandList.add("./yararules/run.yar");
+        commandList.add("./malware/" + malwareSamplesPath + File.separator + "results");
+        /**
+        String[] commands = {"yara", "-m", "-s", "-L", "-w", "./yararules/run.yar",
                 "./malware/" + malwareSamplesPath + File.separator + "results"};
-        Log.logger.info("Initializing YARA " + malwareSamplesPath);
+        */
+        String[] commands = new String[commandList.size()];
+        commands = commandList.toArray(commands);
+        Log.logger.info("Initializing YARA " + malwareSamplesPath + File.separator + "results/ <all files>");
         Process process;
 
         process = runtime.exec(commands);
