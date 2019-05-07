@@ -33,7 +33,7 @@ public class Scanner {
             noSignatureHits = true;
 
             //TODO: sendToJSON
-            
+
             Log.logger.info("\n" + malwareSamplesPath + " CLEAN ");
 
         } else {

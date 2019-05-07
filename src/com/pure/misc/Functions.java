@@ -1,11 +1,56 @@
 package com.pure.misc;
 
-import java.io.UnsupportedEncodingException;
+import java.io.*;
 import java.net.URL;
 import java.net.URLDecoder;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.*;
 
+import com.pure.logger.Log;
+import org.json.*;
+
 public class Functions {
+
+    public static String extendBasicConfig(String jobNameAkaFolderName,
+                                               String configFileToReadAndExtend) throws IOException {
+
+        File initialFile = new File("./malware-jail/" + configFileToReadAndExtend);
+        InputStream is = new FileInputStream(initialFile);
+        JSONTokener tokener = new JSONTokener(is);
+        JSONObject object = new JSONObject(tokener);
+        String oldValue = object.getString("save_files");
+        //localhost_10-17-0046
+        String outputFolder = oldValue + jobNameAkaFolderName + File.separator + "output" + File.separator;
+        object.remove("save_files");
+        object.put("save_files", outputFolder);
+
+        boolean mkdirs = (new File("./malware/" + jobNameAkaFolderName + File.separator
+                + "output" + File.separator)).mkdirs();
+        if(!mkdirs){
+            Log.logger.severe("Failed to create output folder for job");
+        }
+
+        Path path = Paths.get("./malware-jail/" + "config_" + jobNameAkaFolderName + ".json");
+
+        File file = new File(path.toString());
+        file.getParentFile().mkdir();
+        FileWriter fr = new FileWriter(file, false);
+        fr.write(object.toString());
+        fr.close();
+
+        file.deleteOnExit();
+
+        /*
+        System.out.println("Name: " + object.getString("fname"));
+        JSONArray courses = object.getJSONArray("data");
+        for (int i = 0; i < data.length(); i++) {
+            System.out.println("  - " + courses.get(i));
+        }
+         */
+
+       return "config_" + jobNameAkaFolderName + ".json";
+    }
 
     public static void iterateMapOfURIParams(URL url) throws UnsupportedEncodingException {
         Map<String, List<String>> stuff = splitQuery(url);

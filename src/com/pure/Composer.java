@@ -53,9 +53,13 @@ public class Composer {
         BufferedReader lineReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
         lineReader.lines().forEach(dataLine -> caseWriter(dataLine));
 
+        BufferedReader errorReader = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+        errorReader.lines().forEach(line -> catchErrorStreamAndLog(line));
+
         if(!jobFailed){
             exportCaseResults();
         }else{
+            //catch JS failures only, the sandbox may continiue
             Log.logger.warning("Uncaught Exception occured, scanning results might be innacurate: \n"
                     + dataToWrite);
         }
@@ -65,6 +69,14 @@ public class Composer {
 
         Log.logger.severe(line);
         jobFailed = true;
+    }
+
+
+    private void caseWriter(String dataLine){
+        if(dataLine.contains("Uncaught Exception") || dataLine.contains("Exception occured")){
+            jobFailed = true;
+        }
+        dataToWrite += dataLine + "\n";
     }
 
     private void exportCaseResults(){
@@ -83,10 +95,4 @@ public class Composer {
         }
     }
 
-    private void caseWriter(String dataLine){
-        if(dataLine.contains("Uncaught Exception")){
-            jobFailed = true;
-        }
-        dataToWrite += dataLine + "\n";
-    }
 }

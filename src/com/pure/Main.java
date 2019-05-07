@@ -4,6 +4,7 @@ import com.gargoylesoftware.htmlunit.*;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.pure.locker.EvidenceLocker;
 import com.pure.logger.Log;
+import com.pure.misc.Functions;
 import com.pure.profiles.BaseInteretExplorer;
 
 import java.io.IOException;
@@ -40,6 +41,7 @@ public class Main {
         }
     }
     //edge: if (typeof document == "undefined")
+    //init case
 
     public static void httpAgentz(URL uri) throws IOException, Exception {
 
@@ -64,9 +66,11 @@ public class Main {
         //Integer jobId = 1;
         Composer composer = new Composer("." + evidenceLocker.getCurrentJobFullPath(),
                 evidenceLocker.getFileName());
+        //case1: onlyMainConfig case2: Wscript only (needs IE)
+        String getCurrentConfig = Functions.extendBasicConfig(evidenceLocker.getFolderName(),
+                "config.json");
         // ./config.json
-        composer.executor(evidenceLocker.getFolderName(),"./config.json" +
-                "");
+        composer.executor(evidenceLocker.getFolderName(),"./"+getCurrentConfig);
         String[] tags = {"location", "ansip"};
         Scanner scanner = new Scanner(evidenceLocker.getFolderName(), tags);
         Evaluator evaluator = new Evaluator();

@@ -90,8 +90,8 @@ public class EvidenceLocker {
         if(simpleResultsDOM.isEmpty() && simpleResultsJS.isEmpty()){
             throw new Exception("Cannot create VirtualPage without content");
         }
-        String timeStamp = new SimpleDateFormat("MM-dd_HH-mm-ssss").format(Calendar.getInstance().getTime());
-        String folderStamp = new SimpleDateFormat("HH-mm-ssss").format(Calendar.getInstance().getTime());
+        String timeStamp = new SimpleDateFormat("HH-mm-ssss").format(Calendar.getInstance().getTime());
+        String folderStamp = new SimpleDateFormat("MM-dd_HH-mm-ssss").format(Calendar.getInstance().getTime());
 
         this.folderName = uri.getHost().replace(".","_")+"_"+folderStamp;
         this.fileName = uri.getHost().replace(".","_") +"_"+ timeStamp +".js";
@@ -136,7 +136,7 @@ public class EvidenceLocker {
             }
         }
     }
-    //save as HtmlPage
+    //TODO: save as HtmlPage
     public void parsePCAP(){}
 
     public void setUri(URL uri) {
