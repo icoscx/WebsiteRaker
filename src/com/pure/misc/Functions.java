@@ -1,5 +1,8 @@
 package com.pure.misc;
 
+import org.json.JSONObject;
+import org.json.JSONTokener;
+
 import java.io.*;
 import java.net.URL;
 import java.net.URLDecoder;
@@ -7,13 +10,27 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
 
-import com.pure.logger.Log;
-import org.json.*;
-
 public class Functions {
 
+    public static Queue<String> parsedInputFile() throws FileNotFoundException {
+
+        File input = new File("./input.txt");
+        Scanner s = new Scanner(input);
+        Queue<String> aQueue  = new LinkedList<>();
+        while (s.hasNextLine()){
+            if(!s.toString().contains("http")){
+                aQueue.add("http://" + s.nextLine());
+            }else{
+                aQueue.add(s.nextLine());
+            }
+        }
+        s.close();
+
+        return aQueue;
+    }
+
     public static String extendBasicConfig(String jobNameAkaFolderName,
-                                               String configFileToReadAndExtend) throws IOException {
+                                               String configFileToReadAndExtend) throws Exception {
 
         File initialFile = new File("./malware-jail/" + configFileToReadAndExtend);
         InputStream is = new FileInputStream(initialFile);
@@ -28,7 +45,8 @@ public class Functions {
         boolean mkdirs = (new File("./malware/" + jobNameAkaFolderName + File.separator
                 + "output" + File.separator)).mkdirs();
         if(!mkdirs){
-            Log.logger.severe("Failed to create output folder for job");
+            //Log.logger.severe("Failed to create output folder for job");
+            throw new Exception("Failed to create output folder for job");
         }
 
         Path path = Paths.get("./malware-jail/" + "config_" + jobNameAkaFolderName + ".json");
@@ -38,7 +56,7 @@ public class Functions {
         FileWriter fr = new FileWriter(file, false);
         fr.write(object.toString());
         fr.close();
-
+        //delete extended temp conf file
         file.deleteOnExit();
 
         /*

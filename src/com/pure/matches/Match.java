@@ -1,6 +1,5 @@
 package com.pure.matches;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -11,9 +10,13 @@ public class Match {
     private Integer score = 0;
     private Integer matchesFound = 0;
     private List<String> matchedRows = null;
+    private String currentJobFull = "";
+    private String jobid = "";
 
-    public Match(){
+    public Match(String jobPath, String jobId){
         matchedRows = new LinkedList<>();
+        currentJobFull = jobPath;
+        this.jobid = jobId;
     }
 
     public String getRuleName() {
@@ -54,5 +57,21 @@ public class Match {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getCurrentJobFull() {
+        return currentJobFull;
+    }
+
+    public void setCurrentJobFull(String currentJobFull) {
+        this.currentJobFull = currentJobFull;
+    }
+
+    public String getJobid() {
+        return jobid;
+    }
+
+    public void setJobid(String jobid) {
+        this.jobid = jobid;
     }
 }

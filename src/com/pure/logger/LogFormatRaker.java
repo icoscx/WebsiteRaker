@@ -9,14 +9,12 @@ import java.util.logging.LogRecord;
 
 public class LogFormatRaker extends Formatter {
 
-    private static final DateFormat dateFormat = new SimpleDateFormat("[dd/MM/yyyy HH:mm:ss.SSS]");
+    private static final DateFormat dateFormat = new SimpleDateFormat("[dd/MM HH:mm:ss]");
 
     public String format(LogRecord record) {
         StringBuilder builder = new StringBuilder();
-        builder.append(dateFormat.format(new Date(record.getMillis()))).append("|");
-        //builder.append("<").append(record.getSourceClassName()).append(">");
-        //builder.append(record.getSourceMethodName()).append("] - ");
-        builder.append("[").append(record.getLevel()).append("]|");
+        builder.append(dateFormat.format(new Date(record.getMillis())));
+        builder.append("[").append(record.getLevel().toString().toLowerCase()).append("]");
         builder.append(formatMessage(record));
         builder.append("\n");
         return builder.toString();

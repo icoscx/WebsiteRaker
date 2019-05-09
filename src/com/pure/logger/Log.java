@@ -14,6 +14,7 @@ public class Log {
     private static ConsoleHandler consoleHandler = null;
 
     public static void enableProgramFlowLog(){
+
         /**Disabling the parent handlers (removes default console
         handling) and adding our own handler that will only show the short
         message makes the error output much more manageable.*/
@@ -21,14 +22,16 @@ public class Log {
         logger.setUseParentHandlers(true);
         try {
             fileHandler = new FileHandler(System.getProperty("user.dir")+
-                    File.separator + "dev-log" + File.separator + "dev.log", true);
+                    File.separator + "systemlog" + File.separator + "sys.log", true);
         } catch (IOException e) {
             System.err.println(e.getMessage());
             e.printStackTrace();
         }
-        LogFormatRaker formatter = new LogFormatRaker();
-        fileHandler.setFormatter(formatter);
+
+        LogFormatRaker formatRaker = new LogFormatRaker();
+        fileHandler.setFormatter(formatRaker);
         logger.addHandler(fileHandler);
+
         //consoleHandler = new ConsoleHandler();
         //consoleHandler.setFormatter(formatter);
         //logger.addHandler(consoleHandler);
@@ -40,15 +43,5 @@ public class Log {
         //Thread.currentThread().getStackTrace()
     }
 
-    /**
-    public static void stackTraceToString(){
-
-        Exception exception = new Exception("test");
-        StringWriter sw = new StringWriter();
-        PrintWriter pw = new PrintWriter(sw);
-        exception.printStackTrace(pw);
-        Log.logger.log(Level.WARNING, sw.toString());
-    }
-     */
-
 }
+

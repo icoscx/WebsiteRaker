@@ -16,13 +16,17 @@ public class Scanner {
     private boolean noSignatureHits = false;
     private boolean yaraHadError = false;
     private List<Match> matchQueue = new LinkedList<>();
+    private String jobFullPath;
+    private String jobid;
 
     /*
     getYear wscript replace +- 3years
      */
 
-    public Scanner(String malwareSamplesPath, String[] tags) throws Exception {
+    public Scanner(String malwareSamplesPath, String[] tags, String jobFullPath, String jobId) throws Exception {
         this.malwareSamplesPath = malwareSamplesPath;
+        this.jobFullPath = jobFullPath;
+        this.jobid = jobId;
         yaraWrapperProcess(tags);
         parseYaraInput();
     }
@@ -32,7 +36,11 @@ public class Scanner {
         if (scannerResults.isEmpty() && !yaraHadError) {
             noSignatureHits = true;
 
-            //TODO: sendToJSON
+            Match match = new Match(jobFullPath, jobid);
+            match.setRuleName("clean");
+            match.setDescription("clean");
+
+            matchQueue.add(match);
 
             Log.logger.info("\n" + malwareSamplesPath + " CLEAN ");
 
@@ -60,7 +68,7 @@ public class Scanner {
                         match.setMatchesFound(match.getMatchedRows().size());
                         matchQueue.add(match);
                     }
-                    match = new Match();
+                    match = new Match(jobFullPath, jobid);
                     match.setRuleName(currentLine[0]);
                     match.setScore(Integer.valueOf(metadata[0].replace("score=", "")));
                     match.setDescription(metadata[1].replace("description=", ""));
@@ -69,7 +77,9 @@ public class Scanner {
                 } else if (result.substring(0, 2).matches("0x") && acceptResultData) { //end index is exclusive
 
                     match.getMatchedRows().add(result);
+                    //add last Match
                     if(scannerResults.get(scannerResults.size()-1).equals(result)){
+                        match.setMatchesFound(match.getMatchedRows().size());
                         matchQueue.add(match);
                     }
 
@@ -97,12 +107,9 @@ public class Scanner {
                 commandList.add(tag);
             }
         }
-        commandList.add("./yararules/run.yar");
+        commandList.add("./yararules/playbook.yar");
         commandList.add("./malware/" + malwareSamplesPath + File.separator + "results");
-        /**
-        String[] commands = {"yara", "-m", "-s", "-L", "-w", "./yararules/run.yar",
-                "./malware/" + malwareSamplesPath + File.separator + "results"};
-        */
+
         String[] commands = new String[commandList.size()];
         commands = commandList.toArray(commands);
         Log.logger.info("Initializing YARA " + malwareSamplesPath + File.separator + "results/ <all files>");

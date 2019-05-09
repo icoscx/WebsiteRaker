@@ -85,7 +85,7 @@ public class EvidenceLocker {
 
     }
 
-    public void createVirtualPage() throws IOException, Exception{
+    public void createVirtualPage(String uid) throws IOException, Exception{
 
         if(simpleResultsDOM.isEmpty() && simpleResultsJS.isEmpty()){
             throw new Exception("Cannot create VirtualPage without content");
@@ -93,7 +93,7 @@ public class EvidenceLocker {
         String timeStamp = new SimpleDateFormat("HH-mm-ssss").format(Calendar.getInstance().getTime());
         String folderStamp = new SimpleDateFormat("MM-dd_HH-mm-ssss").format(Calendar.getInstance().getTime());
 
-        this.folderName = uri.getHost().replace(".","_")+"_"+folderStamp;
+        this.folderName = uri.getHost().replace(".","_")+"_"+folderStamp+"_"+uid;
         this.fileName = uri.getHost().replace(".","_") +"_"+ timeStamp +".js";
         this.currentJobFullPath = File.separator + "malware" + File.separator +
                 folderName + File.separator;
