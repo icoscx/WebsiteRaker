@@ -24,7 +24,7 @@ public class HeadlessBrowser {
     public HtmlPage httpAgent(URL uri) throws IOException {
 
 
-        BaseInteretExplorer interetExplorer = new BaseInteretExplorer();
+        BaseInteretExplorer interetExplorer = new BaseInteretExplorer(thisJobUid);
         //Debug.enumPlugins(interetExplorer.getWebClient());
         //Debug.enumFeatures(interetExplorer.getWebClient());
         Log.logger.info("(" + thisJobUid + ")" + "Starting job " + uri);

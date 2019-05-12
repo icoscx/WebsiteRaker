@@ -2,6 +2,7 @@ package com.pure.profiles;
 
 import com.gargoylesoftware.htmlunit.*;
 import com.gargoylesoftware.htmlunit.util.WebConnectionWrapper;
+import com.pure.logger.Log;
 
 import java.io.IOException;
 import java.util.LinkedList;
@@ -32,7 +33,9 @@ class BaseProfile{
 
     }
 
-    protected void setTransactionMonitor(){
+    protected void setTransactionMonitor(String uid){
+
+        Log.logger.info("[" + uid + "]" + "Injecting Transaction Monitor");
 
         webClient.setWebConnection(new WebConnectionWrapper(webClient) {
             @Override

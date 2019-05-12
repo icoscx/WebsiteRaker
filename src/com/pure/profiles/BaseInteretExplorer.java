@@ -7,12 +7,11 @@ import com.pure.logger.Log;
 
 public class BaseInteretExplorer extends BaseProfile {
 
-    public BaseInteretExplorer(){
+    public BaseInteretExplorer(String uid){
         initiate();
         pluginConfig();
         super.webClientFeatures();
-        Log.logger.info("Injecting Transaction Monitor");
-        super.setTransactionMonitor();
+        super.setTransactionMonitor(uid);
     }
 
     private void initiate(){
