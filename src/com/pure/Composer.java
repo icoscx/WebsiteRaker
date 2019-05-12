@@ -1,13 +1,11 @@
 package com.pure;
 
 import com.gargoylesoftware.htmlunit.BrowserVersion;
-import com.pure.locker.EvidenceLocker;
 import com.pure.logger.Log;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
 
 public class Composer {
 
@@ -87,7 +85,7 @@ public class Composer {
                 fileName.replace(".js", ".dynamic.log"));
         file.getParentFile().mkdir();
         try {
-            FileWriter fr = new FileWriter(file, false);
+            FileWriter fr = new FileWriter(file, true);
             fr.write(dataToWrite);
             fr.close();
         } catch (IOException e) {

@@ -1,5 +1,7 @@
 package com.pure.misc;
 
+import com.pure.matches.Match;
+import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
@@ -11,6 +13,65 @@ import java.nio.file.Paths;
 import java.util.*;
 
 public class Functions {
+
+    private static final String rakerConfigName = "./rakerConfig.json";
+
+    public static void fullWriteToJson(List<Match> parsedMatches) throws IOException {
+
+        File file = new File("./resultsDebugYara.json");
+        FileWriter fr = new FileWriter(file, true);
+
+        JSONArray finalJsonArray = new JSONArray();
+
+        for(Match match : parsedMatches){
+
+            JSONObject jsonObject = new JSONObject();
+
+            jsonObject.put("jobID", match.getJobid());
+            jsonObject.put("foundMatches" , match.getMatchesFound());
+            jsonObject.put("description" , match.getDescription());
+            jsonObject.put("totalScore" ,match.getScore());
+            jsonObject.put("ruleName", match.getRuleName());
+            jsonObject.put("jobPath", match.getCurrentJobFull());
+
+            jsonObject.put("matchedRows", match.getMatchedRows());
+
+            finalJsonArray.put(jsonObject);
+
+        }
+        JSONObject finalJsonObject = new JSONObject();
+        finalJsonObject.put("match", finalJsonArray);
+
+        fr.write(finalJsonObject.toString());
+        fr.close();
+    }
+
+    public static String rakerConfigGetPlaybookName() throws FileNotFoundException {
+
+        File initialFile = new File(rakerConfigName);
+        InputStream is = new FileInputStream(initialFile);
+        JSONTokener tokener = new JSONTokener(is);
+        JSONObject object = new JSONObject(tokener);
+
+        return object.getString("playbook_name");
+    }
+
+    public static List<String> rakerConfigGetYaraTags() throws FileNotFoundException {
+
+        File initialFile = new File(rakerConfigName);
+        InputStream is = new FileInputStream(initialFile);
+        JSONTokener tokener = new JSONTokener(is);
+        JSONObject object = new JSONObject(tokener);
+        JSONArray array = object.getJSONArray("yara_tags");
+
+        List<String> listOfTags = new ArrayList<>();
+
+        for(int i = 0; i<array.length(); i++){
+            listOfTags.add(array.getString(i));
+        }
+
+        return listOfTags;
+    }
 
     public static Queue<String> parsedInputFile() throws FileNotFoundException {
 
@@ -61,7 +122,7 @@ public class Functions {
 
         /*
         System.out.println("Name: " + object.getString("fname"));
-        JSONArray courses = object.getJSONArray("data");
+        JSONArray data = object.getJSONArray("data");
         for (int i = 0; i < data.length(); i++) {
             System.out.println("  - " + courses.get(i));
         }

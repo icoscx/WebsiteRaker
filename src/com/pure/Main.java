@@ -21,6 +21,7 @@ public class Main {
         java.util.logging.Logger.getLogger("com.gargoylesoftware").setLevel(Level.OFF);
         //initLogging
         synchronized (Log.logger) {
+            //scrambled eggs log for debug only
             Log.enableProgramFlowLog();
         }
 
@@ -37,8 +38,9 @@ public class Main {
                 String job = jobs.remove();
                 executor.submit(() -> {
                     try {
+                        WebsiteValidator.setTrainingModeOn = true;
                         WebsiteValidator ws = new WebsiteValidator(uid);
-                        ws.httpAgent(new URL(job));
+                        ws.rootFunctionsCaller(new URL(job));
                     } catch (Exception e) {
                         Log.logger.log(Level.SEVERE, e.getMessage(), e);
                     }

@@ -2,6 +2,7 @@ package com.pure;
 
 import com.pure.logger.Log;
 import com.pure.matches.Match;
+import com.pure.misc.Functions;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -11,7 +12,7 @@ public class Evaluator {
 
     private int completeScore = 0;
 
-    public void judgment(List<Match> parsedMatches) throws Exception{
+    public void judgmentToCSV(List<Match> parsedMatches) throws Exception{
 
         File file = new File("./results.csv");
         FileWriter fr = new FileWriter(file, true);
@@ -37,21 +38,10 @@ public class Evaluator {
         fr.write(writeable);
         fr.close();
         Log.logger.info(writeableLog);
-    }
 
-    public void fullWriteToJson(List<Match> parsedMatches){
-
-        for(Match match : parsedMatches){
-
-            System.out.println("found " + match.getMatchesFound());
-            System.out.println("desc " + match.getDescription());
-            System.out.println("score: " + match.getScore());
-            System.out.println("ruleName: " + match.getRuleName());
-            System.out.println("jobPath " + match.getCurrentJobFull());
-
-            for(String s : match.getMatchedRows()){
-                System.out.print("[" + s + "]");
-            }
+        if(WebsiteValidator.setTrainingModeOn){
+            Log.logger.warning("Yara Debugger is enabled, massive log flood. USE for training a playbook!");
+            Functions.fullWriteToJson(parsedMatches);
         }
     }
 

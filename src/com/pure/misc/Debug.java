@@ -1,4 +1,4 @@
-package com.pure;
+package com.pure.misc;
 
 import com.gargoylesoftware.htmlunit.PluginConfiguration;
 import com.gargoylesoftware.htmlunit.WebClient;

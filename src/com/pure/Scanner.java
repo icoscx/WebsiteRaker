@@ -18,15 +18,17 @@ public class Scanner {
     private List<Match> matchQueue = new LinkedList<>();
     private String jobFullPath;
     private String jobid;
+    private String playBookName;
 
     /*
     getYear wscript replace +- 3years
      */
 
-    public Scanner(String malwareSamplesPath, String[] tags, String jobFullPath, String jobId) throws Exception {
+    public Scanner(String malwareSamplesPath, List<String> tags, String jobFullPath, String jobId, String playbookName) throws Exception {
         this.malwareSamplesPath = malwareSamplesPath;
         this.jobFullPath = jobFullPath;
         this.jobid = jobId;
+        this.playBookName = playbookName;
         yaraWrapperProcess(tags);
         parseYaraInput();
     }
@@ -34,6 +36,7 @@ public class Scanner {
     private void parseYaraInput() throws Exception {
 
         if (scannerResults.isEmpty() && !yaraHadError) {
+
             noSignatureHits = true;
 
             Match match = new Match(jobFullPath, jobid);
@@ -88,10 +91,12 @@ public class Scanner {
         }
 
         //program Flow Ends if yaraHaderror
-        if(yaraHadError){throw new Exception("^^ YARA failure ^^");}
+        if(yaraHadError){
+            throw new Exception("^^ YARA failure ^^");
+        }
     }
 
-    private void yaraWrapperProcess(String[] tags) throws IOException {
+    private void yaraWrapperProcess(List<String> tags) throws IOException {
 
         Runtime runtime = Runtime.getRuntime();
 
@@ -101,13 +106,13 @@ public class Scanner {
         commandList.add("-s");
         commandList.add("-L");
         commandList.add("-w");
-        if(tags.length != 0){
+        if(tags.size() != 0){
             for(String tag : tags){
                 commandList.add("-t");
                 commandList.add(tag);
             }
         }
-        commandList.add("./yararules/playbook.yar");
+        commandList.add("./yararules/"+playBookName);
         commandList.add("./malware/" + malwareSamplesPath + File.separator + "results");
 
         String[] commands = new String[commandList.size()];

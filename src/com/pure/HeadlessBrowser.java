@@ -1,30 +1,41 @@
 package com.pure;
 
-import com.gargoylesoftware.htmlunit.BrowserVersion;
 import com.gargoylesoftware.htmlunit.WebClient;
+import com.gargoylesoftware.htmlunit.WebRequest;
+import com.gargoylesoftware.htmlunit.WebResponse;
+import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import com.pure.logger.Log;
+import com.pure.profiles.BaseInteretExplorer;
 
+import java.io.IOException;
 import java.net.URL;
-
-import static com.gargoylesoftware.htmlunit.BrowserVersion.EDGE;
-import static com.gargoylesoftware.htmlunit.BrowserVersion.INTERNET_EXPLORER;
 
 public class HeadlessBrowser {
 
-    private URL url = null;
-    private WebClient webClient = null;
+    public String thisJobUid = "";
 
-    HeadlessBrowser(URL url){
-        this.url = url;
+    public HeadlessBrowser(String uid){
+        thisJobUid = uid;
     }
 
-    private void crawler(){
-
-    }
-
-    private void buildProfile(){
+    public HtmlPage httpAgent(URL uri) throws IOException {
 
 
+        BaseInteretExplorer interetExplorer = new BaseInteretExplorer();
+        //Debug.enumPlugins(interetExplorer.getWebClient());
+        //Debug.enumFeatures(interetExplorer.getWebClient());
+        Log.logger.info("(" + thisJobUid + ")" + "Starting job " + uri);
+        WebClient webClient = interetExplorer.getWebClient();
+        HtmlPage htmlPage = webClient.getPage(uri);
+        WebResponse webResponse = htmlPage.getWebResponse();
+        WebRequest webRequest = webResponse.getWebRequest();
+        webClient.close();
+        Log.logger.info("(" + thisJobUid + ")" + "Last page Navigated to " + htmlPage.getTitleText() + " status: "
+                + htmlPage.getWebResponse().getStatusCode() + " date: " +
+                htmlPage.getWebResponse().getResponseHeaderValue("Date"));
 
+
+        return htmlPage;
     }
 
 }

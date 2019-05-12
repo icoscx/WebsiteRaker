@@ -1,4 +1,4 @@
-package com.pure.locker;
+package com.pure;
 
 import com.gargoylesoftware.htmlunit.WebResponse;
 import com.gargoylesoftware.htmlunit.html.*;
@@ -18,14 +18,15 @@ public class EvidenceLocker {
 
     private List<String> exceptions = Arrays.asList("jQuery", "google-analytics", "schema.org", "CDATA"
     , "/themes/");
-    private List<String> tags = Arrays.asList("div","p");
-    //private HashMap<String, String> simpleResultsDOM = new HashMap<>();
-    private HashMap<Integer, List<String>> simpleResultsDOM = new HashMap<>();
+    private List<String> htmlTagsList = Arrays.asList("div","p", "object");
+    private HashMap<Integer, List<String>> simpleResultsDOMbyId = new HashMap<>();
+    private HashMap<Integer, List<String>> simpleResultsDOMbyClass = new HashMap<>();
     private HashMap<String, String> simpleResultsJS = new HashMap<>();
     private static String rootPath = System.getProperty("user.dir");
     private URL uri = null;
     private int posOfJsPointer = 0;
-    private int posOfDomPointer = 0;
+    private int posOfDomPointerById = 0;
+    private int posOfDomPointerByClass = 0;
     private String folderName = null;
     private String fileName = null;
     private String currentJobFullPath = null;
@@ -34,33 +35,40 @@ public class EvidenceLocker {
 
     public void simpleParse(HtmlPage htmlPage)throws IOException {
 
-        for(String tag : tags) {
+        for(String tag : htmlTagsList) {
             DomNodeList<DomElement> domElements = htmlPage.getElementsByTagName(tag);
             for (DomElement domElement : domElements) {
                 //asText = parseFrameContent
-                if (!domElement.getId().equals("")) {
+                if (domElement.getId().length() >0) {
                     //simpleFrameRunner
-                    simpleResultsDOM.put(posOfDomPointer, Arrays.asList(domElement.getId(),
+                    simpleResultsDOMbyId.put(posOfDomPointerById, Arrays.asList(domElement.getId(),
                             StringEscapeUtils.escapeEcmaScript(domElement.getTextContent())));
-                    posOfDomPointer++;
+                    posOfDomPointerById++;
+                }else if(domElement.getAttribute("class").length() > 0 &&
+                domElement.getChildElementCount() == 0 && domElement.getTextContent().trim().length() >0){
+                    //domElement.getAttribute("class"); domElement.getTextContent();
+                    simpleResultsDOMbyClass.put(posOfDomPointerByClass, Arrays.asList(domElement.getAttribute("class"),
+                            StringEscapeUtils.escapeEcmaScript(domElement.getTextContent())));
+                    posOfDomPointerByClass++;
                 }
             }
         }
-        //Special case: Script tags with ID
+
+        //Special case: Script htmlTagsList with ID
         DomNodeList<DomElement> domElements = htmlPage.getElementsByTagName("script");
         for (DomElement domElement : domElements) {
-            if (!domElement.getId().equals("")) {
-                simpleResultsDOM.put(posOfDomPointer, Arrays.asList(domElement.getId(),
+            if (domElement.getId().length() >0) {
+                simpleResultsDOMbyId.put(posOfDomPointerById, Arrays.asList(domElement.getId(),
                         StringEscapeUtils.escapeEcmaScript(domElement.getTextContent())));
-                posOfDomPointer++;
+                posOfDomPointerById++;
             }
         }
-        //Iterate script pieces
+        //Iterate script pieces, domelements from previous loop "script"
         for (DomElement domElement : domElements) {
-            if(!domElement.getTextContent().equals("")) {
+            if(domElement.getTextContent().length() >0) {
                 String stringToSeek = domElement.getTextContent();
                 //Push js excluding whitelist
-                if(!exceptions.parallelStream().anyMatch(stringToSeek::contains)) {
+                if(exceptions.parallelStream().noneMatch(stringToSeek::contains)) {
                     simpleResultsJS.put("//" + posOfJsPointer, domElement.getTextContent());
                     posOfJsPointer++;
                 }
@@ -68,7 +76,7 @@ public class EvidenceLocker {
         }
 
     }
-    /*Iterate all tags**/
+    /*Iterate all htmlTagsList**/
     public void advancedParse(HtmlPage htmlPage, WebResponse webResponse){
 
         DomNodeList<DomElement> domElements = htmlPage.getElementsByTagName("body");
@@ -87,7 +95,7 @@ public class EvidenceLocker {
 
     public void createVirtualPage(String uid) throws IOException, Exception{
 
-        if(simpleResultsDOM.isEmpty() && simpleResultsJS.isEmpty()){
+        if(simpleResultsDOMbyId.isEmpty() && simpleResultsJS.isEmpty() && simpleResultsDOMbyClass.isEmpty()){
             throw new Exception("Cannot create VirtualPage without content");
         }
         String timeStamp = new SimpleDateFormat("HH-mm-ssss").format(Calendar.getInstance().getTime());
@@ -106,11 +114,18 @@ public class EvidenceLocker {
         file.getParentFile().mkdir();
         FileWriter fr = new FileWriter(file, false);
 
-        for (Map.Entry<Integer, List<String>> entry : simpleResultsDOM.entrySet()) {
+        for (Map.Entry<Integer, List<String>> entry : simpleResultsDOMbyId.entrySet()) {
             //String key = entry.getKey(); //String value = entry.getValue();
             String key = entry.getValue().get(0);
             String value = entry.getValue().get(1);
             fr.write("document._addElementById(\"" + key + "\",\"" + value + "\");\n");
+        }
+
+        for (Map.Entry<Integer, List<String>> entry : simpleResultsDOMbyClass.entrySet()) {
+            //String key = entry.getKey(); //String value = entry.getValue();
+            String key = entry.getValue().get(0);
+            String value = entry.getValue().get(1);
+            fr.write("document._addElementByClass(\"" + key + "\",\"" + value + "\");\n");
         }
 
         for (Map.Entry<String, String> entry : simpleResultsJS.entrySet()) {
@@ -136,7 +151,7 @@ public class EvidenceLocker {
             }
         }
     }
-    //TODO: save as HtmlPage
+
     public void parsePCAP(){}
 
     public void setUri(URL uri) {
