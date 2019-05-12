@@ -18,7 +18,7 @@ public class Functions {
 
     public static void fullWriteToJson(List<Match> parsedMatches) throws IOException {
 
-        File file = new File("./resultsDebugYara.json");
+        File file = new File("./systemlog/resultsDebugYara_"+ parsedMatches.get(0).getJobid()+".json");
         FileWriter fr = new FileWriter(file, true);
 
         JSONArray finalJsonArray = new JSONArray();
@@ -46,22 +46,34 @@ public class Functions {
         fr.close();
     }
 
-    public static String rakerConfigGetPlaybookName() throws FileNotFoundException {
+    public static JSONObject rakerConfig() throws FileNotFoundException {
 
         File initialFile = new File(rakerConfigName);
         InputStream is = new FileInputStream(initialFile);
         JSONTokener tokener = new JSONTokener(is);
         JSONObject object = new JSONObject(tokener);
+
+        return object;
+    }
+
+    public static String rakerConfigGetBrowserProfile() throws FileNotFoundException {
+        JSONObject object = rakerConfig();
+
+        return object.getString("browser_type");
+    }
+
+    public static String rakerConfigGetPlaybookName() throws FileNotFoundException {
+
+        JSONObject object = rakerConfig();
 
         return object.getString("playbook_name");
     }
 
     public static List<String> rakerConfigGetYaraTags() throws FileNotFoundException {
 
-        File initialFile = new File(rakerConfigName);
-        InputStream is = new FileInputStream(initialFile);
-        JSONTokener tokener = new JSONTokener(is);
-        JSONObject object = new JSONObject(tokener);
+
+        JSONObject object = rakerConfig();
+
         JSONArray array = object.getJSONArray("yara_tags");
 
         List<String> listOfTags = new ArrayList<>();
@@ -91,7 +103,8 @@ public class Functions {
     }
 
     public static String extendBasicConfig(String jobNameAkaFolderName,
-                                               String configFileToReadAndExtend) throws Exception {
+                                               String configFileToReadAndExtend,
+                                           String browserType) throws Exception {
 
         File initialFile = new File("./malware-jail/" + configFileToReadAndExtend);
         InputStream is = new FileInputStream(initialFile);
@@ -102,6 +115,8 @@ public class Functions {
         String outputFolder = oldValue + jobNameAkaFolderName + File.separator + "output" + File.separator;
         object.remove("save_files");
         object.put("save_files", outputFolder);
+        object.remove("browser_type");
+        object.put("browser_type", browserType);
 
         boolean mkdirs = (new File("./malware/" + jobNameAkaFolderName + File.separator
                 + "output" + File.separator)).mkdirs();

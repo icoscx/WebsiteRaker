@@ -27,10 +27,12 @@ public class WebsiteValidator {
         Composer composer = new Composer("." + evidenceLocker.getCurrentJobFullPath(),
                 evidenceLocker.getFileName());
         //case1: onlyMainConfig case2: Wscript only (needs IE)
+        String browserType = Functions.rakerConfigGetBrowserProfile();
         String getCurrentConfig = Functions.extendBasicConfig(evidenceLocker.getFolderName(),
-                "config.json");
+                "config.json", browserType);
         // ./config.json
         composer.executor(evidenceLocker.getFolderName(),"./"+getCurrentConfig);
+        composer.exportStaticResults(headlessBrowser.getStaticContent());
         List<String> tags = Functions.rakerConfigGetYaraTags();
         String playBookName = Functions.rakerConfigGetPlaybookName();
         Scanner scanner = new Scanner(evidenceLocker.getFolderName(), tags,

@@ -1,17 +1,18 @@
 package com.pure.profiles;
 
 import com.gargoylesoftware.htmlunit.BrowserVersion;
-import com.gargoylesoftware.htmlunit.CookieManager;
 import com.gargoylesoftware.htmlunit.PluginConfiguration;
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.pure.logger.Log;
 
-public class BaseInteretExplorer extends BaseProfile{
+public class BaseInteretExplorer extends BaseProfile {
 
     public BaseInteretExplorer(){
         initiate();
         pluginConfig();
-        webClientFeatures();
+        super.webClientFeatures();
+        Log.logger.info("Injecting Transaction Monitor");
+        super.setTransactionMonitor();
     }
 
     private void initiate(){
@@ -41,21 +42,6 @@ public class BaseInteretExplorer extends BaseProfile{
         pluginConfiguration.getMimeTypes().add(mimeType_swf);
         pluginConfiguration.getMimeTypes().add(mimeType_spl);
         webClient.getBrowserVersion().getPlugins().add(pluginConfiguration);
-
-    }
-
-    private void webClientFeatures(){
-
-        webClient.getOptions().setJavaScriptEnabled(false);
-        webClient.getOptions().setActiveXNative(false);
-        webClient.getOptions().setAppletEnabled(true);
-        webClient.getOptions().setCssEnabled(true);
-        webClient.getOptions().setRedirectEnabled(true);
-        webClient.getOptions().setUseInsecureSSL(true);
-        //webClient.waitForBackgroundJavaScript(1000);
-        CookieManager cookieManager = new CookieManager();
-        cookieManager.setCookiesEnabled(true);
-        webClient.setCookieManager(cookieManager);
 
     }
 

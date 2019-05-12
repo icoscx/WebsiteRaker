@@ -1,11 +1,11 @@
 package com.pure;
 
-import com.gargoylesoftware.htmlunit.BrowserVersion;
 import com.pure.logger.Log;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Queue;
 
 public class Composer {
 
@@ -18,9 +18,6 @@ public class Composer {
         this.fullPathWithDot = fullPathWithDot;
         this.fileName = fileName;
     }
-
-    //GetBrowserProfileFrom Profiles
-    public void setBrowserProfile(BrowserVersion firefox52) {}
 
     public void executor(String folder, String configFile) throws IOException {
 
@@ -60,6 +57,7 @@ public class Composer {
             //catch JS failures only, the sandbox may continiue
             Log.logger.warning("Uncaught Exception occured, scanning results might be innacurate: \n"
                     + dataToWrite);
+            exportCaseResults();
         }
     }
 
@@ -77,20 +75,35 @@ public class Composer {
         dataToWrite += dataLine + "\n";
     }
 
-    private void exportCaseResults(){
+    private void exportCaseResults() throws IOException {
 
         File file = new File(fullPathWithDot + "results" + File.separator +
                 fileName.replace(".js", ".dynamic.log"));
         Log.logger.info("Exporting results to: /" + "results" + File.separator +
                 fileName.replace(".js", ".dynamic.log"));
         file.getParentFile().mkdir();
-        try {
-            FileWriter fr = new FileWriter(file, true);
-            fr.write(dataToWrite);
-            fr.close();
-        } catch (IOException e) {
-            Log.logger.severe(e.getCause() + " - " + e.getMessage());
+
+        FileWriter fr = new FileWriter(file, true);
+        fr.write(dataToWrite);
+        fr.close();
+
+    }
+
+    public void exportStaticResults(Queue<String> staticQueue) throws IOException {
+
+        File file = new File(fullPathWithDot + "results" + File.separator +
+                fileName.replace(".js", ".static.log"));
+        Log.logger.info("Exporting results to: /" + "results" + File.separator +
+                fileName.replace(".js", ".static.log"));
+        file.getParentFile().mkdir();
+        FileWriter fr = new FileWriter(file, true);
+
+        while (!staticQueue.isEmpty()){
+            fr.write(staticQueue.remove());
         }
+
+        fr.close();
+
     }
 
 }

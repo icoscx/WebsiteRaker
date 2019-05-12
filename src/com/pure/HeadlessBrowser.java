@@ -9,10 +9,13 @@ import com.pure.profiles.BaseInteretExplorer;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class HeadlessBrowser {
 
     public String thisJobUid = "";
+    private Queue<String> staticContent = new LinkedList<>();
 
     public HeadlessBrowser(String uid){
         thisJobUid = uid;
@@ -30,12 +33,19 @@ public class HeadlessBrowser {
         WebResponse webResponse = htmlPage.getWebResponse();
         WebRequest webRequest = webResponse.getWebRequest();
         webClient.close();
-        Log.logger.info("(" + thisJobUid + ")" + "Last page Navigated to " + htmlPage.getTitleText() + " status: "
-                + htmlPage.getWebResponse().getStatusCode() + " date: " +
-                htmlPage.getWebResponse().getResponseHeaderValue("Date"));
-
+        this.staticContent = interetExplorer.getStaticContent();
+        Log.logger.info("(" + thisJobUid + ")" + "Last page Navigated to " + webRequest.getUrl() + " status: "
+                + webResponse.getStatusCode() +" "+ webResponse.getStatusMessage() + " date: " +
+                webResponse.getResponseHeaderValue("Date"));
 
         return htmlPage;
     }
 
+    public Queue<String> getStaticContent() {
+        return staticContent;
+    }
+
+    public void setStaticContent(Queue<String> staticContent) {
+        this.staticContent = staticContent;
+    }
 }

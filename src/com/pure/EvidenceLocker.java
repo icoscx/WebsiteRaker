@@ -31,8 +31,6 @@ public class EvidenceLocker {
     private String fileName = null;
     private String currentJobFullPath = null;
 
-    /*if class name not empty create class*/
-
     public void simpleParse(HtmlPage htmlPage)throws IOException {
 
         for(String tag : htmlTagsList) {
@@ -138,7 +136,7 @@ public class EvidenceLocker {
 
     }
 
-    //2n deep, no recursion, all frames
+    //2n deep, no recursion, all frames and iframes
     public void simpleFrameRunner(HtmlPage htmlPage) throws IOException{
 
         List<FrameWindow> window = htmlPage.getFrames();
