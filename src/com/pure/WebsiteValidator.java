@@ -33,6 +33,7 @@ public class WebsiteValidator {
         // ./config.json
         composer.executor(evidenceLocker.getFolderName(),"./"+getCurrentConfig);
         composer.exportStaticResults(headlessBrowser.getStaticContent());
+        composer.exportURLaddressesFromDynamicAnal(evidenceLocker.getFolderName());
         List<String> tags = Functions.rakerConfigGetYaraTags();
         String playBookName = Functions.rakerConfigGetPlaybookName();
         Scanner scanner = new Scanner(evidenceLocker.getFolderName(), tags,

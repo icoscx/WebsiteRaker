@@ -6,6 +6,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
+import java.util.Scanner;
 
 public class Composer {
 
@@ -103,6 +104,29 @@ public class Composer {
         }
 
         fr.close();
+
+    }
+
+    public void exportURLaddressesFromDynamicAnal(String folder) throws Exception {
+
+        File f = new File("./malware/" + folder + File.separator + "output" + File.separator + "urls.json");
+        if(f.exists() && !f.isDirectory()) {
+
+            File newFile = new File("./malware/" + folder + File.separator + "results" + File.separator + "urls.json");
+            java.util.Scanner s = new Scanner(f);
+            FileWriter fr = new FileWriter(newFile, true);
+
+            while (s.hasNextLine()){
+                fr.write(s.nextLine());
+            }
+            s.close();
+            fr.close();
+
+            Log.logger.info("Dynamic URLs extracted from " + folder + File.separator + fileName + " and saved to "
+            + f.getPath());
+        }else{
+            Log.logger.info("No Dynamic URLs extracted from: " + folder + File.separator + fileName);
+        }
 
     }
 
