@@ -28,6 +28,8 @@ public class Composer {
         commandList.add("node");
         commandList.add("./malware-jail/jailme.js");
         commandList.add("--h404");
+        commandList.add("-t");
+        commandList.add("15000");
         if(configFile.length() != 0) {
             commandList.add("-c");
             commandList.add(configFile);
@@ -117,7 +119,7 @@ public class Composer {
             FileWriter fr = new FileWriter(newFile, true);
 
             while (s.hasNextLine()){
-                fr.write(s.nextLine());
+                fr.write(s.nextLine()+"\n");
             }
             s.close();
             fr.close();

@@ -15,7 +15,7 @@ public class Main {
 
     public static volatile Queue<String> jobs = new ConcurrentLinkedQueue<>();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         //htmlunit off
         java.util.logging.Logger.getLogger("com.gargoylesoftware").setLevel(Level.OFF);
@@ -25,7 +25,7 @@ public class Main {
             Log.enableProgramFlowLog();
         }
 
-        ExecutorService executor = Executors.newFixedThreadPool(1);
+        ExecutorService executor = Executors.newFixedThreadPool(10);
 
         try {
 
@@ -50,6 +50,8 @@ public class Main {
 
         }catch (Exception e){
             Log.logger.log(Level.SEVERE, e.getMessage(), e);
+        }finally {
+            executor.shutdown();
         }
 
         /*
@@ -58,7 +60,7 @@ public class Main {
             return null;
         });
         */
-        executor.shutdown();
+
     }
 
 }

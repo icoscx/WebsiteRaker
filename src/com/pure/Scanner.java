@@ -40,12 +40,12 @@ public class Scanner {
             noSignatureHits = true;
 
             Match match = new Match(jobFullPath, jobid);
-            match.setRuleName("clean");
-            match.setDescription("clean");
+            match.setRuleName("no_matches");
+            match.setDescription("no_matches");
 
             matchQueue.add(match);
 
-            Log.logger.info("\n" + malwareSamplesPath + " CLEAN ");
+            Log.logger.info("\n" + malwareSamplesPath + " no_matches ");
 
         } else {
 
@@ -90,7 +90,7 @@ public class Scanner {
             }
         }
 
-        //program Flow Ends if yaraHaderror
+        //program Flow Ends if yaraHaderror (Program Error)
         if(yaraHadError){
             throw new Exception("^^ YARA failure ^^");
         }

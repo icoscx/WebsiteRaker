@@ -91,11 +91,13 @@ public class Functions {
         Scanner s = new Scanner(input);
         Queue<String> aQueue  = new LinkedList<>();
         while (s.hasNextLine()){
-            if(!s.toString().contains("http")){
-                aQueue.add("http://" + s.nextLine());
-            }else{
-                aQueue.add(s.nextLine());
+
+            String parsable = s.nextLine();
+            if(!parsable.contains("http:")){
+                parsable = "http://" + parsable;
             }
+            aQueue.add(parsable);
+
         }
         s.close();
 

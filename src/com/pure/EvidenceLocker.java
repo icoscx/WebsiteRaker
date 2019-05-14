@@ -16,8 +16,8 @@ import java.util.*;
 
 public class EvidenceLocker {
 
-    private List<String> exceptions = Arrays.asList("jQuery", "google-analytics", "schema.org", "CDATA"
-    , "/themes/");
+    private List<String> exceptions = Arrays.asList("google-analytics", "schema.org", "CDATA"
+    , "/themes/", "window.google", "gstatic.com", ".google.");
     private List<String> htmlTagsList = Arrays.asList("div","p", "object");
     private HashMap<Integer, List<String>> simpleResultsDOMbyId = new HashMap<>();
     private HashMap<Integer, List<String>> simpleResultsDOMbyClass = new HashMap<>();
