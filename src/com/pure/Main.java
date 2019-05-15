@@ -25,7 +25,7 @@ public class Main {
             Log.enableProgramFlowLog();
         }
 
-        ExecutorService executor = Executors.newFixedThreadPool(10);
+        ExecutorService executor = Executors.newFixedThreadPool(15);
 
         try {
 
@@ -39,7 +39,7 @@ public class Main {
                 executor.submit(() -> {
                     try {
                         //For Training mode use 1 thread!
-                        WebsiteValidator.setTrainingModeOn = true;
+                        //WebsiteValidator.setTrainingModeOn = true;
                         WebsiteValidator ws = new WebsiteValidator(uid);
                         ws.rootFunctionsCaller(new URL(job));
                     } catch (Exception e) {

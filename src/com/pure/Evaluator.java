@@ -6,6 +6,7 @@ import com.pure.misc.Functions;
 
 import java.io.File;
 import java.io.FileWriter;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Evaluator {
@@ -20,7 +21,7 @@ public class Evaluator {
         for(Match match : parsedMatches){
             completeScore += match.getScore();
         }
-        String verdict = "CLEAN";
+        String verdict = "no_matches";
         if(completeScore <= 50 && completeScore > 1){
             verdict = "Undetermined";
         }else if(completeScore <= 74 && completeScore > 51){
@@ -42,6 +43,17 @@ public class Evaluator {
         if(WebsiteValidator.setTrainingModeOn){
             Log.logger.warning("Yara Debugger is enabled, massive log flood. USE for training a playbook!");
             Functions.fullWriteToJson(parsedMatches);
+        }else{
+            Runtime runtime = Runtime.getRuntime();
+            List<String> commandList = new ArrayList<>();
+            commandList.add("rm");
+            commandList.add("-rf");
+            commandList.add("." + parsedMatches.get(0).getCurrentJobFull());
+            String[] commands = new String[commandList.size()];
+            commands = commandList.toArray(commands);
+            Process process;
+            process = runtime.exec(commands);
+            Log.logger.info("Delete: " + process.info().commandLine());
         }
     }
 

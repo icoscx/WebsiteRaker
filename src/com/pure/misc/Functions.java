@@ -135,6 +135,7 @@ public class Functions {
         fr.write(object.toString());
         fr.close();
         //delete extended temp conf file
+        //>>>>>>>>>>Evaluator: PROC rm, deletes all after entire procss
         file.deleteOnExit();
 
         /*
