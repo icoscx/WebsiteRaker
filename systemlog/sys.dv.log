@@ -1,0 +1,411 @@
+[15/05 18:26:01][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[15/05 18:26:01][info][88F54002]Injecting Transaction Monitor
+[15/05 18:26:01][info](88F54002)Starting job http://localhost/1.php
+[15/05 18:26:02][info](88F54002)Last page Navigated to http://localhost/3.php?id=2 status: 200 OK date: Wed, 15 May 2019 15:26:01 GMT
+[15/05 18:26:02][info]Found frames: 1
+[15/05 18:26:02][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-15_18-26-0002_88F54002/localhost_18-26-0002.js
+[15/05 18:26:02][info]Processing command for NodeJS in folder localhost_05-15_18-26-0002_88F54002 and file localhost_18-26-0002.js
+[15/05 18:26:02][info]Process at 65850 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-15_18-26-0002_88F54002.json ./malware/localhost_05-15_18-26-0002_88F54002/localhost_18-26-0002.js]
+[15/05 18:26:02][info]Exporting results to: /results/localhost_18-26-0002.dynamic.log
+[15/05 18:26:02][info]Exporting results to: /results/localhost_18-26-0002.static.log
+[15/05 18:26:02][info]No Dynamic URLs extracted from: localhost_05-15_18-26-0002_88F54002/localhost_18-26-0002.js
+[15/05 18:26:02][info]Initializing YARA localhost_05-15_18-26-0002_88F54002/results/ <all files>
+[15/05 18:26:02][info]Process at 65873 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-15_18-26-0002_88F54002/results]
+[15/05 18:26:02][info]
+localhost_05-15_18-26-0002_88F54002 no_matches 
+[15/05 18:26:02][info]88F54002,/malware/localhost_05-15_18-26-0002_88F54002/results/ <all files> ,0,no_matches
+[15/05 18:26:02][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[15/05 18:30:53][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[15/05 18:30:53][info][B4916000]Injecting Transaction Monitor
+[15/05 18:30:53][info](B4916000)Starting job http://localhost/1.php
+[15/05 18:30:54][info](B4916000)Last page Navigated to http://localhost/3.php?id=2 status: 200 OK date: Wed, 15 May 2019 15:30:54 GMT
+[15/05 18:30:54][info]Found frames: 1
+[15/05 18:30:54][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-15_18-30-0054_B4916000/localhost_18-30-0054.js
+[15/05 18:30:54][info]Processing command for NodeJS in folder localhost_05-15_18-30-0054_B4916000 and file localhost_18-30-0054.js
+[15/05 18:30:54][info]Process at 66120 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-15_18-30-0054_B4916000.json ./malware/localhost_05-15_18-30-0054_B4916000/localhost_18-30-0054.js]
+[15/05 18:30:54][info]Exporting results to: /results/localhost_18-30-0054.dynamic.log
+[15/05 18:30:54][info]Exporting results to: /results/localhost_18-30-0054.static.log
+[15/05 18:30:54][info]No Dynamic URLs extracted from: localhost_05-15_18-30-0054_B4916000/localhost_18-30-0054.js
+[15/05 18:30:54][info]Initializing YARA localhost_05-15_18-30-0054_B4916000/results/ <all files>
+[15/05 18:30:54][info]Process at 66137 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-15_18-30-0054_B4916000/results]
+[15/05 18:30:55][info]localhost_05-15_18-30-0054_B4916000 no_matches 
+[15/05 18:30:55][info]B4916000,/malware/localhost_05-15_18-30-0054_B4916000/results/ <all files> ,0,no_matches
+[15/05 18:30:55][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[15/05 18:39:47][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[15/05 18:39:47][info][75FE077F]Injecting Transaction Monitor
+[15/05 18:39:47][info](75FE077F)Starting job http://localhost/1.php
+[15/05 18:39:48][info](75FE077F)Last page Navigated to http://localhost/3.php?id=2 status: 200 OK date: Wed, 15 May 2019 15:39:48 GMT
+[15/05 18:39:48][info]Found frames: 1
+[15/05 18:39:48][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-15_18-39-0048_75FE077F/localhost_18-39-0048.js
+[15/05 18:39:48][info]Processing command for NodeJS in folder localhost_05-15_18-39-0048_75FE077F and file localhost_18-39-0048.js
+[15/05 18:39:48][info]Process at 66737 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-15_18-39-0048_75FE077F.json ./malware/localhost_05-15_18-39-0048_75FE077F/localhost_18-39-0048.js]
+[15/05 18:39:49][info]Exporting results to: /results/localhost_18-39-0048.dynamic.log
+[15/05 18:39:49][info]Exporting results to: /results/localhost_18-39-0048.static.log
+[15/05 18:39:49][info]No Dynamic URLs extracted from: localhost_05-15_18-39-0048_75FE077F/localhost_18-39-0048.js
+[15/05 18:39:49][info]Initializing YARA localhost_05-15_18-39-0048_75FE077F/results/ <all files>
+[15/05 18:39:49][info]Process at 66754 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-15_18-39-0048_75FE077F/results]
+[15/05 18:39:49][info]localhost_05-15_18-39-0048_75FE077F no_matches 
+[15/05 18:39:49][info]75FE077F,/malware/localhost_05-15_18-39-0048_75FE077F/results/ <all files> ,0,no_matches
+[15/05 18:39:49][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[15/05 18:41:14][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[15/05 18:41:14][info][6A1EE88A]Injecting Transaction Monitor
+[15/05 18:41:14][info](6A1EE88A)Starting job http://localhost/1.php
+[15/05 18:41:15][info](6A1EE88A)Last page Navigated to http://localhost/3.php?id=2 status: 200 OK date: Wed, 15 May 2019 15:41:15 GMT
+[15/05 18:41:15][info]Found frames: 1
+[15/05 18:41:15][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-15_18-41-0015_6A1EE88A/localhost_18-41-0015.js
+[15/05 18:41:15][info]Processing command for NodeJS in folder localhost_05-15_18-41-0015_6A1EE88A and file localhost_18-41-0015.js
+[15/05 18:41:15][info]Process at 66886 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-15_18-41-0015_6A1EE88A.json ./malware/localhost_05-15_18-41-0015_6A1EE88A/localhost_18-41-0015.js]
+[15/05 18:41:15][info]Exporting results to: /results/localhost_18-41-0015.dynamic.log
+[15/05 18:41:15][info]Exporting results to: /results/localhost_18-41-0015.static.log
+[15/05 18:41:15][info]No Dynamic URLs extracted from: localhost_05-15_18-41-0015_6A1EE88A/localhost_18-41-0015.js
+[15/05 18:41:15][info]Initializing YARA localhost_05-15_18-41-0015_6A1EE88A/results/ <all files>
+[15/05 18:41:15][info]Process at 66903 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-15_18-41-0015_6A1EE88A/results]
+[15/05 18:41:15][info]localhost_05-15_18-41-0015_6A1EE88A no_matches 
+[15/05 18:41:15][info]6A1EE88A,/malware/localhost_05-15_18-41-0015_6A1EE88A/results/ <all files> ,0,no_matches
+[15/05 18:41:15][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[15/05 18:41:27][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[15/05 18:41:27][info][3FAD9002]Injecting Transaction Monitor
+[15/05 18:41:27][info](3FAD9002)Starting job http://localhost/1.php
+[15/05 18:41:27][info](3FAD9002)Last page Navigated to http://localhost/3.php?id=2 status: 200 OK date: Wed, 15 May 2019 15:41:27 GMT
+[15/05 18:41:27][info]Found frames: 1
+[15/05 18:41:27][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-15_18-41-0027_3FAD9002/localhost_18-41-0027.js
+[15/05 18:41:28][info]Processing command for NodeJS in folder localhost_05-15_18-41-0027_3FAD9002 and file localhost_18-41-0027.js
+[15/05 18:41:28][info]Process at 67008 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-15_18-41-0027_3FAD9002.json ./malware/localhost_05-15_18-41-0027_3FAD9002/localhost_18-41-0027.js]
+[15/05 18:41:28][info]Exporting results to: /results/localhost_18-41-0027.dynamic.log
+[15/05 18:41:28][info]Exporting results to: /results/localhost_18-41-0027.static.log
+[15/05 18:41:28][info]No Dynamic URLs extracted from: localhost_05-15_18-41-0027_3FAD9002/localhost_18-41-0027.js
+[15/05 18:41:28][info]Initializing YARA localhost_05-15_18-41-0027_3FAD9002/results/ <all files>
+[15/05 18:41:28][info]Process at 67025 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-15_18-41-0027_3FAD9002/results]
+[15/05 18:41:28][info]localhost_05-15_18-41-0027_3FAD9002 no_matches 
+[15/05 18:41:28][info]3FAD9002,/malware/localhost_05-15_18-41-0027_3FAD9002/results/ <all files> ,0,no_matches
+[15/05 18:41:28][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[15/05 18:45:15][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[15/05 18:45:15][info][CCDA7567]Injecting Transaction Monitor
+[15/05 18:45:15][info](CCDA7567)Starting job http://localhost/1.php
+[15/05 18:45:15][info](CCDA7567)Last page Navigated to http://localhost/3.php?id=2 status: 200 OK date: Wed, 15 May 2019 15:45:15 GMT
+[15/05 18:45:15][info]Found frames: 1
+[15/05 18:45:15][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-15_18-45-0015_CCDA7567/localhost_18-45-0015.js
+[15/05 18:45:15][info]Processing command for NodeJS in folder localhost_05-15_18-45-0015_CCDA7567 and file localhost_18-45-0015.js
+[15/05 18:45:15][info]Process at 67218 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-15_18-45-0015_CCDA7567.json ./malware/localhost_05-15_18-45-0015_CCDA7567/localhost_18-45-0015.js]
+[15/05 18:45:16][info]Exporting results to: /results/localhost_18-45-0015.dynamic.log
+[15/05 18:45:16][info]Exporting results to: /results/localhost_18-45-0015.static.log
+[15/05 18:45:16][info]No Dynamic URLs extracted from: localhost_05-15_18-45-0015_CCDA7567/localhost_18-45-0015.js
+[15/05 18:45:16][info]Initializing YARA localhost_05-15_18-45-0015_CCDA7567/results/ <all files>
+[15/05 18:45:16][info]Process at 67235 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-15_18-45-0015_CCDA7567/results]
+[15/05 18:45:16][info]localhost_05-15_18-45-0015_CCDA7567 no_matches 
+[15/05 18:45:16][info]CCDA7567,/malware/localhost_05-15_18-45-0015_CCDA7567/results/ <all files> ,0,no_matches
+[15/05 18:45:16][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[15/05 18:53:43][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[15/05 18:53:43][info][EE33E584]Injecting Transaction Monitor
+[15/05 18:53:43][info](EE33E584)Starting job http://localhost/1.php
+[15/05 18:53:44][info](EE33E584)Last page Navigated to http://localhost/3.php?id=2 status: 200 OK date: Wed, 15 May 2019 15:53:44 GMT
+[15/05 18:53:44][info]Found frames: 1
+[15/05 18:53:44][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-15_18-53-0044_EE33E584/localhost_18-53-0044.js
+[15/05 18:53:44][info]Processing command for NodeJS in folder localhost_05-15_18-53-0044_EE33E584 and file localhost_18-53-0044.js
+[15/05 18:53:44][info]Process at 67499 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-15_18-53-0044_EE33E584.json ./malware/localhost_05-15_18-53-0044_EE33E584/localhost_18-53-0044.js]
+[15/05 18:53:45][info]Exporting results to: /results/localhost_18-53-0044.dynamic.log
+[15/05 18:53:45][info]Exporting results to: /results/localhost_18-53-0044.static.log
+[15/05 18:53:45][info]No Dynamic URLs extracted from: localhost_05-15_18-53-0044_EE33E584/localhost_18-53-0044.js
+[15/05 18:53:45][info]Initializing YARA localhost_05-15_18-53-0044_EE33E584/results/ <all files>
+[15/05 18:53:45][info]Process at 67516 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-15_18-53-0044_EE33E584/results]
+[15/05 18:53:45][info]localhost_05-15_18-53-0044_EE33E584 no_matches 
+[15/05 18:53:45][info]EE33E584,/malware/localhost_05-15_18-53-0044_EE33E584/results/ <all files> ,0,no_matches
+[15/05 18:53:45][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[15/05 18:54:27][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[15/05 18:54:27][info][A0C2BA14]Injecting Transaction Monitor
+[15/05 18:54:27][info](A0C2BA14)Starting job http://localhost/1.php
+[15/05 18:54:27][info](A0C2BA14)Last page Navigated to http://localhost/3.php?id=2 status: 200 OK date: Wed, 15 May 2019 15:54:27 GMT
+[15/05 18:54:27][info]Found frames: 1
+[15/05 18:54:27][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-15_18-54-0027_A0C2BA14/localhost_18-54-0027.js
+[15/05 18:54:27][info]Processing command for NodeJS in folder localhost_05-15_18-54-0027_A0C2BA14 and file localhost_18-54-0027.js
+[15/05 18:54:27][info]Process at 67634 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-15_18-54-0027_A0C2BA14.json ./malware/localhost_05-15_18-54-0027_A0C2BA14/localhost_18-54-0027.js]
+[15/05 18:54:28][info]Exporting results to: /results/localhost_18-54-0027.dynamic.log
+[15/05 18:54:28][info]Exporting results to: /results/localhost_18-54-0027.static.log
+[15/05 18:54:28][info]No Dynamic URLs extracted from: localhost_05-15_18-54-0027_A0C2BA14/localhost_18-54-0027.js
+[15/05 18:54:28][info]Initializing YARA localhost_05-15_18-54-0027_A0C2BA14/results/ <all files>
+[15/05 18:54:28][info]Process at 67652 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-15_18-54-0027_A0C2BA14/results]
+[15/05 18:54:28][info]localhost_05-15_18-54-0027_A0C2BA14 no_matches 
+[15/05 18:54:28][info]A0C2BA14,/malware/localhost_05-15_18-54-0027_A0C2BA14/results/ <all files> ,0,no_matches
+[15/05 18:54:28][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[15/05 18:54:45][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[15/05 18:54:45][info][2A9CC33C]Injecting Transaction Monitor
+[15/05 18:54:45][info](2A9CC33C)Starting job http://localhost/1.php
+[15/05 18:54:46][info](2A9CC33C)Last page Navigated to http://localhost/3.php?id=2 status: 200 OK date: Wed, 15 May 2019 15:54:46 GMT
+[15/05 18:54:46][info]Found frames: 1
+[15/05 18:54:46][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-15_18-54-0046_2A9CC33C/localhost_18-54-0046.js
+[15/05 18:54:46][info]Processing command for NodeJS in folder localhost_05-15_18-54-0046_2A9CC33C and file localhost_18-54-0046.js
+[15/05 18:54:46][info]Process at 67763 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-15_18-54-0046_2A9CC33C.json ./malware/localhost_05-15_18-54-0046_2A9CC33C/localhost_18-54-0046.js]
+[15/05 18:54:46][info]Exporting results to: /results/localhost_18-54-0046.dynamic.log
+[15/05 18:54:46][info]Exporting results to: /results/localhost_18-54-0046.static.log
+[15/05 18:54:46][info]No Dynamic URLs extracted from: localhost_05-15_18-54-0046_2A9CC33C/localhost_18-54-0046.js
+[15/05 18:54:46][info]Initializing YARA localhost_05-15_18-54-0046_2A9CC33C/results/ <all files>
+[15/05 18:54:46][info]Process at 67780 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-15_18-54-0046_2A9CC33C/results]
+[15/05 18:54:46][info]localhost_05-15_18-54-0046_2A9CC33C no_matches 
+[15/05 18:54:46][info]2A9CC33C,/malware/localhost_05-15_18-54-0046_2A9CC33C/results/ <all files> ,0,no_matches
+[15/05 18:54:46][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[15/05 18:56:27][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[15/05 18:56:27][info][8186D431]Injecting Transaction Monitor
+[15/05 18:56:27][info](8186D431)Starting job http://localhost/1.php
+[15/05 18:56:28][info](8186D431)Last page Navigated to http://localhost/3.php?id=2 status: 200 OK date: Wed, 15 May 2019 15:56:28 GMT
+[15/05 18:56:28][info]Found frames: 1
+[15/05 18:56:28][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-15_18-56-0028_8186D431/localhost_18-56-0028.js
+[15/05 18:56:28][info]Processing command for NodeJS in folder localhost_05-15_18-56-0028_8186D431 and file localhost_18-56-0028.js
+[15/05 18:56:28][info]Process at 67905 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-15_18-56-0028_8186D431.json ./malware/localhost_05-15_18-56-0028_8186D431/localhost_18-56-0028.js]
+[15/05 18:56:28][info]Exporting results to: /results/localhost_18-56-0028.dynamic.log
+[15/05 18:56:28][info]Exporting results to: /results/localhost_18-56-0028.static.log
+[15/05 18:56:28][info]No Dynamic URLs extracted from: localhost_05-15_18-56-0028_8186D431/localhost_18-56-0028.js
+[15/05 18:56:28][info]Initializing YARA localhost_05-15_18-56-0028_8186D431/results/ <all files>
+[15/05 18:56:28][info]Process at 67922 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-15_18-56-0028_8186D431/results]
+[15/05 18:56:28][info]localhost_05-15_18-56-0028_8186D431 no_matches 
+[15/05 18:56:28][info]8186D431,/malware/localhost_05-15_18-56-0028_8186D431/results/ <all files> ,0,no_matches
+[15/05 18:56:28][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[15/05 21:04:26][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[15/05 21:04:26][info][1DC01C1C]Injecting Transaction Monitor
+[15/05 21:04:27][info](1DC01C1C)Starting job http://localhost/malware_samples/0c78827e75046803b5e4bcca7cf50ac8.html
+[15/05 21:04:27][info](1DC01C1C)Last page Navigated to http://localhost/malware_samples/0c78827e75046803b5e4bcca7cf50ac8.html status: 200 OK date: Wed, 15 May 2019 18:04:27 GMT
+[15/05 21:04:27][info]Found frames: 0
+[15/05 21:04:27][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-15_21-04-0027_1DC01C1C/localhost_21-04-0027.js
+[15/05 21:04:27][info]Processing command for NodeJS in folder localhost_05-15_21-04-0027_1DC01C1C and file localhost_21-04-0027.js
+[15/05 21:04:27][info]Process at 70153 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-15_21-04-0027_1DC01C1C.json ./malware/localhost_05-15_21-04-0027_1DC01C1C/localhost_21-04-0027.js]
+[15/05 21:04:28][info]Exporting results to: /results/localhost_21-04-0027.dynamic.log
+[15/05 21:04:28][info]Exporting results to: /results/localhost_21-04-0027.static.log
+[15/05 21:04:28][info]Dynamic URLs extracted from localhost_05-15_21-04-0027_1DC01C1C/localhost_21-04-0027.js and saved to ./malware/localhost_05-15_21-04-0027_1DC01C1C/output/urls.json
+[15/05 21:04:28][info]Initializing YARA localhost_05-15_21-04-0027_1DC01C1C/results/ <all files>
+[15/05 21:04:28][info]Process at 70170 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn -t PB_Gen ./yararules/playbook_start.yar ./malware/localhost_05-15_21-04-0027_1DC01C1C/results]
+[15/05 21:04:28][info]1DC01C1C,/malware/localhost_05-15_21-04-0027_1DC01C1C/results/ <all files> ,172,Malicious
+[15/05 21:04:28][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[15/05 21:04:28][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[15/05 21:04:28][info][96B1B803]Injecting Transaction Monitor
+[15/05 21:04:28][info](96B1B803)Starting job http://localhost/malware_samples/751de6d99204034ac08071675a4a54de.html
+[15/05 21:04:28][info](96B1B803)Last page Navigated to http://localhost/malware_samples/751de6d99204034ac08071675a4a54de.html status: 200 OK date: Wed, 15 May 2019 18:04:28 GMT
+[15/05 21:04:28][info]Found frames: 0
+[15/05 21:04:28][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-15_21-04-0028_96B1B803/localhost_21-04-0028.js
+[15/05 21:04:28][info]Processing command for NodeJS in folder localhost_05-15_21-04-0028_96B1B803 and file localhost_21-04-0028.js
+[15/05 21:04:28][info]Process at 70204 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-15_21-04-0028_96B1B803.json ./malware/localhost_05-15_21-04-0028_96B1B803/localhost_21-04-0028.js]
+[15/05 21:04:29][info]Exporting results to: /results/localhost_21-04-0028.dynamic.log
+[15/05 21:04:29][info]Exporting results to: /results/localhost_21-04-0028.static.log
+[15/05 21:04:29][info]Dynamic URLs extracted from localhost_05-15_21-04-0028_96B1B803/localhost_21-04-0028.js and saved to ./malware/localhost_05-15_21-04-0028_96B1B803/output/urls.json
+[15/05 21:04:29][info]Initializing YARA localhost_05-15_21-04-0028_96B1B803/results/ <all files>
+[15/05 21:04:29][info]Process at 70220 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn -t PB_Gen ./yararules/playbook_start.yar ./malware/localhost_05-15_21-04-0028_96B1B803/results]
+[15/05 21:04:29][info]96B1B803,/malware/localhost_05-15_21-04-0028_96B1B803/results/ <all files> ,117,Malicious
+[15/05 21:04:29][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[15/05 21:04:29][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[15/05 21:04:29][info][7C25D4A9]Injecting Transaction Monitor
+[15/05 21:04:29][info](7C25D4A9)Starting job http://localhost/malware_samples/b672a51b9b078c4a7156fed8ff2f10de.html
+[15/05 21:04:29][info](7C25D4A9)Last page Navigated to http://localhost/malware_samples/b672a51b9b078c4a7156fed8ff2f10de.html status: 200 OK date: Wed, 15 May 2019 18:04:29 GMT
+[15/05 21:04:29][info]Found frames: 0
+[15/05 21:04:29][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-15_21-04-0029_7C25D4A9/localhost_21-04-0029.js
+[15/05 21:04:29][info]Processing command for NodeJS in folder localhost_05-15_21-04-0029_7C25D4A9 and file localhost_21-04-0029.js
+[15/05 21:04:29][info]Process at 70254 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-15_21-04-0029_7C25D4A9.json ./malware/localhost_05-15_21-04-0029_7C25D4A9/localhost_21-04-0029.js]
+[15/05 21:04:30][warning]Uncaught Exception occured, scanning results might be innacurate: 
+15 May 21:04:29 - mailware-jail, a malware sandbox ver. 0.19
+15 May 21:04:29 - ------------------------
+15 May 21:04:29 - Arguments: --h404 -t 15000 -c ./config_localhost_05-15_21-04-0029_7C25D4A9.json ./malware/localhost_05-15_21-04-0029_7C25D4A9/localhost_21-04-0029.js
+15 May 21:04:29 - Sandbox environment sequence: malware-jail/env/utils.js,malware-jail/env/eval.js,malware-jail/env/function.js,malware-jail/env/wscript.js,malware-jail/env/browser.js,malware-jail/env/agents.js,malware-jail/env/other.js,malware-jail/env/console.js
+15 May 21:04:29 - Malware files: ./malware/localhost_05-15_21-04-0029_7C25D4A9/localhost_21-04-0029.js
+15 May 21:04:29 - Execution timeout set to: 15 seconds
+15 May 21:04:29 - Output file for sandbox dump: malware-jail/sandbox_dump_after.json
+15 May 21:04:29 - Output directory for generated files: malware-jail/../malware/localhost_05-15_21-04-0029_7C25D4A9/output/
+15 May 21:04:29 - Download from remote server: Return HTTP/404
+15 May 21:04:29 - ==> Preparing Sandbox environment.
+15 May 21:04:29 -  => Executing: malware-jail/env/utils.js quitely
+15 May 21:04:29 -  => Executing: malware-jail/env/eval.js quitely
+15 May 21:04:29 -  => Executing: malware-jail/env/function.js quitely
+15 May 21:04:29 -  => Executing: malware-jail/env/wscript.js quitely
+15 May 21:04:29 -  => Executing: malware-jail/env/browser.js quitely
+15 May 21:04:29 -  => Executing: malware-jail/env/agents.js quitely
+15 May 21:04:29 -  => Executing: malware-jail/env/other.js quitely
+15 May 21:04:29 -  => Executing: malware-jail/env/console.js quitely
+15 May 21:04:29 - ==> Executing malware file(s). =========================================
+15 May 21:04:29 -  => Executing: ./malware/localhost_05-15_21-04-0029_7C25D4A9/localhost_21-04-0029.js verbosely, reporting silent catches
+15 May 21:04:29 - Saving: malware-jail/../malware/localhost_05-15_21-04-0029_7C25D4A9/output/._malware_localhost_05-15_21-04-0029_7C25D4A9_localhost_21-04-0029.js
+15 May 21:04:29 - Saving: malware-jail/../malware/localhost_05-15_21-04-0029_7C25D4A9/output/tr_._malware_localhost_05-15_21-04-0029_7C25D4A9_localhost_21-04-0029.js
+15 May 21:04:29 - WScript.scriptfullname = (string) './malware/localhost_05-15_21-04-0029_7C25D4A9/localhost_21-04-0029.js'
+15 May 21:04:29 - WScript.arguments = (object) './malware/localhost_05-15_21-04-0029_7C25D4A9/localhost_21-04-0029.js,xyz'
+15 May 21:04:29 - Calling eval[1]('function e(){?    var _hsiyudgfustdg = "WS"+""+"c"+"r"+"i"+"pt";?    var _c = "\%Sy"+"st"+""+"em"+"Root\%\\s"+"ystem32\\cmd."+"ex"+"e";?     var _87867t67t6gt = this[_hsiyudgfustdg]["Cre"+"ateOb"+"ject"](_hsiyudgfustdg+".She"+"ll"); ?    var _87g6sd5 ... (truncated)')
+15 May 21:04:30 - WScript.CreateObject(WScript.Shell)
+15 May 21:04:30 - new WScript.Shell[14]
+15 May 21:04:30 - new WshEnvironment[15](SYSTEM)
+15 May 21:04:30 - WScript.Shell[14].Environment(SYSTEM)
+15 May 21:04:30 - WshEnvironment[15](SYSTEM)(COMSPEC) => C:\WINDOWS\system32\cmd.exe
+15 May 21:04:30 - Exception occured: object undefined:8
+	else {this[this["_hsiyudgfustdg"]]["Qui"+""+"t"](1);};
+	                                  ^
+
+TypeError: Cannot read property 'Quit' of undefined
+    at e (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:8:36)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:10:1)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-15_21-04-0029_7C25D4A9/localhost_21-04-0029.js:18:1
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+    at Object.<anonymous> (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:360:20)
+15 May 21:04:30 - ==> Cleaning up sandbox.
+15 May 21:04:30 - ==> Script execution finished, dumping sandbox environment to a file.
+15 May 21:04:30 - The sandbox context has been  saved to: malware-jail/sandbox_dump_after.json
+15 May 21:04:30 - Saving: malware-jail/../malware/localhost_05-15_21-04-0029_7C25D4A9/output/eval_1.js
+
+[15/05 21:04:30][info]Exporting results to: /results/localhost_21-04-0029.dynamic.log
+[15/05 21:04:30][info]Exporting results to: /results/localhost_21-04-0029.static.log
+[15/05 21:04:30][info]No Dynamic URLs extracted from: localhost_05-15_21-04-0029_7C25D4A9/localhost_21-04-0029.js
+[15/05 21:04:30][info]Initializing YARA localhost_05-15_21-04-0029_7C25D4A9/results/ <all files>
+[15/05 21:04:30][info]Process at 70271 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn -t PB_Gen ./yararules/playbook_start.yar ./malware/localhost_05-15_21-04-0029_7C25D4A9/results]
+[15/05 21:04:30][info]7C25D4A9,/malware/localhost_05-15_21-04-0029_7C25D4A9/results/ <all files> ,112,Malicious
+[15/05 21:04:30][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[15/05 21:04:30][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[15/05 21:04:30][info][ADEB8309]Injecting Transaction Monitor
+[15/05 21:04:30][info](ADEB8309)Starting job http://localhost/malware_samples/44880573519212a90b7d910319fc31d8.html
+[15/05 21:04:30][info](ADEB8309)Last page Navigated to http://localhost/malware_samples/44880573519212a90b7d910319fc31d8.html status: 200 OK date: Wed, 15 May 2019 18:04:30 GMT
+[15/05 21:04:30][info]Found frames: 0
+[15/05 21:04:30][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-15_21-04-0030_ADEB8309/localhost_21-04-0030.js
+[15/05 21:04:30][info]Processing command for NodeJS in folder localhost_05-15_21-04-0030_ADEB8309 and file localhost_21-04-0030.js
+[15/05 21:04:30][info]Process at 70306 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-15_21-04-0030_ADEB8309.json ./malware/localhost_05-15_21-04-0030_ADEB8309/localhost_21-04-0030.js]
+[15/05 21:04:31][warning]Uncaught Exception occured, scanning results might be innacurate: 
+15 May 21:04:30 - mailware-jail, a malware sandbox ver. 0.19
+15 May 21:04:30 - ------------------------
+15 May 21:04:30 - Arguments: --h404 -t 15000 -c ./config_localhost_05-15_21-04-0030_ADEB8309.json ./malware/localhost_05-15_21-04-0030_ADEB8309/localhost_21-04-0030.js
+15 May 21:04:30 - Sandbox environment sequence: malware-jail/env/utils.js,malware-jail/env/eval.js,malware-jail/env/function.js,malware-jail/env/wscript.js,malware-jail/env/browser.js,malware-jail/env/agents.js,malware-jail/env/other.js,malware-jail/env/console.js
+15 May 21:04:30 - Malware files: ./malware/localhost_05-15_21-04-0030_ADEB8309/localhost_21-04-0030.js
+15 May 21:04:30 - Execution timeout set to: 15 seconds
+15 May 21:04:30 - Output file for sandbox dump: malware-jail/sandbox_dump_after.json
+15 May 21:04:30 - Output directory for generated files: malware-jail/../malware/localhost_05-15_21-04-0030_ADEB8309/output/
+15 May 21:04:30 - Download from remote server: Return HTTP/404
+15 May 21:04:30 - ==> Preparing Sandbox environment.
+15 May 21:04:30 -  => Executing: malware-jail/env/utils.js quitely
+15 May 21:04:30 -  => Executing: malware-jail/env/eval.js quitely
+15 May 21:04:30 -  => Executing: malware-jail/env/function.js quitely
+15 May 21:04:30 -  => Executing: malware-jail/env/wscript.js quitely
+15 May 21:04:30 -  => Executing: malware-jail/env/browser.js quitely
+15 May 21:04:30 -  => Executing: malware-jail/env/agents.js quitely
+15 May 21:04:30 -  => Executing: malware-jail/env/other.js quitely
+15 May 21:04:30 -  => Executing: malware-jail/env/console.js quitely
+15 May 21:04:30 - ==> Executing malware file(s). =========================================
+15 May 21:04:30 -  => Executing: ./malware/localhost_05-15_21-04-0030_ADEB8309/localhost_21-04-0030.js verbosely, reporting silent catches
+15 May 21:04:30 - Saving: malware-jail/../malware/localhost_05-15_21-04-0030_ADEB8309/output/._malware_localhost_05-15_21-04-0030_ADEB8309_localhost_21-04-0030.js
+15 May 21:04:30 - Saving: malware-jail/../malware/localhost_05-15_21-04-0030_ADEB8309/output/tr_._malware_localhost_05-15_21-04-0030_ADEB8309_localhost_21-04-0030.js
+15 May 21:04:30 - WScript.scriptfullname = (string) './malware/localhost_05-15_21-04-0030_ADEB8309/localhost_21-04-0030.js'
+15 May 21:04:30 - WScript.arguments = (object) './malware/localhost_05-15_21-04-0030_ADEB8309/localhost_21-04-0030.js,xyz'
+15 May 21:04:31 - Calling eval[1]('function e(){?    var _hsiyudgfustdg = "WS"+""+"c"+"r"+"i"+"pt";?    var _c = "\%Sy"+"st"+""+"em"+"Root\%\\s"+"ystem32\\cmd."+"ex"+"e";?     var _87867t67t6gt = this[_hsiyudgfustdg]["Cre"+"ateOb"+"ject"](_hsiyudgfustdg+".She"+"ll"); ?    var _87g6sd5 ... (truncated)')
+15 May 21:04:31 - WScript.CreateObject(WScript.Shell)
+15 May 21:04:31 - new WScript.Shell[14]
+15 May 21:04:31 - new WshEnvironment[15](SYSTEM)
+15 May 21:04:31 - WScript.Shell[14].Environment(SYSTEM)
+15 May 21:04:31 - WshEnvironment[15](SYSTEM)(COMSPEC) => C:\WINDOWS\system32\cmd.exe
+15 May 21:04:31 - Exception occured: object undefined:8
+	else {this[this["_hsiyudgfustdg"]]["Qui"+""+"t"](1);};
+	                                  ^
+
+TypeError: Cannot read property 'Quit' of undefined
+    at e (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:8:36)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:10:1)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-15_21-04-0030_ADEB8309/localhost_21-04-0030.js:17:1
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+    at Object.<anonymous> (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:360:20)
+15 May 21:04:31 - ==> Cleaning up sandbox.
+15 May 21:04:31 - ==> Script execution finished, dumping sandbox environment to a file.
+15 May 21:04:31 - The sandbox context has been  saved to: malware-jail/sandbox_dump_after.json
+15 May 21:04:31 - Saving: malware-jail/../malware/localhost_05-15_21-04-0030_ADEB8309/output/eval_1.js
+
+[15/05 21:04:31][info]Exporting results to: /results/localhost_21-04-0030.dynamic.log
+[15/05 21:04:31][info]Exporting results to: /results/localhost_21-04-0030.static.log
+[15/05 21:04:31][info]No Dynamic URLs extracted from: localhost_05-15_21-04-0030_ADEB8309/localhost_21-04-0030.js
+[15/05 21:04:31][info]Initializing YARA localhost_05-15_21-04-0030_ADEB8309/results/ <all files>
+[15/05 21:04:31][info]Process at 70322 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn -t PB_Gen ./yararules/playbook_start.yar ./malware/localhost_05-15_21-04-0030_ADEB8309/results]
+[15/05 21:04:31][info]ADEB8309,/malware/localhost_05-15_21-04-0030_ADEB8309/results/ <all files> ,112,Malicious
+[15/05 21:04:31][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[15/05 21:04:31][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[15/05 21:04:31][info][AE5F78C6]Injecting Transaction Monitor
+[15/05 21:04:31][info](AE5F78C6)Starting job http://localhost/malware_samples/1e0d1cba566b246736110050ae04d73d.html
+[15/05 21:04:31][info](AE5F78C6)Last page Navigated to http://localhost/malware_samples/1e0d1cba566b246736110050ae04d73d.html status: 200 OK date: Wed, 15 May 2019 18:04:31 GMT
+[15/05 21:04:31][info]Found frames: 0
+[15/05 21:04:31][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-15_21-04-0031_AE5F78C6/localhost_21-04-0031.js
+[15/05 21:04:31][info]Processing command for NodeJS in folder localhost_05-15_21-04-0031_AE5F78C6 and file localhost_21-04-0031.js
+[15/05 21:04:31][info]Process at 70357 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-15_21-04-0031_AE5F78C6.json ./malware/localhost_05-15_21-04-0031_AE5F78C6/localhost_21-04-0031.js]
+[15/05 21:04:31][warning]Uncaught Exception occured, scanning results might be innacurate: 
+15 May 21:04:31 - mailware-jail, a malware sandbox ver. 0.19
+15 May 21:04:31 - ------------------------
+15 May 21:04:31 - Arguments: --h404 -t 15000 -c ./config_localhost_05-15_21-04-0031_AE5F78C6.json ./malware/localhost_05-15_21-04-0031_AE5F78C6/localhost_21-04-0031.js
+15 May 21:04:31 - Sandbox environment sequence: malware-jail/env/utils.js,malware-jail/env/eval.js,malware-jail/env/function.js,malware-jail/env/wscript.js,malware-jail/env/browser.js,malware-jail/env/agents.js,malware-jail/env/other.js,malware-jail/env/console.js
+15 May 21:04:31 - Malware files: ./malware/localhost_05-15_21-04-0031_AE5F78C6/localhost_21-04-0031.js
+15 May 21:04:31 - Execution timeout set to: 15 seconds
+15 May 21:04:31 - Output file for sandbox dump: malware-jail/sandbox_dump_after.json
+15 May 21:04:31 - Output directory for generated files: malware-jail/../malware/localhost_05-15_21-04-0031_AE5F78C6/output/
+15 May 21:04:31 - Download from remote server: Return HTTP/404
+15 May 21:04:31 - ==> Preparing Sandbox environment.
+15 May 21:04:31 -  => Executing: malware-jail/env/utils.js quitely
+15 May 21:04:31 -  => Executing: malware-jail/env/eval.js quitely
+15 May 21:04:31 -  => Executing: malware-jail/env/function.js quitely
+15 May 21:04:31 -  => Executing: malware-jail/env/wscript.js quitely
+15 May 21:04:31 -  => Executing: malware-jail/env/browser.js quitely
+15 May 21:04:31 -  => Executing: malware-jail/env/agents.js quitely
+15 May 21:04:31 -  => Executing: malware-jail/env/other.js quitely
+15 May 21:04:31 -  => Executing: malware-jail/env/console.js quitely
+15 May 21:04:31 - ==> Executing malware file(s). =========================================
+15 May 21:04:31 -  => Executing: ./malware/localhost_05-15_21-04-0031_AE5F78C6/localhost_21-04-0031.js verbosely, reporting silent catches
+15 May 21:04:31 - Saving: malware-jail/../malware/localhost_05-15_21-04-0031_AE5F78C6/output/._malware_localhost_05-15_21-04-0031_AE5F78C6_localhost_21-04-0031.js
+15 May 21:04:31 - Saving: malware-jail/../malware/localhost_05-15_21-04-0031_AE5F78C6/output/tr_._malware_localhost_05-15_21-04-0031_AE5F78C6_localhost_21-04-0031.js
+15 May 21:04:31 - WScript.scriptfullname = (string) './malware/localhost_05-15_21-04-0031_AE5F78C6/localhost_21-04-0031.js'
+15 May 21:04:31 - WScript.arguments = (object) './malware/localhost_05-15_21-04-0031_AE5F78C6/localhost_21-04-0031.js,xyz'
+15 May 21:04:31 - WScript.CreateObject(WScript.Shell)
+15 May 21:04:31 - new WScript.Shell[14]
+15 May 21:04:31 - new WshEnvironment[15](SYSTEM)
+15 May 21:04:31 - WScript.Shell[14].Environment(SYSTEM)
+15 May 21:04:31 - WshEnvironment[15](SYSTEM)(COMSPEC) => C:\WINDOWS\system32\cmd.exe
+15 May 21:04:31 - Exception occured: object ./malware/localhost_05-15_21-04-0031_AE5F78C6/localhost_21-04-0031.js:13
+	else {this[this["_zzdddttt"]]["Qu"+"i"+""+"t"](1);};
+	                             ^
+
+TypeError: Cannot read property 'Quit' of undefined
+    at e (./malware/localhost_05-15_21-04-0031_AE5F78C6/localhost_21-04-0031.js:13:31)
+    at ./malware/localhost_05-15_21-04-0031_AE5F78C6/localhost_21-04-0031.js:15:1
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+    at Object.<anonymous> (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:360:20)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+15 May 21:04:31 - ==> Cleaning up sandbox.
+15 May 21:04:31 - ==> Script execution finished, dumping sandbox environment to a file.
+15 May 21:04:31 - The sandbox context has been  saved to: malware-jail/sandbox_dump_after.json
+
+[15/05 21:04:31][info]Exporting results to: /results/localhost_21-04-0031.dynamic.log
+[15/05 21:04:31][info]Exporting results to: /results/localhost_21-04-0031.static.log
+[15/05 21:04:31][info]No Dynamic URLs extracted from: localhost_05-15_21-04-0031_AE5F78C6/localhost_21-04-0031.js
+[15/05 21:04:31][info]Initializing YARA localhost_05-15_21-04-0031_AE5F78C6/results/ <all files>
+[15/05 21:04:31][info]Process at 70373 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn -t PB_Gen ./yararules/playbook_start.yar ./malware/localhost_05-15_21-04-0031_AE5F78C6/results]
+[15/05 21:04:32][info]AE5F78C6,/malware/localhost_05-15_21-04-0031_AE5F78C6/results/ <all files> ,102,Malicious
+[15/05 21:04:32][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[15/05 21:04:32][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[15/05 21:04:32][info][C1339866]Injecting Transaction Monitor
+[15/05 21:04:32][info](C1339866)Starting job http://localhost/malware_samples/c09c0c0f4450ce0d58f21374545c8956.html
+[15/05 21:04:32][info](C1339866)Last page Navigated to http://localhost/malware_samples/c09c0c0f4450ce0d58f21374545c8956.html status: 200 OK date: Wed, 15 May 2019 18:04:32 GMT
+[15/05 21:04:32][info]Found frames: 0
+[15/05 21:04:32][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-15_21-04-0032_C1339866/localhost_21-04-0032.js
+[15/05 21:04:32][info]Processing command for NodeJS in folder localhost_05-15_21-04-0032_C1339866 and file localhost_21-04-0032.js
+[15/05 21:04:32][info]Process at 70408 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-15_21-04-0032_C1339866.json ./malware/localhost_05-15_21-04-0032_C1339866/localhost_21-04-0032.js]
+[15/05 21:04:32][info]Exporting results to: /results/localhost_21-04-0032.dynamic.log
+[15/05 21:04:32][info]Exporting results to: /results/localhost_21-04-0032.static.log
+[15/05 21:04:32][info]Dynamic URLs extracted from localhost_05-15_21-04-0032_C1339866/localhost_21-04-0032.js and saved to ./malware/localhost_05-15_21-04-0032_C1339866/output/urls.json
+[15/05 21:04:32][info]Initializing YARA localhost_05-15_21-04-0032_C1339866/results/ <all files>
+[15/05 21:04:32][info]Process at 70424 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn -t PB_Gen ./yararules/playbook_start.yar ./malware/localhost_05-15_21-04-0032_C1339866/results]
+[15/05 21:04:32][info]C1339866,/malware/localhost_05-15_21-04-0032_C1339866/results/ <all files> ,172,Malicious
+[15/05 21:04:32][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[15/05 21:04:32][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[15/05 21:04:32][info][B25354D3]Injecting Transaction Monitor
+[15/05 21:04:32][info](B25354D3)Starting job http://localhost/malware_samples/4b018275170a2be2c39a22050379f93d.html
+[15/05 21:04:32][info](B25354D3)Last page Navigated to http://localhost/malware_samples/4b018275170a2be2c39a22050379f93d.html status: 200 OK date: Wed, 15 May 2019 18:04:32 GMT
+[15/05 21:04:32][info]Found frames: 0
+[15/05 21:04:32][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-15_21-04-0032_B25354D3/localhost_21-04-0032.js
+[15/05 21:04:32][info]Processing command for NodeJS in folder localhost_05-15_21-04-0032_B25354D3 and file localhost_21-04-0032.js
+[15/05 21:04:32][info]Process at 70458 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-15_21-04-0032_B25354D3.json ./malware/localhost_05-15_21-04-0032_B25354D3/localhost_21-04-0032.js]
+[15/05 21:04:45][info]Exporting results to: /results/localhost_21-04-0032.dynamic.log

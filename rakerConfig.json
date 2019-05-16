@@ -1,0 +1,6 @@
+{
+"playbook_name" : "playbook_start.yar",
+"yara_tags": ["PB_Dyn", "PB_Gen"],
+"browser_type" : "IE8",
+"read_from_pcap" : 0
+}

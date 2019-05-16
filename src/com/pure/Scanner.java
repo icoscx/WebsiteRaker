@@ -45,7 +45,7 @@ public class Scanner {
 
             matchQueue.add(match);
 
-            Log.logger.info("\n" + malwareSamplesPath + " no_matches ");
+            Log.logger.info( malwareSamplesPath + " no_matches ");
 
         } else {
 

@@ -1,7 +1,14 @@
 package com.pure;
 
+import com.gargoylesoftware.htmlunit.CookieManager;
+import com.gargoylesoftware.htmlunit.WebClient;
+import com.gargoylesoftware.htmlunit.WebRequest;
+import com.gargoylesoftware.htmlunit.WebResponse;
+import com.gargoylesoftware.htmlunit.html.HtmlPage;
+
 import java.io.File;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.function.Consumer;
 
 public class Mdebug {
@@ -19,6 +26,28 @@ public class Mdebug {
 
     public static void main(String[] args) {
 
+
+        WebClient webClient = new WebClient();
+        CookieManager cookieManager = new CookieManager();
+        cookieManager.setCookiesEnabled(true);
+        webClient.setCookieManager(cookieManager);
+        webClient.getOptions().setRedirectEnabled(true);
+
+        try {
+            HtmlPage htmlPage = webClient.getPage("http://localhost/1.php");
+            WebResponse webResponse = htmlPage.getWebResponse();
+            WebRequest webRequest = webResponse.getWebRequest();
+            System.out.println(webResponse.getResponseHeaders().toString());
+            System.out.println(webResponse.getWebRequest().getAdditionalHeaders().toString());
+            System.out.println(webResponse.getResponseHeaderValue("Set-Cookie"));
+            System.out.println(webResponse.getResponseHeaders().toString());
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        /**
         try {
             File file = new File("/var/www/html/malware_samples/");
             fetchFiles(file, f -> buildFile(f.getAbsolutePath()));
@@ -27,6 +56,7 @@ public class Mdebug {
             System.err.println(e.getCause());
             e.printStackTrace();
         }
+         */
     }
 
     static void buildFile(String fullpath){

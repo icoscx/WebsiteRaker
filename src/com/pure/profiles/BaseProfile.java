@@ -45,6 +45,7 @@ class BaseProfile{
                 staticContent.add(response.getResponseHeaders().toString() + "\n"
                 + response.getStatusCode() + " "+ response.getStatusMessage() + "\n"
                         + "CurrentURL: " + request.getUrl() + "\n"
+                        + "Referer: " + request.getAdditionalHeaders().toString() + "\n"
                         + response.getContentAsString() + "\n"
                 );
 
