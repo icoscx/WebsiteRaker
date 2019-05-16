@@ -1,5 +1,5 @@
 rule wscript : PB_Dyn
-{
+{ 
     meta:
         score = 40
 	description = "wscript elements"

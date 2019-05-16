@@ -35,7 +35,7 @@ rule urlhassexe : PB_Gen
 	description = "exe file in uri"
 
     strings:
-        $1 = /(\.exe)/ nocase
+        $1 = /(\.exe)/ nocase 
 	$2 = /(\.bin)/ nocase
 
     condition:

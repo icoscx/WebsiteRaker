@@ -29,7 +29,7 @@ rule httpredirection : PB_Gen
         any of them
 }
 
-rule httpredirection_moved : PB_Gen
+rule httpredirection_moved : PB_Gen 
 {
     meta:
         score = 15

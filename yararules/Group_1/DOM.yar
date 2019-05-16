@@ -5,7 +5,7 @@ rule evalfun : PB_Gen
 	description = "PureEvalFun"
 
     strings:
-	$ = /(eval\(function)/ nocase
+	$ = /(eval\(function)/ nocase 
 	$ = /(eval \(function)/ nocase
 
     condition:

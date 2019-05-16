@@ -6,7 +6,7 @@ rule charcode : PB_Gen
 
     strings:
         $1 = /(fromCharCode)/ nocase
-	$2 = /(unescape\()/ nocase
+	$2 = /(unescape\()/ nocase 
 	$3 = /(charCodeAt\()/ nocase
 
     condition:

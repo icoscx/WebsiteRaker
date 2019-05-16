@@ -1,4 +1,4 @@
-rule abusedfunctions : PB_Gen
+rule abusedfunctions : PB_Gen 
 {
     meta:
         score = 10
