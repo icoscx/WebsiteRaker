@@ -3,15 +3,14 @@
 Raker Rework
 
 VM: -Xms512m -Xmx2048m
-Ubuntu 16.04; 18.04 supported
-OpenJDK11
+
+Ubuntu 16.04; 18.04 supported with OpenJDK11
 
 Required Libs:
 ./WebsiteRaker/lib/
 
 Required Tools:
-./WebsiteRaker/malware-jail/
-YARA 3.9.0+
+./WebsiteRaker/malware-jail/  and  YARA 3.9.0+
 
 Setupconfig: ./rakerConfig.json
 
