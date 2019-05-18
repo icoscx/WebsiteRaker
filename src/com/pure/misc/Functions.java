@@ -69,6 +69,20 @@ public class Functions {
         return object.getString("playbook_name");
     }
 
+    public static String rakerConfigGetMode() throws FileNotFoundException {
+
+        JSONObject object = rakerConfig();
+
+        return object.getString("train_playbook");
+    }
+
+    public static Integer rakerConfigGetThreads() throws FileNotFoundException {
+
+        JSONObject object = rakerConfig();
+
+        return object.getInt("threads");
+    }
+
     public static List<String> rakerConfigGetYaraTags() throws FileNotFoundException {
 
 

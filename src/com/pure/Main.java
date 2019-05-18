@@ -3,6 +3,7 @@ package com.pure;
 import com.pure.logger.Log;
 import com.pure.misc.Functions;
 
+import java.io.FileNotFoundException;
 import java.net.URL;
 import java.util.Queue;
 import java.util.UUID;
@@ -13,9 +14,11 @@ import java.util.logging.Level;
 
 public class Main {
 
-    public static volatile Queue<String> jobs = new ConcurrentLinkedQueue<>();
+    private static volatile Queue<String> jobs = new ConcurrentLinkedQueue<>();
+    private static boolean training = false;
+    private static int threads = 0;
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
 
         //htmlunit off
         java.util.logging.Logger.getLogger("com.gargoylesoftware").setLevel(Level.OFF);
@@ -25,7 +28,16 @@ public class Main {
             Log.enableProgramFlowLog();
         }
 
-        ExecutorService executor = Executors.newFixedThreadPool(15);
+        try {
+            if(Functions.rakerConfigGetMode().toLowerCase().equals("true")){
+                training = true;
+            }
+            threads = Functions.rakerConfigGetThreads();
+        } catch (FileNotFoundException e) {
+            Log.logger.log(Level.SEVERE, e.getMessage(), e);
+        }
+
+        ExecutorService executor = Executors.newFixedThreadPool(threads);
 
         try {
 
@@ -39,7 +51,7 @@ public class Main {
                 executor.submit(() -> {
                     try {
                         //For Training mode use 1 thread!
-                        //WebsiteValidator.setTrainingModeOn = true;
+                        WebsiteValidator.setTrainingModeOn = training;
                         WebsiteValidator ws = new WebsiteValidator(uid);
                         ws.rootFunctionsCaller(new URL(job));
                     } catch (Exception e) {
