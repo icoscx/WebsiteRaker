@@ -1,5 +1,27 @@
 # WebsiteRaker
+
 Raker Rework
+
+VM: -Xms512m -Xmx2048m
+Ubuntu 16.04; 18.04 supported
+OpenJDK11
+
+Required Libs:
+./WebsiteRaker/lib/
+
+Required Tools:
+./WebsiteRaker/malware-jail/
+YARA 3.9.0+
+
+Setupconfig: ./rakerConfig.json
+
+
+java -classpath
+./out/production/WebsiteRaker
+./lib/htmlunit-driver-2.35.0-jar-with-dependencies.jar
+./lib/json-20180813.jar
+com.pure.Main
+
 
 ## License ##
 
