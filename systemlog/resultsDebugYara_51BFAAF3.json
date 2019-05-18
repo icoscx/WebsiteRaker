@@ -1,0 +1,1 @@
+{"match":[{"jobID":"51BFAAF3","foundMatches":5,"description":"wscript shell creation cmd","ruleName":"wscriptMoreThree","matchedRows":["0xa85:21:$1: WScript.CreateObject(","0xa9a:13:$2: WScript.Shell","0xabf:13:$2: WScript.Shell","0xb14:13:$2: WScript.Shell","0xb87:7:$3: cmd.exe"],"jobPath":"/malware/localhost_05-18_18-37-0027_51BFAAF3/","totalScore":50}]}

@@ -1,0 +1,1 @@
+{"match":[{"jobID":"0DD06041","foundMatches":8,"description":"wscript pack2","ruleName":"wscriptMore","matchedRows":["0xdc04:6:$1: Write(","0xe84b:6:$1: write(","0xe9e8:4:$3: Run(","0xebd6:4:$3: Run(","0xe972:12:$4: .saveToFile(","0xe567:5:$6: open(","0xe644:5:$6: open(","0xe7f0:5:$6: open("],"jobPath":"/malware/localhost_05-18_18-35-0020_0DD06041/","totalScore":40}]}

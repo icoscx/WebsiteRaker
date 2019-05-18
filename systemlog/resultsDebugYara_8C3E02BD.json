@@ -1,0 +1,1 @@
+{"match":[{"jobID":"8C3E02BD","foundMatches":4,"description":"wscript pack3","ruleName":"wscriptEvenMore","matchedRows":["0x1054:5:$3: send(","0x11ff:5:$3: send(","0xedb:4:$5: .exe","0xf8c:4:$5: .exe"],"jobPath":"/malware/localhost_05-18_18-38-0008_8C3E02BD/","totalScore":40}]}

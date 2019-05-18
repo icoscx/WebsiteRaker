@@ -1,0 +1,1 @@
+{"match":[{"jobID":"E49A8A53","foundMatches":5,"description":"wscript shell creation cmd","ruleName":"wscriptMoreThree","matchedRows":["0x955:21:$1: WScript.CreateObject(","0x96a:13:$2: WScript.Shell","0x98f:13:$2: WScript.Shell","0x9e4:13:$2: WScript.Shell","0xa57:7:$3: cmd.exe"],"jobPath":"/malware/localhost_05-18_18-36-0027_E49A8A53/","totalScore":50}]}
