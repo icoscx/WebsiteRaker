@@ -14,6 +14,8 @@ Required Tools:
 
 Setupconfig: ./rakerConfig.json
 
+Required files from this project: ./malware-jail/env/browser.js | ./malware-jail/config.json
+
 
 java -classpath
 ./out/production/WebsiteRaker
