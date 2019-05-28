@@ -1,6 +1,6 @@
 # WebsiteRaker
 
-Raker Rework
+Raker
 
 VM: -Xms512m -Xmx2048m
 
